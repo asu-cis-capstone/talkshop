@@ -4,7 +4,7 @@
 TalkShop is a web application that facilitates connections between guest speakers and teachers. Often times, teachers have a difficult time finding a speaker within a particular field who is nearby or in the area. This website will allow teachers to search through various speaker profiles in order to find the perfect candidate. Speakers will have the ability to create a profile and put their best foot forward so that they may acquire multiple opportunities. TalkShop will prove to be a very valuable tool in the learning environment. 
   
 TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 2014. The original masterminds of the idea include Dr. Joseph Clark of Arizona State University, Shelly Love of Grand Canyon University, and Karyn Zogopoulos. Dr. Clark presented the idea to his systems design course and recruited a team of information systems students to implement the website. With the team officially assembled, TalkShop is on its way to becoming a reality!
-repo for talkshop team
+
   
 ##Talkshop Design Team  
 ###Project Owners  
@@ -43,3 +43,4 @@ repo for talkshop team
   *  Structure/Architecture
   *  Prototypes of other pages  
   
+[Talkshop Video](http://t.co/hDJQhBq9YR)
