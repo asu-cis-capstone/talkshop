@@ -13,8 +13,8 @@ TALK SHOP!
     <meta charset="utf-8" />
 	
 	<!-- Link tag for CSS -->
-    <link type="text/css" rel="stylesheet" href="style.css" />
-
+    <link type="text/css" rel="stylesheet" href="style/style.css" />
+	
 	<!-- Link tag for JavaScript -->
 		<!-- <script type="text/javascript" src=""></script> -->
 	
@@ -26,7 +26,7 @@ TALK SHOP!
 		<!-- <link rel="icon" href="" type="image/ico" /> -->
 
     <!-- Web Page Title -->
-    <title>Talk Shop</title>
+    <title>TalkShop</title>
 
   </head>
 
@@ -61,16 +61,15 @@ TALK SHOP!
 	</div>
 	
 	<div id="aboutSection">
-		<div id="aboutUsTitle">WHAT IS TALK SHOP?</div>
+		<div id="aboutUsTitle">WHAT IS TALKSHOP?</div>
 		
 		<div id="aboutUsDescriptionHolder">
-			<div id="aboutUsDescriptionText">
-				Lorem ipsum dolor sit amet, sit libero amet at quis sed, nonummy consequat amet nullam, ut tellus orci molestie natoque donec cursus. Arcu <br />
-				volutpat, praesent libero. Sociosqu risus urna in, eleifend in ut dolor, phasellus nec in vivamus justo vestibulum, proin neque a <br />
-				massa, id est eros sed dignissim vitae eros. Mauris molestie, blandit gravida, ut ipsum ullamcorper magna dis amet diam, vestibulum <br />
-				elit ultricies aliquam consectetuer id, nulla ad velit dignissim a aenean pede. Arcu non ut sed pede habitasse lobortis, purus tempus <br />
-				quam fringilla, eget rutrum, nisl dui mi non. Scelerisque neque, viverra auctor vulputate erat eu. Tempor ullamcorper feugiat senectus <br />
-				morbi, lacus duis et turpis, mauris ut elit ut vel wisi, libero ac, at volutpat scelerisque pharetra sed iaculis.
+			<div id="aboutUsDescriptionText">			
+				TalkShop connects teachers and students with guest speakers.<br /><br />
+				TalkShop aims to build a directory of ordinary, extraordinary people who would like to have the chance to reach out to students as guest speakers. <br />
+				Teachers can search for guest speakers based on topic, activity, and geographic area. Speakers will be able to see what kinds of talks teachers are <br />
+				requesting, filtered by subject area, age group, and time slot. If you'd like to get involved, please provide your contact information and tell us <br />
+				whether you're a teacher or a potential guest speaker.
 			</div>
 		</div>
 		
@@ -83,6 +82,19 @@ TALK SHOP!
 	
 	<div id="bottomBar">
 		<div id="bottomBarText">&copy;2015 TALKSHOP | Made in Tempe, AZ</div>
+		<div id="time">
+			<?php
+				date_default_timezone_set('America/Phoenix');
+				
+				$timezone = date_default_timezone_get();
+				
+				echo "The Current Server Timezone is: " . $timezone . ". ";
+				
+				$date = date('m/d/y H:i:s a', time());
+				
+				echo "The Current Time is: " . $date;
+			?>
+		</div>
 	</div>
 	
   </body>
