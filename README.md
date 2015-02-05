@@ -21,14 +21,12 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 * Steven Somenek  
   
 
-##v.01 Release Notes
-* Developed Three Prototype pages
+##v0.1 Release Notes
+* Developed Three Prototype Pages
   * Landing
   * Teacher/Speaker Page
   * Profile Page
 * Identified High Level Needs
-  
-[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)  
 
 ##To Do List  
 *  Need to meet with clients to discuss
@@ -42,5 +40,18 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
   *  Php code
   *  Structure/Architecture
   *  Prototypes of other pages  
-  
+
+##v0.2 Release Notes
+* Created homepage.
+* Created preliminary database.
+* Demonstrated working PHP by displaying time stamp.
+
+##To Do List
+*   Waiting to hear from clients regarding:
+  *   Web Hosting Service/Domain Name
+  *   Initial Homepage Layout/Theme/Color Scheme
+  *   Instructions
+
+[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)
 [Talkshop Video](http://t.co/hDJQhBq9YR)
+
