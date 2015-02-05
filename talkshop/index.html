@@ -41,18 +41,18 @@ TALK SHOP!
 		<div id="login">
 			<div id="loginText">LOGIN</div>
 		</div>
-		<div id="register" onclick="javascript:location.href='register.php'">
+		<div id="register">
 			<div id="registerText">REGISTER</div>
 		</div>
 	</div>
 	
 	<div id="blackBox"></div>
 	
-	<div id="speakerButton" onclick="javascript:location.href='speakerProfiles.php'">
+	<div id="speakerButton">
 		<div id="speaker">Connect with Speakers</div>
 	</div>
 	
-	<div id="teacherButton" onclick="javascript:location.href='teacherProfiles.php'">
+	<div id="teacherButton">
 		<div id="teacher">Connect with Teachers</div>
 	</div>
 	
@@ -82,19 +82,6 @@ TALK SHOP!
 	
 	<div id="bottomBar">
 		<div id="bottomBarText">&copy;2015 TALKSHOP | Made in Tempe, AZ</div>
-		<div id="time">
-			<?php
-				date_default_timezone_set('America/Phoenix');
-				
-				$timezone = date_default_timezone_get();
-				
-				echo "The Current Server Timezone is: " . $timezone . ". ";
-				
-				$date = date('m/d/y H:i:s a', time());
-				
-				echo "The Current Time is: " . $date;
-			?>
-		</div>
 	</div>
 	
   </body>

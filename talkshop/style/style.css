@@ -66,6 +66,7 @@ body, html{
 	font-weight: 300;
 	text-align: center;
 	margin-top: 12px;
+	-webkit-user-select: none;
 }
 
 #register{
@@ -88,6 +89,7 @@ body, html{
 	font-weight: 300;
 	text-align: center;
 	margin-top: 12px;
+	-webkit-user-select: none;
 }
 
 #blackBox{
@@ -126,6 +128,7 @@ body, html{
 	text-align: center;
 	font-size: 28px;
 	margin-top: 28px;
+	-webkit-user-select: none;
 }
 
 #teacherButton{
@@ -152,6 +155,7 @@ body, html{
 	text-align: center;
 	font-size: 28px;
 	margin-top: 28px;
+	-webkit-user-select: none;
 }
 
 #image img{
@@ -159,6 +163,7 @@ body, html{
 	margin-top: 0px;
 	display: block;
 	/*opacity: ;*/
+	-webkit-user-select: none;
 }
 
 #aboutSection{
@@ -176,7 +181,9 @@ body, html{
 	color: white;
 	left: 50%;
 	margin-left: -150.5px;
-	margin-top: 35px;
+	margin-top: 35px;	
+	cursor: default;
+	
 }
 
 #aboutUsDescriptionHolder{
@@ -193,6 +200,7 @@ body, html{
 	font-weight: 300;
 	font-size: 22px;
 	color: white;
+	cursor: default;
 }
 
 #socialMediaHolder{
@@ -228,4 +236,14 @@ body, html{
 	color: white;
 	left: 50%;
 	margin-left: -106.5px;
+	cursor: default;
+}
+
+#time{
+	position: absolute;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	margin-top: 8px;
+	color: white;
+	margin-left: 15px;
 }
