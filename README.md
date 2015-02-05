@@ -52,7 +52,7 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
   *   Initial Homepage Layout/Theme/Color Scheme
   *   Instructions
 
-##[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)
+#[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)
 
-##[Talkshop Video](http://t.co/hDJQhBq9YR)
+#[Talkshop Video](http://t.co/hDJQhBq9YR)
 
