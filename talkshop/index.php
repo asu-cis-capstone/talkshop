@@ -16,7 +16,10 @@ TALK SHOP!
     <link type="text/css" rel="stylesheet" href="style/style.css" />
 	
 	<!-- Link tag for JavaScript -->
-		<!-- <script type="text/javascript" src=""></script> -->
+	<script type="text/javascript" src="js/js.js"></script>
+		
+	<!-- Link tag for Google hosted jQuery Library -->	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	
 	<!-- Link tag for Google Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
@@ -45,6 +48,8 @@ TALK SHOP!
 			<div id="registerText">REGISTER</div>
 		</div>
 	</div>
+	
+	<!-- <div id="loginBox"></div> -->
 	
 	<div id="blackBox"></div>
 	
@@ -81,7 +86,7 @@ TALK SHOP!
 	</div>
 	
 	<div id="bottomBar">
-		<div id="bottomBarText">&copy;2015 TALKSHOP | Made in Tempe, AZ</div>
+		<div id="bottomBarText">&copy;2015 TalkShop | Made in Tempe, AZ</div>
 		<div id="time">
 			<?php
 				date_default_timezone_set('America/Phoenix');

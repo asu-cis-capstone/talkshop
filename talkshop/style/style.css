@@ -7,7 +7,7 @@ body, html{
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	/* background-color: rgb(116, 194, 225); */
+	background-color: rgb(116, 194, 225);
 }
 
 #topBar{
@@ -92,6 +92,16 @@ body, html{
 	-webkit-user-select: none;
 }
 
+#loginBox{
+	position: absolute;
+	width: 225px;
+	height: 200px;
+	background-color: rgb(116, 194, 225);
+	right: 0%;
+	margin-right: 10px;
+	margin-top: 50px;
+}
+
 #blackBox{
 	z-index: 1;
 	position: absolute;
@@ -102,6 +112,7 @@ body, html{
 	margin-top: 150px;
 	margin-left: -410px;
 	left: 50%;
+	-webkit-user-select: none;
 }
 
 #speakerButton{
@@ -114,6 +125,7 @@ body, html{
 	margin-right: 50px;
 	background-color: rgb(1, 145, 200);
 	z-index: 2;
+	-webkit-user-select: none;
 }
 
 #speakerButton:hover{
@@ -141,6 +153,7 @@ body, html{
 	margin-left: 50px;
 	background-color: rgb(1, 145, 200);
 	z-index: 2;
+	-webkit-user-select: none;
 }
 
 #teacherButton:hover{
@@ -228,6 +241,14 @@ body, html{
 	background-color: rgb(1, 145, 200);
 }
 
+#bottomBarRegister{
+	width: 100%;
+	height: 40px;
+	background-color: rgb(1, 145, 200);
+	position: fixed;
+	bottom: 0;
+}
+
 #bottomBarText{
 	position: absolute;
 	font-family: 'Oswald', sans-serif;
@@ -235,7 +256,7 @@ body, html{
 	margin-top: 8px;
 	color: white;
 	left: 50%;
-	margin-left: -106.5px;
+	margin-left: -101.5px;
 	cursor: default;
 }
 
@@ -246,4 +267,52 @@ body, html{
 	margin-top: 8px;
 	color: white;
 	margin-left: 15px;
+}
+
+#registrationTitle{
+	position: absolute;
+	margin-top: 150px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 40px;
+	margin-left: -179px;
+	left: 50%;
+}
+
+
+#registerSpeakerButton{
+	position: absolute;
+	margin-top: 275px;
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	right: 50%;
+	margin-right: 50px;
+	background-color: rgb(1, 145, 200);
+	z-index: 2;
+	-webkit-user-select: none;
+}
+
+#registerSpeakerButton:hover{
+	cursor: pointer;
+	background-color: rgb(86, 182, 219);
+}
+
+#registerTeacherButton{
+	position: absolute;
+	margin-top: 275px;
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	left: 50%;
+	margin-left: 50px;
+	background-color: rgb(1, 145, 200);
+	z-index: 2;
+	-webkit-user-select: none;
+}
+
+#registerTeacherButton:hover{
+	cursor: pointer;
+	background-color: rgb(86, 182, 219);
 }
