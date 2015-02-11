@@ -1,0 +1,24 @@
+#Talkshop
+##Instructions
+
+In order to make use this product you will need several things to get you started.
+  
+##Php Files
+##CSS Files
+##Index.html Files
+##Access to GitHub
+##Web Hosting Provider
+##SQL Script
+##MyPhp Admin 4.2.10
+
+# Process Order
+1. Create an account with a web hosting site. We recommend GoDaddy.
+2. After your account is created open the folder of our latest version of our product which you can find on GitHub.
+3. Upload the folder of the lastest version to the web hosting site.  The folder should contain the php, css, and index.html files needed to launch the site.
+4. Open the SQL scripts in MyPhp Admin and run them.
+
+
+
+
+
+
