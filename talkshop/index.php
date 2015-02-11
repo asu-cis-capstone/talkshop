@@ -26,7 +26,7 @@ TALK SHOP!
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 	
 	<!-- Link tag for favicon -->
-		<!-- <link rel="icon" href="" type="image/ico" /> -->
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
     <!-- Web Page Title -->
     <title>TalkShop</title>
@@ -35,9 +35,8 @@ TALK SHOP!
 
   <body>
 	
-	<div id="title">
-		<div id="title1">TALK</div>
-		<div id="title2">SHOP</div>
+	<div id="title" onclick="javascript:location.href='index.php'">
+		<img src="images/bluelogo.png" alt="logo" />
 	</div>
   
 	<div id="topBar">
@@ -100,6 +99,7 @@ TALK SHOP!
 				echo "The Current Time is: " . $date;
 			?>
 		</div>
+		<div id="version">Release 0.2</div>
 	</div>
 	
   </body>
