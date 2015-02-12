@@ -45,12 +45,13 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 * Created homepage.
 * Created preliminary database.
 * Demonstrated working PHP by displaying time stamp.
+* Established web hosting service/domain name.
+* Created intructions for how to build the website.
 
 ##To Do List
 *   Waiting to hear from clients regarding:
-  *   Web Hosting Service/Domain Name
-  *   Initial Homepage Layout/Theme/Color Scheme
-  *   Instructions
+  *   Finalizing Initial Homepage Layout/Theme/Color Scheme
+  *   Registration Forms
 
 ###[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)
 
