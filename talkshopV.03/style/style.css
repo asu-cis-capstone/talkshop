@@ -5,7 +5,6 @@ body, html{
 	margin: 0px;
 	padding: 0px;
 	background-color: rgb(29, 174, 235);
-	min-width: 1068px;
 }
 
 #topBar{
@@ -34,7 +33,52 @@ body, html{
 	-webkit-user-select: none;
 }
 
+<<<<<<< HEAD
 .topBarText{
+=======
+#login{
+	position: absolute;
+	right: 0%;
+	margin-right: 135px;
+	margin-top: 0px;
+	height: 50px;
+	width: 100px;
+}
+
+#login:hover{
+	cursor: pointer;
+	background-color: rgb(29, 174, 235);
+}
+
+#loginText{
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 12px;
+	-webkit-user-select: none;
+}
+
+#register{
+	position: absolute;
+	right: 0%;
+	margin-right: 35px;
+	margin-top: 0px;
+	width: 100px;
+	height: 50px;
+}
+
+#register:hover{
+	cursor: pointer;
+	background-color: rgb(29, 174, 235);
+}
+
+#registerText{
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align: center;
+>>>>>>> origin/master
 	margin-top: 12px;
 }
 
@@ -113,7 +157,6 @@ body, html{
 	display: block;
 	/*opacity: ;*/
 	-webkit-user-select: none;
-	max-height: 600px;
 }
 
 #aboutSection{
@@ -133,13 +176,15 @@ body, html{
 	margin-left: -150.5px;
 	margin-top: 35px;	
 	cursor: default;
+	
 }
 
 #aboutUsDescriptionHolder{
 	position: absolute;
+	width: 1200px;
+	left: 50%;
+	margin-left: -600px;
 	margin-top: 120px;
-	width: 70%;
-	left: 15%;
 }
 
 #aboutUsDescriptionText{
@@ -191,7 +236,7 @@ body, html{
 	margin-top: 8px;
 	color: white;
 	left: 50%;
-	margin-left: -45.5px;
+	margin-left: -101.5px;
 	cursor: default;
 }
 
@@ -263,6 +308,7 @@ body, html{
 	background-color: rgb(104, 201, 241);
 }
 
+<<<<<<< HEAD
 
 
 
@@ -334,42 +380,32 @@ nav li #login-content {
 	right: 0;
 	width: 250px;
 	height: 165px;
+=======
+#joinform {
+	width:				40%;
+	margin:				auto;
+	border:				thick solid black;
+	margin-top:			200px;
+	margin-bottom:		150px;
+	padding-left:		8px;
+	background-color:	rgb(19, 125, 193);
+	font-family:		'Oswald', sans-serif;
+>>>>>>> origin/master
 }
 
-#inputs input {
-	background: rgb(19, 125, 193);
-	height: 30px;
-	margin-top: 15px;
-	width: 220px;
-	border: none;
-  	font-family: 'Oswald', sans-serif;
-	font-weight: 300;
-	font-size: 18px;
-	color: white;
-	text-align: center;
+.submit { text-align: center; }
+
+.submit input {
+	color:				#ffffff;
+	font-size:			95%;
+	font-style:			italic;
+	font-weight:		bold;
+	background-color:	rgb(29, 174, 235);
 }
 
-::-webkit-input-placeholder {
-   color: rgb(104, 201, 241);
-}
+.reset input { background-color: rgb(29, 174, 235); }
 
-#login #submit {    
-    background-color: rgb(19, 125, 193);
-    height: 30px;
-    width: 220px;
-    cursor: pointer;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    color: white; 
-    border: none;
-}
-
-#login #submit:hover,
-#login #submit:focus {
-    background-color: rgb(104, 201, 241);
-} 
-
+<<<<<<< HEAD
 /* *************END OF LOGIN BOX STYLING************* */
 
 
@@ -404,6 +440,8 @@ nav li #login-content {
 
 .reset input { background-color: rgb(29, 174, 235); }
 
+=======
+>>>>>>> origin/master
 label {
 	width:				11em;
 	float:				left;
