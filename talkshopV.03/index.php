@@ -35,14 +35,16 @@ TALK SHOP!
   <body>
 	
 	<script>
-		$(document).ready(function(){
-		$('#login-trigger').hover(function(){
-		$(this).next('#login-content').slideToggle();
-		$(this).toggleClass('active');          
-    
-		if ($(this).hasClass('active')) $(this).find('span')
-		else $(this).find('span')
-		})
+		$(document).ready(function()
+		{
+			$('#login-trigger').click(function()
+			{
+				$(this).next('#login-content').slideToggle();
+				$(this).toggleClass('active');          
+	
+				if ($(this).hasClass('active')) $(this).find('span')
+				else $(this).find('span')
+			})
 		});
 	</script>
 	
