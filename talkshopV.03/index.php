@@ -57,7 +57,7 @@ TALK SHOP!
 			<nav>
 			  <ul>
 				<li id="login">
-				  <a id="login-trigger" href="#">LOGIN</a>
+				  <a id="login-trigger" href="#"><div class="topBarText">LOGIN</div></a>
 				  <div id="login-content">
 					<form>
 						<fieldset id="inputs">
@@ -71,7 +71,7 @@ TALK SHOP!
 				  </div>                     
 				</li>
 				<li id="signup">
-				  <a href="register.php">REGISTER</a>
+				  <a href="register.php"><div class="topBarText">REGISTER</div></a>
 				</li>
 			  </ul>
 			</nav>

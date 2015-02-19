@@ -34,59 +34,8 @@ body, html{
 	-webkit-user-select: none;
 }
 
-#loginOLD{
-	position: absolute;
-	right: 0%;
-	margin-right: 135px;
-	margin-top: 0px;
-	height: 50px;
-	width: 100px;
-	z-index: 6;
-}
-
-
-
-
-#loginText{
-	color: white;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 300;
-	text-align: center;
+.topBarText{
 	margin-top: 12px;
-	-webkit-user-select: none;
-}
-
-#register{
-	position: absolute;
-	right: 0%;
-	margin-right: 35px;
-	margin-top: 0px;
-	width: 100px;
-	height: 50px;
-}
-
-#register:hover{
-	cursor: pointer;
-	background-color: rgb(29, 174, 235);
-}
-
-#registerText{
-	color: white;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 300;
-	text-align: center;
-	margin-top: 12px;
-	-webkit-user-select: none;
-}
-
-#loginBox{
-	position: absolute;
-	width: 225px;
-	height: 200px;
-	background-color: rgb(29, 174, 235);
-	right: 0%;
-	margin-right: 10px;
-	margin-top: 50px;
 }
 
 #blackBox{
@@ -338,6 +287,7 @@ nav ul {
   background: black;
 }
 
+
 nav li {
 	float: left;
 }
@@ -421,3 +371,41 @@ nav li #login-content {
 } 
 
 /* *************END OF LOGIN BOX STYLING************* */
+
+
+
+
+
+
+
+
+
+
+#joinform {
+	width:				40%;
+	margin:				auto;
+	border:				thick solid black;
+	margin-top:			200px;
+	margin-bottom:		150px;
+	padding-left:		8px;
+	background-color:	rgb(19, 125, 193);
+	font-family:		'Oswald', sans-serif;
+}
+
+.submit { text-align: center; }
+
+.submit input {
+	color:				#ffffff;
+	font-size:			95%;
+	font-style:			italic;
+	font-weight:		bold;
+	background-color:	rgb(29, 174, 235);
+}
+
+.reset input { background-color: rgb(29, 174, 235); }
+
+label {
+	width:				11em;
+	float:				left;
+	text-align:			left;
+}
