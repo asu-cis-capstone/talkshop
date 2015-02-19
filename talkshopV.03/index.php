@@ -36,7 +36,7 @@ TALK SHOP!
 	
 	<script>
 		$(document).ready(function(){
-		$('#login-trigger').click(function(){
+		$('#login-trigger').hover(function(){
 		$(this).next('#login-content').slideToggle();
 		$(this).toggleClass('active');          
     
