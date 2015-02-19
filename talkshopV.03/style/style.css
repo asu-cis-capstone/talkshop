@@ -1,0 +1,423 @@
+body, html{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: rgb(29, 174, 235);
+	min-width: 1068px;
+}
+
+#topBar{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: black; /*rgb(19, 125, 193);*/
+}
+
+#title{
+	position: absolute;
+	background-color: black; /* rgb(0, 91, 154); */
+	height: 120px;
+	width: 320px;
+	margin-left: 75px;
+	z-index: 1;
+	cursor: pointer;
+	-webkit-user-select: none;
+}
+
+#title img{
+	margin-top: 10px;
+	margin-left: 10px;
+	max-width: 300px;
+    height: auto;
+	-webkit-user-select: none;
+}
+
+#loginOLD{
+	position: absolute;
+	right: 0%;
+	margin-right: 135px;
+	margin-top: 0px;
+	height: 50px;
+	width: 100px;
+	z-index: 6;
+}
+
+
+
+
+#loginText{
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 12px;
+	-webkit-user-select: none;
+}
+
+#register{
+	position: absolute;
+	right: 0%;
+	margin-right: 35px;
+	margin-top: 0px;
+	width: 100px;
+	height: 50px;
+}
+
+#register:hover{
+	cursor: pointer;
+	background-color: rgb(29, 174, 235);
+}
+
+#registerText{
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 12px;
+	-webkit-user-select: none;
+}
+
+#loginBox{
+	position: absolute;
+	width: 225px;
+	height: 200px;
+	background-color: rgb(29, 174, 235);
+	right: 0%;
+	margin-right: 10px;
+	margin-top: 50px;
+}
+
+#blackBox{
+	z-index: 1;
+	position: absolute;
+	width: 820px;
+	height: 200px;
+	background-color: black;
+	opacity: .4;
+	margin-top: 170px;
+	margin-left: -410px;
+	left: 50%;
+	-webkit-user-select: none;
+}
+
+#speakerButton{
+	position: absolute;
+	margin-top: 220px;
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	right: 50%;
+	margin-right: 50px;
+	background-color: rgb(19, 125, 193);
+	z-index: 2;
+	-webkit-user-select: none;
+}
+
+#speakerButton:hover{
+	cursor: pointer;
+	background-color: rgb(29, 174, 235);
+}
+
+#speaker{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	font-size: 28px;
+	margin-top: 28px;
+	-webkit-user-select: none;
+}
+
+#teacherButton{
+	position: absolute;
+	margin-top: 220px;
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	left: 50%;
+	margin-left: 50px;
+	background-color: rgb(19, 125, 193);
+	z-index: 2;
+	-webkit-user-select: none;
+}
+
+#teacherButton:hover{
+	cursor: pointer;
+	background-color: rgb(29, 174, 235);
+}
+
+#teacher{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	font-size: 28px;
+	margin-top: 28px;
+	-webkit-user-select: none;
+}
+
+#image img{
+	width: 100%;
+	margin-top: 0px;
+	display: block;
+	/*opacity: ;*/
+	-webkit-user-select: none;
+	max-height: 600px;
+}
+
+#aboutSection{
+	background-color: rgb(29, 174, 235);
+	width: 100%;
+	height: 475px;
+	z-index: 3;
+}
+
+#aboutUsTitle{
+	position: absolute;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	color: white;
+	left: 50%;
+	margin-left: -150.5px;
+	margin-top: 35px;	
+	cursor: default;
+}
+
+#aboutUsDescriptionHolder{
+	position: absolute;
+	margin-top: 120px;
+	width: 70%;
+	left: 15%;
+}
+
+#aboutUsDescriptionText{
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	color: white;
+	cursor: default;
+}
+
+#socialMediaHolder{
+	position: absolute;
+	background-color: rgb(185, 224, 240);
+	width: 250px;
+	height: 75px;
+	margin-top: 350px;
+	left: 50%;
+	margin-left: -125px;
+	border-radius: 10px;
+}
+
+#socialMediaHolder img{
+	margin-top: 12.5px;
+	margin-left: 50px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+#bottomBar{
+	width: 100%;
+	height: 40px;
+	background-color: rgb(19, 125, 193);
+}
+
+#bottomBarRegister{
+	width: 100%;
+	height: 40px;
+	background-color: rgb(19, 125, 193);
+	position: fixed;
+	bottom: 0;
+}
+
+#bottomBarText{
+	position: absolute;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	margin-top: 8px;
+	color: white;
+	left: 50%;
+	margin-left: -45.5px;
+	cursor: default;
+}
+
+#time{
+	position: absolute;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	margin-top: 8px;
+	color: white;
+	margin-left: 25px;
+}
+
+#version{
+	position: absolute;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	margin-top: 8px;
+	color: white;
+	margin-right: 25px;
+	right: 0;
+	cursor: default;
+}
+
+#registrationTitle{
+	position: absolute;
+	margin-top: 150px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 40px;
+	margin-left: -179px;
+	left: 50%;
+}
+
+
+#registerSpeakerButton{
+	position: absolute;
+	margin-top: 275px;
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	right: 50%;
+	margin-right: 50px;
+	background-color: rgb(19, 125, 193);
+	z-index: 2;
+	-webkit-user-select: none;
+}
+
+#registerSpeakerButton:hover{
+	cursor: pointer;
+	background-color: rgb(104, 201, 241);
+}
+
+#registerTeacherButton{
+	position: absolute;
+	margin-top: 275px;
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	left: 50%;
+	margin-left: 50px;
+	background-color: rgb(19, 125, 193);
+	z-index: 2;
+	-webkit-user-select: none;
+}
+
+#registerTeacherButton:hover{
+	cursor: pointer;
+	background-color: rgb(104, 201, 241);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *************LOGIN BOX STYLING************* */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: right;
+  background: black;
+}
+
+nav li {
+	float: left;
+}
+
+#signup{
+	margin-right: 50px;
+}
+
+fieldset{
+	border: 0;
+}
+
+nav #login-trigger,
+nav #signup a {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	display: inline-block;
+	height: 50px;
+	width: 100px;
+	color: white;
+	text-decoration: none;
+
+}
+
+nav #login-trigger:hover,
+nav #login .active,
+nav #signup a:hover {
+  background: rgb(29, 174, 235);
+}
+
+nav #login-content {
+	display: none;
+	position: absolute;
+	top: 50px;
+	margin-right: 0px;
+	right: 0;
+	z-index: 999;    
+	background: rgb(29, 174, 235);
+	border: none;
+}
+
+nav li #login-content {
+	right: 0;
+	width: 250px;
+	height: 165px;
+}
+
+#inputs input {
+	background: rgb(19, 125, 193);
+	height: 30px;
+	margin-top: 15px;
+	width: 220px;
+	border: none;
+  	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+}
+
+::-webkit-input-placeholder {
+   color: rgb(104, 201, 241);
+}
+
+#login #submit {    
+    background-color: rgb(19, 125, 193);
+    height: 30px;
+    width: 220px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: white; 
+    border: none;
+}
+
+#login #submit:hover,
+#login #submit:focus {
+    background-color: rgb(104, 201, 241);
+} 
+
+/* *************END OF LOGIN BOX STYLING************* */
