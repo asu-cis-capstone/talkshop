@@ -170,13 +170,13 @@ body, html{
 	cursor: pointer;
 }
 
-#bottomBar{
+#bottomBarHome{
 	width: 100%;
 	height: 40px;
 	background-color: rgb(19, 125, 193);
 }
 
-#bottomBarRegister{
+#bottomBarFixed{
 	width: 100%;
 	height: 40px;
 	background-color: rgb(19, 125, 193);
@@ -226,6 +226,27 @@ body, html{
 	left: 50%;
 }
 
+#teacherRegistrationTitle{
+	position: absolute;
+	margin-top: 150px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 40px;
+	margin-left: -170.5px;
+	left: 50%;
+}
+
+#speakerRegistrationTitle{
+	position: absolute;
+	margin-top: 150px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 40px;
+	margin-left: -171px;
+	left: 50%;
+}
 
 #registerSpeakerButton{
 	position: absolute;
@@ -262,118 +283,6 @@ body, html{
 	cursor: pointer;
 	background-color: rgb(104, 201, 241);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *************LOGIN BOX STYLING************* */
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  float: right;
-  background: black;
-}
-
-
-nav li {
-	float: left;
-}
-
-#signup{
-	margin-right: 50px;
-}
-
-fieldset{
-	border: 0;
-}
-
-nav #login-trigger,
-nav #signup a {
-	font-family: 'Oswald', sans-serif;
-	font-weight: 300;
-	text-align: center;
-	display: inline-block;
-	height: 50px;
-	width: 100px;
-	color: white;
-	text-decoration: none;
-
-}
-
-nav #login-trigger:hover,
-nav #login .active,
-nav #signup a:hover {
-  background: rgb(29, 174, 235);
-}
-
-nav #login-content {
-	display: none;
-	position: absolute;
-	top: 50px;
-	margin-right: 0px;
-	right: 0;
-	z-index: 999;    
-	background: rgb(29, 174, 235);
-	border: none;
-}
-
-nav li #login-content {
-	right: 0;
-	width: 250px;
-	height: 165px;
-}
-
-#inputs input {
-	background: rgb(19, 125, 193);
-	height: 30px;
-	margin-top: 15px;
-	width: 220px;
-	border: none;
-  	font-family: 'Oswald', sans-serif;
-	font-weight: 300;
-	font-size: 18px;
-	color: white;
-	text-align: center;
-}
-
-::-webkit-input-placeholder {
-   color: rgb(104, 201, 241);
-}
-
-#login #submit {    
-    background-color: rgb(19, 125, 193);
-    height: 30px;
-    width: 220px;
-    cursor: pointer;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    color: white; 
-    border: none;
-}
-
-#login #submit:hover,
-#login #submit:focus {
-    background-color: rgb(104, 201, 241);
-} 
-
-/* *************END OF LOGIN BOX STYLING************* */
-
-
-
 
 
 

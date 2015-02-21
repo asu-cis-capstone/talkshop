@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-
-<!--
-TALK SHOP!
--->
-
-<html lang="en">
-  	
-  <head>
-  
-    <!-- Meta tag -->
-    <meta charset="utf-8" />
-	
-	<!-- Link tag for CSS -->
-    <link type="text/css" rel="stylesheet" href="style/style.css" />
-	
-	<!-- Link tag for JavaScript -->
-	<script type="text/javascript" src="js/js.js"></script>
-		
-	<!-- Link tag for Google hosted jQuery Library -->	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
-	<!-- Link tag for Google Web Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-	
-	<!-- Link tag for favicon -->
-	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+<?php include 'htmlHeader.php' ?>
 
     <!-- Web Page Title -->
     <title>TalkShop</title>
@@ -34,54 +7,7 @@ TALK SHOP!
 
   <body>
 	
-	<script>
-		$(document).ready(function()
-		{
-			$('#login-trigger').click(function()
-			{
-				$(this).next('#login-content').slideToggle();
-				$(this).toggleClass('active');          
-	
-				if ($(this).hasClass('active')) $(this).find('span')
-				else $(this).find('span')
-			})
-		});
-	</script>
-	
-	<div id="title" onclick="javascript:location.href='index.php'">
-		<img src="images/bluelogo.png" alt="logo" />
-	</div>
-  
-	<div id="topBar">
-	
-		<div id="login">
-				
-			<nav>
-			  <ul>
-				<li id="login">
-				  <a id="login-trigger" href="#"><div class="topBarText">LOGIN</div></a>
-				  <div id="login-content">
-					<form>
-						<fieldset id="inputs">
-							<input id="username" type="email" name="email" placeholder="Email Address" required>   
-							<input id="password" type="password" name="password" placeholder="Password" required>
-						</fieldset>
-						<fieldset id="actions">
-							<input type="submit" id="submit" value="LOGIN">
-						</fieldset>
-					</form>
-				  </div>                     
-				</li>
-				<li id="signup">
-				  <a href="register.php"><div class="topBarText">REGISTER</div></a>
-				</li>
-			  </ul>
-			</nav>
-					
-		</div>
-		
-	</div>
-
+	<?php include 'headerBar.php' ?>
 	
 	<div id="blackBox"></div>
 	
@@ -117,10 +43,7 @@ TALK SHOP!
 		
 	</div>
 	
-	<div id="bottomBar">
-		<div id="bottomBarText">&copy;2015 TalkShop</div>
-		<div id="version">Release 0.3</div>
-	</div>
+	<?php include 'bottomBarHome.php' ?>
 	
   </body>
 
