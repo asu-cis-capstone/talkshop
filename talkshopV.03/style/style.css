@@ -283,38 +283,3 @@ body, html{
 	cursor: pointer;
 	background-color: rgb(104, 201, 241);
 }
-
-
-
-
-
-
-
-#joinform {
-	width:				40%;
-	margin:				auto;
-	border:				thick solid black;
-	margin-top:			200px;
-	margin-bottom:		150px;
-	padding-left:		8px;
-	background-color:	rgb(19, 125, 193);
-	font-family:		'Oswald', sans-serif;
-}
-
-.submit { text-align: center; }
-
-.submit input {
-	color:				#ffffff;
-	font-size:			95%;
-	font-style:			italic;
-	font-weight:		bold;
-	background-color:	rgb(29, 174, 235);
-}
-
-.reset input { background-color: rgb(29, 174, 235); }
-
-label {
-	width:				11em;
-	float:				left;
-	text-align:			left;
-}

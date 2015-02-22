@@ -1,0 +1,123 @@
+/* CSS for speakerProfiles */
+
+#profileBox{
+	position: 			absolute;
+	width: 				980px;
+	height: 			600px;
+	background-color: 	rgb(19, 125, 193);
+	margin-top:			150px;
+	margin-left: 		-485px;
+	left: 				50%;
+	-webkit-user-select: none;
+}
+
+#profileBox img{
+	z-index: 			1;
+	margin-top: 		7px; 
+	margin-left:		7px;
+}
+
+#socialMediaLinks{
+	margin-top: 		-65px; 
+	margin-left: 		33px;
+}
+
+#speakerName{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size:		 	40px;
+	margin-top: 		-200px;
+	margin-left: 		218px;
+	-webkit-user-select: none;
+}
+
+#profession{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size: 			25px;
+	margin-top: 		-5px; 
+	margin-left: 		218px;
+	-webkit-user-select: none;
+}
+
+#topicAreas{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size: 			25px;
+	margin-top: 		-28px; 
+	margin-left: 		218px;
+	-webkit-user-select: none;
+}
+
+#geographicLocation{
+	font-family:		 	'Oswald', sans-serif;
+	font-weight: 		  	300;
+	color: 					white;
+	font-size: 				25px;
+	margin-top: 			-28px; 
+	margin-left: 			218px;
+	-webkit-user-select: 	none;
+}
+
+#aboutSpeaker{
+	font-family: 			'Oswald', sans-serif;
+	font-weight: 			300;
+	color: 					white;
+	font-size: 				28px;
+	margin-top: 			-5px; 
+	margin-left: 			218px;
+	-webkit-user-select: 	none;
+}
+
+#aboutParagraph{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size: 			18px;
+	margin-top: 		-13px; 
+	margin-left: 		218px;
+	-webkit-user-select: none;
+}
+
+#contactSpeaker{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size: 			28px;
+	margin-top: 		-15px; 
+	margin-left: 		218px;
+	-webkit-user-select: none;
+}
+
+#backToSearch{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size: 			20px;
+	margin-top: 		-75px; 
+	margin-left: 		820px;
+	-webkit-user-select: none;
+}
+
+a:link {
+color: 				white;
+}
+
+a:visited {
+color: 				grey;
+}
+
+a {
+text-decoration: 	none;
+}
+
+#bottomBar{
+	margin-top: 	750px;
+	width: 			100%;
+	height: 		40px;
+	background-color: rgb(19, 125, 193);
+}
+

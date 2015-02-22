@@ -1,0 +1,59 @@
+/* CSS for teacherRegistration form */
+
+#joinform {
+	width:				40%;
+	margin:				auto;
+	border:				thick solid black;
+	margin-top:			200px;
+	margin-bottom:		75px;
+	padding-left:		8px;
+	background-color:	rgb(29, 174, 235);
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align: 		center;
+}
+
+#joinform input{
+	background: 		rgb(19, 125, 193);
+	height: 			30px;
+	margin-top: 		15px;
+	width: 				220px;
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align: 		center;
+}
+
+#joinform select {
+background: 			rgb(19, 125, 193);
+height: 				30px;
+margin-top: 			15px;
+width: 					220px;
+border: 				none;
+font-family: 			'Oswald', sans-serif;
+font-weight: 			300;
+font-size: 				18px;
+color: 					white;
+text-align: 			center;
+}
+
+#joinform select text  {
+background: 			rgb(19, 125, 193);
+height: 				30px;
+margin-top: 			15px;
+width: 					220px;
+border: 				none;
+font-family: 			'Oswald', sans-serif;
+font-weight: 			300;
+font-size: 				18px;
+color: 					white;
+text-align: 			center;
+}
+
+
+
+
