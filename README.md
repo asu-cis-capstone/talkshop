@@ -52,6 +52,15 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 *   Waiting to hear from clients regarding:
   *   Finalizing Initial Homepage Layout/Theme/Color Scheme
   *   Registration Forms
+  *   
+  
+##v0.3 Release Notes
+*Created the Login form that will be used across the website's header
+*Created the Teacher Registration form
+*Created a template of the Speaker profile
+
+##To Do List
+*Database connectivity to the login and registration forms
 
 ###[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)
 
