@@ -4,6 +4,36 @@ TALK SHOP! Teacher Registration Form
 
 <?php include 'htmlHeader.php' ?>
 
+<?php
+    
+    include('../local-connect.php');
+    $fname1 = $_POST['firstname'];
+    $fname2 = mysqli_real_escape_string($dbc,$fname1);
+    $lname1 = $_POST['lastname'];
+    $lname2 = mysqli_real_escape_string($dbc,$lname1);
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $org = $_POST['organization'];
+    $line1 = $_POST['lineone'];
+    $line2 = $_POST['linetwo'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zip = $_POST['zip'];
+    $phone = $_POST['phone'];
+    $age = $_POST['agegroup'];
+    $image = $_POST['fileToUpload'];
+    
+    
+    $query = "INSERT INTO teachers(firstname, lastname, username, email, password, organization, addressone, addresstwo, city, state, zip, phone, agegroup, image)" .  "VALUES('$fname2','$lname2','$username', '$email','$password','$org', '$line1','$line2','$city', '$state', '$zip', '$phone','$age', '$image')";
+    
+    $result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
+    
+    mysqli_close($dbc);
+    
+    ?>
+    
+
   <head>
   
 	<!-- Link tag for teacherRegistration CSS -->
@@ -63,7 +93,7 @@ TALK SHOP! Teacher Registration Form
 					<input placeholder="Street Address 1" type="text" id="lineone" name="lineone" />
 					<br />
 					<!--<label for="lineone">Line 2:</label>-->
-					<input placeholder="Street Address 2" type="text" id="lineone" name="lineone" />
+					<input placeholder="Street Address 2" type="text" id="linetwo" name="lineone" />
 					<br />
 					<!--<label for="city">City</label>-->
 					<input placeholder="City" type="text" id="city" name="city" />
@@ -125,12 +155,12 @@ TALK SHOP! Teacher Registration Form
 					</select>
 					<br>
 					<!--<label for="state">Zip</label>-->
-					<input placeholder="Zip" type="text" id="zip" name="zip" />
+					<input placeholder="Zip" type="number" id="zip" name="zip" max = "5"/>
 					<br />
 					
 					<!-- phone -->
 					<!--<label for="phone">Phone Number:</label>-->
-					<input placeholder="Phone Number" type="text" id="phone" name="phone" />
+					<input placeholder="Phone Number" type="number" id="phone" name="phone" max= "10" />
 					<br />
 					
 					<!-- age group -->
