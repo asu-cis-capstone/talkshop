@@ -5,7 +5,7 @@ TALK SHOP! Teacher Registration Form
 <?php include 'htmlHeader.php' ?>
 
 <?php
-    
+    /*
     include('../local-connect.php');
     $fname1 = $_POST['firstname'];
     $fname2 = mysqli_real_escape_string($dbc,$fname1);
@@ -30,7 +30,7 @@ TALK SHOP! Teacher Registration Form
     $result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
     
     mysqli_close($dbc);
-    
+    */
     ?>
     
 
