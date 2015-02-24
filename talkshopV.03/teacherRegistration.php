@@ -55,48 +55,48 @@ TALK SHOP! Teacher Registration Form
 	<form id="joinform" action="../confirm.htm" method="get">
 				<p>
 					<!-- first name -->
-					<input placeholder="First Name" type="text" id="firstname" name="firstname" />
+					<input placeholder="First Name" type="text" id="firstname" name="firstname" max="50" />
 					<br />
 					
 					<!-- last name -->
 					<!--<label for="firstname">Last Name:</label>-->
-					<input placeholder="Last Name" type="text" id="lastname" name="lastname" />
+					<input placeholder="Last Name" type="text" id="lastname" name="lastname"  max ="50"/>
 					<br />
 					
 					<!-- username --> 
 					<!--<label for="username">Username:</label>-->
-					<!--<input placeholder="Username" type="text" id="username" name="username" />
+					<!--<input placeholder="Username" type="text" id="username" name="username" max="15" />
 					<br />-->
 					
 					<!-- email -->
 					<!--<label for="email">Email Address:</label>-->
-					<input placeholder="Email Address" type="text" id="email" name="email" />
+					<input placeholder="Email Address" type="text" id="email" name="email" max="50"     />
 					<br />
 					
 					<!-- password -->
 					<!--<label for="password">Password:</label>-->
-					<input placeholder="Password" type="password" id="password" name="password" />
+					<input placeholder="Password" type="password" id="password" name="password" min="10" max="20" />
 					<br />
 					
 					<!-- reenter -->
 					<!--<label for="reenter">Re-enter Password:</label>-->
-					<input placeholder="Re-enter Password" type="password" id="reenter" name="reenter" />
+					<input placeholder="Re-enter Password" type="password" id="reenter" name="reenter" min="10" max="20" />
 					<br />
 					
 					<!-- organization -->
 					<!--<label for="organization">Organization:</label>-->
-					<input placeholder="Organization" type="text" id="organization" name="organization" />
+					<input placeholder="Organization" type="text" id="organization" name="organization" max="50" />
 					<br />
 					
 					<!-- address -->
 					<!--<label for="lineone">Line 1:</label>-->
-					<input placeholder="Street Address 1" type="text" id="lineone" name="lineone" />
+					<input placeholder="Street Address 1" type="text" id="lineone" name="lineone" max="99" />
 					<br />
 					<!--<label for="lineone">Line 2:</label>-->
-					<input placeholder="Street Address 2" type="text" id="linetwo" name="lineone" />
+					<input placeholder="Street Address 2" type="text" id="linetwo" name="lineone" max="99" />
 					<br />
 					<!--<label for="city">City</label>-->
-					<input placeholder="City" type="text" id="city" name="city" />
+					<input placeholder="City" type="text" id="city" name="city" max="99"/>
 					<br />
 					<!--<label for="State">State</label>-->
 					<select id="state" name="state">
