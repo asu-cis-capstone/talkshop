@@ -3,7 +3,7 @@
 #profileBox{
 	position: 			absolute;
 	width: 				980px;
-	height: 			600px;
+	height: 			630px;
 	background-color: 	rgb(19, 125, 193);
 	margin-top:			150px;
 	margin-left: 		-485px;
@@ -18,8 +18,18 @@
 }
 
 #socialMediaLinks{
-	margin-top: 		-65px; 
+	margin-top: 		-75px; 
 	margin-left: 		33px;
+}
+
+#websiteURL{
+	margin-top: 		-25px; 
+	margin-left: 		50px;
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size:		 	28px;
+	-webkit-user-select: none;
 }
 
 #speakerName{
@@ -27,7 +37,7 @@
 	font-weight: 		300;
 	color: 				white;
 	font-size:		 	40px;
-	margin-top: 		-200px;
+	margin-top: 		-205px;
 	margin-left: 		218px;
 	-webkit-user-select: none;
 }
@@ -37,12 +47,22 @@
 	font-weight: 		300;
 	color: 				white;
 	font-size: 			25px;
-	margin-top: 		-5px; 
+	margin-top: 		-40px; 
 	margin-left: 		218px;
 	-webkit-user-select: none;
 }
 
 #topicAreas{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size: 			25px;
+	margin-top: 		-28px; 
+	margin-left: 		218px;
+	-webkit-user-select: none;
+}
+
+#ageGroup{
 	font-family: 		'Oswald', sans-serif;
 	font-weight: 		300;
 	color: 				white;
@@ -67,7 +87,7 @@
 	font-weight: 			300;
 	color: 					white;
 	font-size: 				28px;
-	margin-top: 			-5px; 
+	margin-top: 			-15px; 
 	margin-left: 			218px;
 	-webkit-user-select: 	none;
 }
@@ -77,19 +97,35 @@
 	font-weight: 		300;
 	color: 				white;
 	font-size: 			18px;
-	margin-top: 		-13px; 
+	margin-top: 		-53px; 
 	margin-left: 		218px;
+	margin-bottom: 		30px; 
 	-webkit-user-select: none;
 }
 
-#contactSpeaker{
-	font-family: 		'Oswald', sans-serif;
-	font-weight: 		300;
-	color: 				white;
-	font-size: 			28px;
-	margin-top: 		-15px; 
-	margin-left: 		218px;
-	-webkit-user-select: none;
+#contactSpeaker {
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+color: white;
+text-align: center;
+font-size: 28px;
+margin-top: 3px;
+-webkit-user-select: none;
+}
+
+#contactButton {
+bottom: 0%; 
+position: absolute;
+margin-top: -10px;
+margin-bottom: 10px; 
+width: 250px;
+height: 50px;
+border-radius: 50px;
+right: 50%;
+margin-right: -120px;
+background-color: rgb(29, 174, 235);
+z-index: 2;
+-webkit-user-select: none;
 }
 
 #backToSearch{
@@ -115,7 +151,7 @@ text-decoration: 	none;
 }
 
 #bottomBar{
-	margin-top: 	750px;
+	margin-top: 	780px;
 	width: 			100%;
 	height: 		40px;
 	background-color: rgb(19, 125, 193);
