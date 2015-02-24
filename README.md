@@ -56,7 +56,10 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 ##v0.3 Release Notes
 * Created the Login form that will be used across the website's header
 * Created the Teacher Registration form
+* Created the Speaker Registration form
 * Created a template of the Speaker profile
+* Minor CSS changes across the website 
+* Functionality/design feedback from potential users
 
 ##To Do List
 * Database connectivity to the login and registration forms
