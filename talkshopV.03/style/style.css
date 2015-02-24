@@ -4,7 +4,7 @@ body, html{
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	background-color: rgb(29, 174, 235);
+	background-color: rgb(160, 223, 250);
 	min-width: 1068px;
 }
 
@@ -220,7 +220,7 @@ body, html{
 	margin-top: 150px;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
-	color: white;
+	color: black;
 	font-size: 40px;
 	margin-left: -179px;
 	left: 50%;
@@ -231,7 +231,7 @@ body, html{
 	margin-top: 150px;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
-	color: white;
+	color: black;
 	font-size: 40px;
 	margin-left: -170.5px;
 	left: 50%;
@@ -242,7 +242,7 @@ body, html{
 	margin-top: 150px;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
-	color: white;
+	color: black;
 	font-size: 40px;
 	margin-left: -171px;
 	left: 50%;
