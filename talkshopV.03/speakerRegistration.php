@@ -1,7 +1,7 @@
 <?php include 'htmlHeader.php' ?>
 
 	<!-- Link tag for teacherRegistration CSS -->
-    <link type="text/css" rel="stylesheet" href="style/teacherRegistration.css" />
+    <link type="text/css" rel="stylesheet" href="style/registration.css" />
 
     <!-- Web Page Title -->
     <title>TalkShop | Registration</title>
@@ -27,6 +27,11 @@
 	<?php include 'headerBar.php' ?>
 	
 	<div id="speakerRegistrationTitle">SPEAKER REGISTRATION</div>
+	
+	<div id="registrationInstructions">
+		To register without making a profile, please fill out the first section of this form.<br />
+		To register and make an active profile, please check "Make Active Profile" and fill out the entire form.
+	</div>
 	
 	<br />
 	
@@ -121,23 +126,22 @@
 					<input class="textFields" placeholder="Phone Number" type="text" id="phone" name="phone" />
 					<br />
 					
-					<hr />
-					
 					<!-- active profile? -->
-					Make an active profile<input type="checkbox" name="activeProfile" value="yes" onclick="CheckboxChecked(this.checked,'checkboxdiv')">
+					<span class="selectionTitle">Make Active Profile</span>
+					<input type="checkbox" name="activeProfile" value="yes" onclick="CheckboxChecked(this.checked,'checkboxdiv')" style="margin-bottom: 15px; margin-top: 20px;">
 					
 					<div id="checkboxdiv" style="display:none;">
 					
 						<!-- profession -->
 						<select class="textFields" name="profession">
-							<option value="">Profession</option>
+							<option value="">Select Profession...</option>
 							<option value="">Agriculture</option>
 							<option value="">Architecture/Planning</option>
 							<option value="">Arts</option>
 							<option value="">Biological Sciences</option>
 							<option value="">Business</option>
 							<option value="">Communication</option>
-							<option value="">Computer/Information Technology</option>
+							<option value="">Information Technology</option>
 							<option value="">Education</option>
 							<option value="">Engineering</option>
 							<option value="">Environmental Sciences</option>
@@ -152,6 +156,7 @@
 							<option value="">Protective Services</option>
 							<option value="">Psychology and Counseling</option>
 							<option value="">Recreation and Fitness</option>
+							<option value="">Sales</option>
 							<option value="">Skilled Trade/Construction</option>
 							<option value="">Social Sciences/Liberal Arts</option>
 							<option value="">Social Services</option>
@@ -159,34 +164,9 @@
 							<option value="">Other</option>
 						</select><br />
 						
-						<!-- topic areas -->
-						<p>Select Topic Areas</p>
-						<input type="checkbox" name="" value="">Agriculture<br />
-						<input type="checkbox" name="" value="">Art<br />
-						<input type="checkbox" name="" value="">Biological Sciences<br />
-						<input type="checkbox" name="" value="">Business<br />
-						<input type="checkbox" name="" value="">Communication<br />
-						<input type="checkbox" name="" value="">Computers/Information Technology<br />
-						<input type="checkbox" name="" value="">Education<br />
-						<input type="checkbox" name="" value="">Engineering<br />
-						<input type="checkbox" name="" value="">Environmental Science<br />
-						<input type="checkbox" name="" value="">Health<br />
-						<input type="checkbox" name="" value="">Language and Literature<br />
-						<input type="checkbox" name="" value="">Law<br />
-						<input type="checkbox" name="" value="">Math<br />
-						<input type="checkbox" name="" value="">Philosophy and Religion<br />
-						<input type="checkbox" name="" value="">Physical Science<br />
-						<input type="checkbox" name="" value="">Psychology and Counseling<br />
-						<input type="checkbox" name="" value="">Recreation and Fitness<br />
-						<input type="checkbox" name="" value="">Skilled Trade and Construction<br />
-						<input type="checkbox" name="" value="">Social Sciences and Liberal Arts<br />
-						<input type="checkbox" name="" value="">Social Services<br />
-						<input type="checkbox" name="" value="">Transportation<br />
-						<input type="checkbox" name="" value="">Other<br />
-						
 						<!-- age group -->
 						<select class="textFields" id="agegroup" name="agegroup">
-							<option value="">Age Group</option>
+							<option value="">Select Age Group...</option>
 							<option value="preschool">Pre School</option>
 							<option value="elementary">Elementary</option>
 							<option value="middle">Middle School</option>
@@ -194,6 +174,32 @@
 							<option value="college">College</option>
 							<option value="other">Other</option>
 						</select>
+						
+						<!-- topic areas -->
+						<p class="selectionTitle">SELECT YOUR TOPIC AREAS</p>
+						<ul class="checkbox">
+							<li><input type="checkbox" name="" value="">Agriculture<br /></li>
+							<li><input type="checkbox" name="" value="">Art<br /></li>
+							<li><input type="checkbox" name="" value="">Biological Sciences<br /></li>
+							<li><input type="checkbox" name="" value="">Business<br /></li>
+							<li><input type="checkbox" name="" value="">Communication<br /></li>
+							<li><input type="checkbox" name="" value="">Information Technology<br /></li>
+							<li><input type="checkbox" name="" value="">Education<br /></li>
+							<li><input type="checkbox" name="" value="">Engineering<br /></li>
+							<li><input type="checkbox" name="" value="">Environmental Science<br /></li>
+							<li><input type="checkbox" name="" value="">Health<br /></li>
+							<li><input type="checkbox" name="" value="">Language and Literature<br /></li>
+							<li><input type="checkbox" name="" value="">Law<br /></li>
+							<li><input type="checkbox" name="" value="">Philosophy and Religion<br /></li>
+							<li><input type="checkbox" name="" value="">Physical Science<br /></li>
+							<li><input type="checkbox" name="" value="">Psychology and Counseling<br /></li>
+							<li><input type="checkbox" name="" value="">Recreation and Fitness<br /></li>
+							<li><input type="checkbox" name="" value="">Skilled Trade and Construction<br /></li>
+							<li><input type="checkbox" name="" value="">Social Sciences and Liberal Arts<br /></li>
+							<li><input type="checkbox" name="" value="">Social Services<br /></li>
+							<li><input type="checkbox" name="" value="">Transportation<br /></li>
+							<li><input type="checkbox" name="" value="">Other<br /></li>
+						</ul>
 						
 						<textarea id="bio" rows="7" cols="75" name="bio" placeholder="Bio and Additional Information"></textarea>
 						
@@ -204,30 +210,29 @@
 					
 					
 					<form action="uploadImage.php" method="post" enctype="multipart/form-data">
-							Upload Profile Image
-							<br/>
-							<input type="file" name="fileToUpload" id="fileToUpload">
-							<br/>
-							<input type="submit" value="Upload Image" name="submit">
-							<br/>
+							<span class="uploadTitle">UPLOAD PROFILE IMAGE</span>
+								<br/>
+							<input id="chooseFile" type="file" name="fileToUpload" id="fileToUpload">
+								<br/>
+							<input id="uploadButton" type="submit" value="UPLOAD IMAGE" name="submit">
+								<br/>
 					
 					</form>
 					
 				</div>
 				
-				<p class="submit">
-					<input type="submit" value="REGISTER"
-					onclick="return a3Validate()"/>
-					<!--<span class="reset">
-						<input type="reset" value="Clear" onclick="a3Focus()" />
-					</span>-->
-				</p>
-				
 		</form>
+		
+		<form id="">
+			<input id="formSubmit" type="button" value="REGISTER">
+		</form>
+		
+		<br />
+		<br />
+		<br />
 	
 	
-	
-	<?php include 'bottomBarFixed.php' ?>
+	<?php include 'bottomBarHome.php' ?>
 	
   </body>
 

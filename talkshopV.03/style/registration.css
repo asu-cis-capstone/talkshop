@@ -1,0 +1,109 @@
+/* CSS for Registration forms */
+
+#joinform {
+	width:				50%;
+	margin:				auto;
+	border:				solid 1px black;
+	margin-top:			250px;
+	margin-bottom:		100px;
+	padding-left:		8px;
+	background-color:	rgb(29, 174, 235);
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align: 		center;
+}
+
+.textFields{
+	background: 		rgb(19, 125, 193);
+	height: 			30px;
+	margin-top: 		15px;
+	width: 				250px;
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align: 		center;
+	float:				center;
+}
+
+#bio{
+	background: 		rgb(19, 125, 193);
+	margin-top: 		15px;
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align:			center;
+	resize:				none;
+	margin-bottom:		15px;
+}
+
+ul.checkbox li { 
+  display: inline-block;
+  width: 230px;
+  text-align: left;
+}
+
+ul.checkbox{
+	margin-left: -35px;
+}
+
+.selectionTitle{
+	font-size: 22px;
+	margin-bottom: -15px;
+}
+
+.uploadTitle{
+	font-size: 22px;
+	margin-bottom: -15px;
+	margin-top: -10px;
+}
+
+#formSubmit{
+	position:			absolute;
+	margin-bottom:		100px;
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	background: 		rgb(19, 125, 193);
+	width:				150px;
+	left:				50%;
+	margin-left:		-75px;
+	margin-top:			-50px;
+}
+
+#formSubmit:hover{
+	cursor: pointer;
+}
+
+#chooseFile{
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	background: 		rgb(19, 125, 193);
+	width:				350px;
+}
+
+#uploadButton{
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	background: 		rgb(19, 125, 193);
+	width:				150px;
+	font-size: 			16px;
+	margin-top:			10px;
+	margin-bottom:		20px;
+}
+
+#uploadButton:hover{
+	cursor: pointer;
+}
+
