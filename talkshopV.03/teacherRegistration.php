@@ -1,9 +1,3 @@
-<!--
-TALK SHOP! Teacher Registration Form
--->
-
-<?php include 'htmlHeader.php' ?>
-
 <?php
     /*
     include('../local-connect.php');
@@ -31,18 +25,20 @@ TALK SHOP! Teacher Registration Form
     
     mysqli_close($dbc);
     */
-    ?>
-    
+?>
 
-  <head>
-  
+<?php include 'htmlHeader.php' ?>
+
 	<!-- Link tag for teacherRegistration CSS -->
-    <link type="text/css" rel="stylesheet" href="style/teacherRegistration.css" />
-	
+    <link type="text/css" rel="stylesheet" href="style/registration.css" />
+
     <!-- Web Page Title -->
-    <title>TalkShop | Registration</title>
-	
-	<!-- JavaScript Tags -->
+    <title>TalkShop | Teacher Registration</title>
+
+  </head>
+
+  <body>
+  
 	<script type="text/javascript" language="JavaScript">
 		function HidePart(d) { document.getElementById(d).style.display = "none";  }
 		function ShowPart(d) { document.getElementById(d).style.display = "block"; }
@@ -56,68 +52,49 @@ TALK SHOP! Teacher Registration Form
 	<script type="text/javascript">
 		CheckboxChecked(document.myform.mycheckbox.checked,'checkboxdiv');;
 	</script>
-
-  </head>
-
-  <body>
   
 	<?php include 'headerBar.php' ?>
 	
 	<div id="teacherRegistrationTitle">TEACHER REGISTRATION</div>
 	
+	<div id="registrationInstructions">
+		To register without making a profile, please fill out the first section of this form.<br />
+		To register and make an active profile, please check "Make Active Profile" and fill out the entire form.
+	</div>
+	
 	<br />
-
-
-
-	<form id="joinform" action="../confirm.htm" method="get">
-				<p>
+	
+		<form id="joinform" action="../confirm.htm" method="get">
+				
 					<!-- first name -->
-					<input placeholder="First Name" type="text" id="firstname" name="firstname" max="50" />
+					<input class="textFields" placeholder="First Name" type="text" id="firstname" name="firstname" />
 					<br />
 					
 					<!-- last name -->
-					<!--<label for="firstname">Last Name:</label>-->
-					<input placeholder="Last Name" type="text" id="lastname" name="lastname"  max ="50"/>
+					<input class="textFields" placeholder="Last Name" type="text" id="lastname" name="lastname" />
 					<br />
 					
-					<!-- username --> 
-					<!--<label for="username">Username:</label>-->
-					<!--<input placeholder="Username" type="text" id="username" name="username" max="15" />
-					<br />-->
-					
 					<!-- email -->
-					<!--<label for="email">Email Address:</label>-->
-					<input placeholder="Email Address" type="text" id="email" name="email" max="50"     />
+					<input class="textFields" placeholder="Email Address" type="text" id="email" name="email" />
 					<br />
 					
 					<!-- password -->
-					<!--<label for="password">Password:</label>-->
-					<input placeholder="Password" type="password" id="password" name="password" min="10" max="20" />
+					<input class="textFields" placeholder="Password" type="password" id="password" name="password" />
 					<br />
 					
-					<!-- reenter -->
-					<!--<label for="reenter">Re-enter Password:</label>-->
-					<input placeholder="Re-enter Password" type="password" id="reenter" name="reenter" min="10" max="20" />
-					<br />
-					
-					<!-- organization -->
-					<!--<label for="organization">Organization:</label>-->
-					<input placeholder="Organization" type="text" id="organization" name="organization" max="50" />
+					<!-- confirm password -->
+					<input class="textFields" placeholder="Confirm Password" type="password" id="reenter" name="reenter" />
 					<br />
 					
 					<!-- address -->
-					<!--<label for="lineone">Line 1:</label>-->
-					<input placeholder="Street Address 1" type="text" id="lineone" name="lineone" max="99" />
+					<input class="textFields" placeholder="Street Address 1" type="text" id="lineone" name="lineone" />
 					<br />
-					<!--<label for="lineone">Line 2:</label>-->
-					<input placeholder="Street Address 2" type="text" id="linetwo" name="lineone" max="99" />
+					<input class="textFields" placeholder="Street Address 2" type="text" id="lineone" name="lineone" />
 					<br />
-					<!--<label for="city">City</label>-->
-					<input placeholder="City" type="text" id="city" name="city" max="99"/>
+					<input class="textFields" placeholder="City" type="text" id="city" name="city" />
 					<br />
-					<!--<label for="State">State</label>-->
-					<select id="state" name="state">
-							<option value="">State</option>
+					<select class="textFields" id="state" name="state">
+							<option value="">Select State...</option>
 							<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>
@@ -171,85 +148,81 @@ TALK SHOP! Teacher Registration Form
 							<option value="WY">Wyoming</option>
 					</select>
 					<br>
-					<!--<label for="state">Zip</label>-->
-					<input placeholder="Zip" type="number" id="zip" name="zip" max = "5"/>
+					<input class="textFields" placeholder="Zip" type="text" id="zip" name="zip" />
 					<br />
 					
 					<!-- phone -->
-					<!--<label for="phone">Phone Number:</label>-->
-					<input placeholder="Phone Number" type="number" id="phone" name="phone" max= "10" />
-					<br />
-
-					<!-- make active profile button -->
-					Make active profile?
-					<input type="checkbox" name="mycheckbox" value="yes" 
-						onclick="CheckboxChecked(this.checked,'checkboxdiv')">				
-					
-				<div id="checkboxdiv" style="display:none">
-					
-					<!-- age group -->
-					<!--<label for="agregroup">Representing Age Group:</label>-->
-					<select id="agegroup" name="agegroup">
-						<option value="">Select an Age Group</option>
-						<option value="preschool">Pre School</option>
-						<option value="elementary">Elementary</option>
-						<option value="middle">Middle School</option>
-						<option value="high">High School</option>
-						<option value="college">College</option>
-						<option value="other">Other</option>
-					</select> 
+					<input class="textFields" placeholder="Phone Number" type="text" id="phone" name="phone" />
 					<br />
 					
-					<!-- topic areas -->
-						<p>Select Topic Areas</p>
-						<input type="checkbox" name="" value="">Agriculture
-						<input type="checkbox" name="" value="">Art
-						<input type="checkbox" name="" value="">Biological Sciences
-						<input type="checkbox" name="" value="">Business
-						<input type="checkbox" name="" value="">Communication
-						<input type="checkbox" name="" value="">Computers/Information Technology
-						<input type="checkbox" name="" value="">Education
-						<input type="checkbox" name="" value="">Engineering
-						<input type="checkbox" name="" value="">Environmental Science
-						<input type="checkbox" name="" value="">Health
-						<input type="checkbox" name="" value="">Language and Literature
-						<input type="checkbox" name="" value="">Law
-						<input type="checkbox" name="" value="">Math
-						<input type="checkbox" name="" value="">Philosophy and Religion
-						<input type="checkbox" name="" value="">Physical Science
-						<input type="checkbox" name="" value="">Psychology and Counseling
-						<input type="checkbox" name="" value="">Recreation and Fitness
-						<input type="checkbox" name="" value="">Skilled Trade and Construction
-						<input type="checkbox" name="" value="">Social Sciences and Liberal Arts
-						<input type="checkbox" name="" value="">Social Services
-						<input type="checkbox" name="" value="">Transportation
-						<input type="checkbox" name="" value="">Other
+					<!-- active profile? -->
+					<span class="selectionTitle">Make Active Profile</span>
+					<input type="checkbox" name="activeProfile" value="yes" onclick="CheckboxChecked(this.checked,'checkboxdiv')" style="margin-bottom: 15px; margin-top: 20px;">
 					
-					<!-- biography -->
-					<br />
-					<textarea placeholder="Bio and Additional Information" id="comments" name="comments" 
-						rows="2" cols="49"></textarea>
-					<br />
-					
-					<!-- upload image -->
-					<form action="uploadImage.php" method="post" enctype="multipart/form-data" style="display:none">
-						Upload Profile Image
-						<br/>
-						<input type="file" name="fileToUpload" id="fileToUpload">
-						<br/>
-						<input type="submit" value="Upload Image" name="submit">
-						<br/>	
+					<!-- begin expanded form -->
+					<div id="checkboxdiv" style="display:none;">
 						
-					<p class="submit">
-					<input type="submit" value="REGISTER"
-						onclick="return a3Validate()"/>
-					</p>
-				</p>
-					</form>
-				</div>	
+						<!-- age group -->
+						<select class="textFields" id="agegroup" name="agegroup">
+							<option value="">Select Age Group...</option>
+							<option value="preschool">Pre School</option>
+							<option value="elementary">Elementary</option>
+							<option value="middle">Middle School</option>
+							<option value="high">High School</option>
+							<option value="college">College</option>
+							<option value="other">Other</option>
+						</select>
+						
+						<!-- topic areas -->
+						<p class="selectionTitle">SELECT YOUR NEEDED TOPIC AREAS</p>
+						<ul class="checkbox">
+							<li><input type="checkbox" name="" value="">Agriculture<br /></li>
+							<li><input type="checkbox" name="" value="">Art<br /></li>
+							<li><input type="checkbox" name="" value="">Biological Sciences<br /></li>
+							<li><input type="checkbox" name="" value="">Business<br /></li>
+							<li><input type="checkbox" name="" value="">Communication<br /></li>
+							<li><input type="checkbox" name="" value="">Information Technology<br /></li>
+							<li><input type="checkbox" name="" value="">Education<br /></li>
+							<li><input type="checkbox" name="" value="">Engineering<br /></li>
+							<li><input type="checkbox" name="" value="">Environmental Science<br /></li>
+							<li><input type="checkbox" name="" value="">Health<br /></li>
+							<li><input type="checkbox" name="" value="">Language and Literature<br /></li>
+							<li><input type="checkbox" name="" value="">Law<br /></li>
+							<li><input type="checkbox" name="" value="">Philosophy and Religion<br /></li>
+							<li><input type="checkbox" name="" value="">Physical Science<br /></li>
+							<li><input type="checkbox" name="" value="">Psychology and Counseling<br /></li>
+							<li><input type="checkbox" name="" value="">Recreation and Fitness<br /></li>
+							<li><input type="checkbox" name="" value="">Skilled Trade and Construction<br /></li>
+							<li><input type="checkbox" name="" value="">Social Sciences and Liberal Arts<br /></li>
+							<li><input type="checkbox" name="" value="">Social Services<br /></li>
+							<li><input type="checkbox" name="" value="">Transportation<br /></li>
+							<li><input type="checkbox" name="" value="">Other<br /></li>
+						</ul>
+						
+						<textarea id="bio" rows="7" cols="75" name="bio" placeholder="Bio and/or Additional Information"></textarea>
+						
+						<br />
+						
+						<form action="uploadImage.php" method="post" enctype="multipart/form-data">
+							<span class="uploadTitle">UPLOAD PROFILE IMAGE</span>
+								<br/>
+							<input id="chooseFile" type="file" name="fileToUpload" id="fileToUpload">
+								<br/>
+							<input id="uploadButton" type="submit" value="UPLOAD IMAGE" name="submit">
+								<br/>
+						</form>
 					
+					</div>
+				
 		</form>
-	
+		
+		<form id="">
+			<input id="formSubmit" type="button" value="REGISTER AS A TEACHER">
+		</form>
+		
+		<br />
+		<br />
+		<br />
 	
 	<?php include 'bottomBarHome.php' ?>
 	

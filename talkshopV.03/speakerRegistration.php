@@ -4,7 +4,7 @@
     <link type="text/css" rel="stylesheet" href="style/registration.css" />
 
     <!-- Web Page Title -->
-    <title>TalkShop | Registration</title>
+    <title>TalkShop | Speaker Registration</title>
 
   </head>
 
@@ -65,7 +65,7 @@
 					<input class="textFields" placeholder="City" type="text" id="city" name="city" />
 					<br />
 					<select class="textFields" id="state" name="state">
-							<option value="">State</option>
+							<option value="">Select State...</option>
 							<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>
@@ -130,6 +130,7 @@
 					<span class="selectionTitle">Make Active Profile</span>
 					<input type="checkbox" name="activeProfile" value="yes" onclick="CheckboxChecked(this.checked,'checkboxdiv')" style="margin-bottom: 15px; margin-top: 20px;">
 					
+					<!-- begin expanded form -->
 					<div id="checkboxdiv" style="display:none;">
 					
 						<!-- profession -->
@@ -201,12 +202,12 @@
 							<li><input type="checkbox" name="" value="">Other<br /></li>
 						</ul>
 						
-						<textarea id="bio" rows="7" cols="75" name="bio" placeholder="Bio and Additional Information"></textarea>
+						<textarea id="bio" rows="7" cols="75" name="bio" placeholder="Bio and/or Additional Information"></textarea>
 						
-						<input class="textFields" type="url" name="url" required placeholder="Facebook URL"><br />
-						<input class="textFields" type="url" name="url" required placeholder="LinkedIn URL"><br />
-						<input class="textFields" type="url" name="url" required placeholder="Google+ URL"><br />
-						<input class="textFields" type="url" name="url" required placeholder="Twitter URL"><br /><br />
+						<input class="textFields" type="url" name="url" placeholder="Facebook URL"><br />
+						<input class="textFields" type="url" name="url" placeholder="LinkedIn URL"><br />
+						<input class="textFields" type="url" name="url" placeholder="Google+ URL"><br />
+						<input class="textFields" type="url" name="url" placeholder="Twitter URL"><br /><br />
 					
 					
 					<form action="uploadImage.php" method="post" enctype="multipart/form-data">
@@ -224,7 +225,7 @@
 		</form>
 		
 		<form id="">
-			<input id="formSubmit" type="button" value="REGISTER">
+			<input id="formSubmit" type="button" value="REGISTER AS A SPEAKER">
 		</form>
 		
 		<br />
