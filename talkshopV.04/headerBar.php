@@ -47,20 +47,22 @@
 						</fieldset>
 						<div id="loginErrors">
 							<?php
-								// Check return code from process.php
-								if ($_GET["rc"] == 1)
+								if (isset($_GET["rc"]))
 								{
-									echo '<span class="logerr">Invalid Username</span>';
-								}
-							
-								if ($_GET["rc"] == 2)
-								{
-									echo '<span class="logerr">Invalid Password</span>';
-								}
+									if ($_GET["rc"] == 1)
+									{
+										echo '<span class="logerr">*Invalid Email Address</span>';
+									}
 								
-								if ($_GET["rc"] == 3)
-								{
-									echo '<span class="logerr">Returned from loginProcess.php</span>';
+									if ($_GET["rc"] == 2)
+									{
+										echo '<span class="logerr">*Invalid Password</span>';
+									}
+									
+									if ($_GET["rc"] == 3)
+									{
+										echo '<span class="logerr">Returned from loginProcess.php</span>';
+									}
 								}
 							?>
 						</div>

@@ -7,12 +7,12 @@
 	include('local-connect.php');
 	
 	// PHP variables for the HTML elements
-	$email = $_POST['Email'];
-	$pword = $_POST['pword'];
-	$query = "SELECT * FROM users WHERE Email = '$email'";
-	
+	$email = $_POST['email'];
+	$pword = $_POST['password'];
 	
 	// Build the email query
+	$query = "SELECT * FROM users WHERE Email = '$email'";
+	
 	// Run the query
 	$result = mysqli_query($dbc, $query) or die('Email read error!');
 	
