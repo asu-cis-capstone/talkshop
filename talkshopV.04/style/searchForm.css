@@ -1,0 +1,67 @@
+/* CSS for searchForms */
+
+#searchForm {
+position: absolute;
+width: 200px;
+height: 630px;
+background-color: rgb(19, 125, 193);
+margin-left: 25px;
+margin-top: 150px;
+-webkit-user-select: none;
+font-family: 		'Oswald', sans-serif;
+font-weight: 		300;
+color: 				white;
+font-size:		 	25px;
+}
+
+.textFields {
+background: white;
+height: 30px;
+width: 80px;
+border: none;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+font-size: 18px;
+color: rgb(19, 125, 193);
+text-align: center;
+}
+
+#state{
+margin-top: 20px;
+}
+
+#searchTopicAreas{
+margin-top: 20px; 
+
+}
+
+#searchTargetAudience{
+margin-top: 20px;
+}
+
+#searchButtonText {
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+color: white;
+text-align: center;
+font-size: 28px;
+margin-top: 3px;
+-webkit-user-select: none;
+}
+
+#searchButton{
+bottom: 0%; 
+margin-top: 20px;
+width: 90px;
+height: 50px;
+border-radius: 50px;
+right: 50%;
+margin-right: -120px;
+background-color: rgb(29, 174, 235);
+z-index: 2;
+-webkit-user-select: none;
+}
+
+
+
+
