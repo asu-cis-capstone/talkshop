@@ -319,3 +319,51 @@ body, html{
 	text-align: center;
 	margin-left: 13px;
 }
+
+#welcomeBanner{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	right: 0;
+	margin-right: 170px;
+	margin-top: 11px;
+	cursor: default;
+}
+
+#logoutButton{
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	-webkit-user-select: none;
+}
+
+#logoutButton:hover{
+	cursor: pointer;
+	-webkit-user-select: none;
+	background-color: rgb(104, 201, 241);
+}
+
+#deleteProfileButton{
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	margin-top: 50px;
+	-webkit-user-select: none;
+}
+
+#deleteProfileButton:hover{
+	-webkit-user-select: none;
+	cursor: pointer;
+	background-color: rgb(104, 201, 241);
+}
+
+.settingsDropDownText{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	margin-top: 14px;
+}

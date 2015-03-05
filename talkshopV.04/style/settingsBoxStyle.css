@@ -1,0 +1,57 @@
+/* *************START OF SETTINGS BOX STYLING************* */
+
+#settingsDropDown ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	float: right;
+	background: black;
+}
+
+#settingsDropDown li {
+	float: left;
+}
+
+fieldset{
+	border: 0;
+}
+
+#settingsDropDown #login-trigger {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	display: inline-block;
+	height: 50px;
+	width: 100px;
+	color: white;
+	text-decoration: none;
+	margin-right: 50px;
+}
+
+#settingsDropDown #login-trigger:hover,
+#settingsDropDown #login .active {
+	background: rgb(29, 174, 235);
+}
+
+#settingsDropDown #login-content {
+	display: none;
+	position: absolute;
+	top: 50px;
+	margin-right: 0px;
+	right: 0;
+	z-index: 999;    
+	background: rgb(29, 174, 235);
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#settingsDropDown li #login-content {
+	right: 0;
+	margin-right: 49px;
+	width: 100px;
+	height: 100px;
+}
+
+/* *************END OF SETTINGS BOX STYLING************* */

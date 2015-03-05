@@ -1,6 +1,6 @@
 /* *************LOGIN BOX STYLING************* */
 
-nav ul {
+#loginDropDown ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -10,7 +10,7 @@ nav ul {
 }
 
 
-nav li {
+#loginDropDown li {
 	float: left;
 }
 
@@ -22,8 +22,8 @@ fieldset{
 	border: 0;
 }
 
-nav #login-trigger,
-nav #signup a {
+#loginDropDown #login-trigger,
+#loginDropDown #signup a {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	text-align: center;
@@ -35,13 +35,13 @@ nav #signup a {
 
 }
 
-nav #login-trigger:hover,
-nav #login .active,
-nav #signup a:hover {
+#loginDropDown #login-trigger:hover,
+#loginDropDown #login .active,
+#loginDropDown #signup a:hover {
 	background: rgb(29, 174, 235);
 }
 
-nav #login-content {
+#loginDropDown #login-content {
 	display: none;
 	position: absolute;
 	top: 50px;
@@ -54,7 +54,7 @@ nav #login-content {
 	border-right: 1px solid black;
 }
 
-nav li #login-content {
+#loginDropDown li #login-content {
 	right: 0;
 	width: 249px;
 	height: 175px;

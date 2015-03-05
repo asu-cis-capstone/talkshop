@@ -14,6 +14,7 @@ TALK SHOP!
 	<!-- Link tag for CSS -->
     <link type="text/css" rel="stylesheet" href="style/style.css" />
 	<link type="text/css" rel="stylesheet" href="style/loginBoxStyle.css" />
+	<link type="text/css" rel="stylesheet" href="style/settingsBoxStyle.css" />
 	
 	<!-- Link tag for JavaScript -->
 	<script type="text/javascript" src="js/js.js"></script>
@@ -27,3 +28,6 @@ TALK SHOP!
 	
 	<!-- Link tag for favicon -->
 	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+	
+	<!-- Link tag for Font Awesome -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
