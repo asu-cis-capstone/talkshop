@@ -72,7 +72,7 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 * Created a template of how the speaker listings page will be displayed
 * Created a presentation demonstrating website functionality 
 
-###[Talkshop Demonstration Video](enter link here)
+###[Talkshop Demonstration Video](https://www.youtube.com/watch?v=fGdxvSO_428)
 
 ##To Do List
 * Finish up creating database connectivity to the speaker and teacher registration forms
