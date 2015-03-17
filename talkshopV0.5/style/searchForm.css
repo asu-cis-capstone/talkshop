@@ -1,0 +1,58 @@
+/* CSS for searchForms */
+
+#searchForm {
+	position: fixed;
+	width: 200px;
+	height: 420px;
+	background-color: rgb(29, 174, 235);
+	margin-left: 25px;
+	margin-top: 150px;
+	-webkit-user-select: none;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 25px;
+	border: solid 1px black;
+}
+
+#searchTitle{
+	text-align: center;
+	font-size: 28px;
+}
+
+.textFields {
+	background: rgb(19, 125, 193);
+	height: 30px;
+	width: 175px;
+	border: none;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-left: 12.5px;
+}
+
+#searchButtonText {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	-webkit-user-select: none;
+}
+
+#searchButton{
+	background-color:  rgb(19, 125, 193);
+	height: 30px;
+	width: 100px;
+	cursor: pointer;
+	border: none;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+
+
+
