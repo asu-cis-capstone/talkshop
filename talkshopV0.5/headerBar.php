@@ -1,7 +1,8 @@
-	<?php
+<?php
 	session_name();
 	session_start();
-	?>
+?>
+	
 	
 	<script>
 		$(document).ready(function()
@@ -35,7 +36,7 @@
 									echo '<p class="settingsDropDownText">LOGOUT</p>';
 								echo '</div>';
 								echo '<div id="deleteProfileButton" onclick="window.open(\'#\',\'_self\')">';
-									echo '<p class="settingsDropDownText">DELETE PROFILE</p>';
+									echo '<p class="settingsDropDownText">DELETE ACCOUNT</p>';
 								echo '</div>';
 							  echo '</div> ';                  
 							echo '</li>';
@@ -87,7 +88,7 @@
 												
 												if ($_GET["rc"] == 3)
 												{
-													echo '<span class="logerr">Returned from loginProcess.php</span>';
+													echo '<span class="logerr">*Returned from loginProcess.php</span>';
 												}
 											}
 

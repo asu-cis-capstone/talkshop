@@ -17,6 +17,33 @@
 	margin-left:		7px;
 }
 
+.profileBox{
+	position: 			absolute;
+	width: 				980px;
+	height: 			215px;
+	background-color: 	rgb(19, 125, 193);
+	margin-top:			150px;
+	margin-left: 		-377.5px;
+	left: 				50%;
+	-webkit-user-select: none;
+}
+
+.profileBox img{
+	z-index: 			1;
+	margin-top: 		7px; 
+	margin-left:		7px;
+}
+
+#profile2{
+	margin-top: 400px;
+}
+
+#profile3{
+	margin-top: 650px;
+	margin-bottom: 100px;
+}
+
+
 #socialMediaLinks{
 	margin-top: 		-75px; 
 	margin-left: 		33px;

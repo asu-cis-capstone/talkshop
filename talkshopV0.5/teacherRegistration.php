@@ -1,34 +1,31 @@
 <?php
     /*
-     include('../local-connect.php');
-     $fname1 = $_POST['firstname'];
-     $fname2 = mysqli_real_escape_string($dbc,$fname1);
-     $lname1 = $_POST['lastname'];
-     $lname2 = mysqli_real_escape_string($dbc,$lname1);
-     $username = $_POST['username'];
-     $email = $_POST['email'];
-     $password = $_POST['password'];
-     $org = $_POST['organization'];
-     $line1 = $_POST['lineone'];
-     $line2 = $_POST['linetwo'];
-     $city = $_POST['city'];
-     $state = $_POST['state'];
-     $zip = $_POST['zip'];
-     $phone = $_POST['phone'];
-     $age = $_POST['agegroup'];
-     $image = $_POST['fileToUpload'];
-     
-     
-     $query = "INSERT INTO teachers(firstname, lastname, username, email, password, organization, addressone, addresstwo, city, state, zip, phone, agegroup, image)" .  "VALUES('$fname2','$lname2','$username', '$email','$password','$org', '$line1','$line2','$city', '$state', '$zip', '$phone','$age', '$image')";
-     
-     $result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
-     
-     mysqli_close($dbc);
-     */
+    include('../local-connect.php');
+    $fname1 = $_POST['firstname'];
+    $fname2 = mysqli_real_escape_string($dbc,$fname1);
+    $lname1 = $_POST['lastname'];
+    $lname2 = mysqli_real_escape_string($dbc,$lname1);
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $org = $_POST['organization'];
+    $line1 = $_POST['lineone'];
+    $line2 = $_POST['linetwo'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zip = $_POST['zip'];
+    $phone = $_POST['phone'];
+    $age = $_POST['agegroup'];
+    $image = $_POST['fileToUpload'];
+    
+    
+    $query = "INSERT INTO teachers(firstname, lastname, username, email, password, organization, addressone, addresstwo, city, state, zip, phone, agegroup, image)" .  "VALUES('$fname2','$lname2','$username', '$email','$password','$org', '$line1','$line2','$city', '$state', '$zip', '$phone','$age', '$image')";
+    
+    $result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
+    
+    mysqli_close($dbc);
+    */
 ?>
-
-
-
 
 <?php include 'htmlHeader.php' ?>
 
@@ -36,7 +33,7 @@
     <link type="text/css" rel="stylesheet" href="style/registration.css" />
 
     <!-- Web Page Title -->
-    <title>TalkShop | Speaker Registration</title>
+    <title>TalkShop | Teacher Registration</title>
 
   </head>
 
@@ -58,7 +55,7 @@
   
 	<?php include 'headerBar.php' ?>
 	
-	<div id="speakerRegistrationTitle">SPEAKER REGISTRATION</div>
+	<div id="teacherRegistrationTitle">TEACHER REGISTRATION</div>
 	
 	<div id="registrationInstructions">
 		To register without making a profile, please fill out the first section of this form.<br />
@@ -164,38 +161,6 @@
 					
 					<!-- begin expanded form -->
 					<div id="checkboxdiv" style="display:none;">
-					
-						<!-- profession -->
-						<select class="textFields" name="profession">
-							<option value="">Select Profession...</option>
-							<option value="">Agriculture</option>
-							<option value="">Architecture/Planning</option>
-							<option value="">Arts</option>
-							<option value="">Biological Sciences</option>
-							<option value="">Business</option>
-							<option value="">Communication</option>
-							<option value="">Information Technology</option>
-							<option value="">Education</option>
-							<option value="">Engineering</option>
-							<option value="">Environmental Sciences</option>
-							<option value="">Healthcare</option>
-							<option value="">Language and Literature</option>
-							<option value="">Law</option>
-							<option value="">Math and Statistics</option>
-							<option value="">Mechanics/Repair</option>
-							<option value="">Military Science</option>
-							<option value="">Philosophy and Religion</option>
-							<option value="">Physical Science</option>
-							<option value="">Protective Services</option>
-							<option value="">Psychology and Counseling</option>
-							<option value="">Recreation and Fitness</option>
-							<option value="">Sales</option>
-							<option value="">Skilled Trade/Construction</option>
-							<option value="">Social Sciences/Liberal Arts</option>
-							<option value="">Social Services</option>
-							<option value="">Transportation</option>
-							<option value="">Other</option>
-						</select><br />
 						
 						<!-- age group -->
 						<select class="textFields" id="agegroup" name="agegroup">
@@ -209,61 +174,55 @@
 						</select>
 						
 						<!-- topic areas -->
-						<p class="selectionTitle">SELECT YOUR TOPIC AREAS</p>
+						<p class="selectionTitle">SELECT YOUR NEEDED TOPIC AREAS</p>
 						<ul class="checkbox">
-							<li><input type="checkbox" name="" value="">Agriculture<br /></li>
-							<li><input type="checkbox" name="" value="">Art<br /></li>
-							<li><input type="checkbox" name="" value="">Biological Sciences<br /></li>
-							<li><input type="checkbox" name="" value="">Business<br /></li>
-							<li><input type="checkbox" name="" value="">Communication<br /></li>
-							<li><input type="checkbox" name="" value="">Information Technology<br /></li>
-							<li><input type="checkbox" name="" value="">Education<br /></li>
-							<li><input type="checkbox" name="" value="">Engineering<br /></li>
-							<li><input type="checkbox" name="" value="">Environmental Science<br /></li>
-							<li><input type="checkbox" name="" value="">Health<br /></li>
-							<li><input type="checkbox" name="" value="">Language and Literature<br /></li>
-							<li><input type="checkbox" name="" value="">Law<br /></li>
-							<li><input type="checkbox" name="" value="">Philosophy and Religion<br /></li>
-							<li><input type="checkbox" name="" value="">Physical Science<br /></li>
-							<li><input type="checkbox" name="" value="">Psychology and Counseling<br /></li>
-							<li><input type="checkbox" name="" value="">Recreation and Fitness<br /></li>
-							<li><input type="checkbox" name="" value="">Skilled Trade and Construction<br /></li>
-							<li><input type="checkbox" name="" value="">Social Sciences and Liberal Arts<br /></li>
-							<li><input type="checkbox" name="" value="">Social Services<br /></li>
-							<li><input type="checkbox" name="" value="">Transportation<br /></li>
-							<li><input type="checkbox" name="" value="">Other<br /></li>
+							<li><input type="checkbox" name="agriculture" value="AG">Agriculture<br /></li>
+							<li><input type="checkbox" name="art" value="ART">Art<br /></li>
+							<li><input type="checkbox" name="bioscience" value="BIO">Biological Sciences<br /></li>
+							<li><input type="checkbox" name="business" value="BUS">Business<br /></li>
+							<li><input type="checkbox" name="communication" value="COM">Communication<br /></li>
+							<li><input type="checkbox" name="infotech" value="IT">Information Technology<br /></li>
+							<li><input type="checkbox" name="educaiton" value="EDU">Education<br /></li>
+							<li><input type="checkbox" name="engineering" value="ENGR">Engineering<br /></li>
+							<li><input type="checkbox" name="envscience" value="ENVS">Environmental Science<br /></li>
+							<li><input type="checkbox" name="health" value="HE">Health<br /></li>
+							<li><input type="checkbox" name="languagelit" value="LANGLIT">Language and Literature<br /></li>
+							<li><input type="checkbox" name="law" value="LAW">Law<br /></li>
+							<li><input type="checkbox" name="philosophyreligion" value="PHR">Philosophy and Religion<br /></li>
+							<li><input type="checkbox" name="physicalscience" value="PHYS">Physical Science<br /></li>
+							<li><input type="checkbox" name="psychology" value="PSY">Psychology and Counseling<br /></li>
+							<li><input type="checkbox" name="fitness" value="RECFIT">Recreation and Fitness<br /></li>
+							<li><input type="checkbox" name="trade" value="CON">Skilled Trade and Construction<br /></li>
+							<li><input type="checkbox" name="liberalarts" value="LIBART">Social Sciences and Liberal Arts<br /></li>
+							<li><input type="checkbox" name="socialservices" value="SOCSRV">Social Services<br /></li>
+							<li><input type="checkbox" name="tranportation" value="TRANS">Transportation<br /></li>
+							<li><input type="checkbox" name="other" value="OTHER">Other<br /></li>
 						</ul>
 						
 						<textarea id="bio" rows="7" cols="75" name="bio" placeholder="Bio and/or Additional Information"></textarea>
 						
-						<input class="textFields" type="url" name="url" placeholder="Facebook URL"><br />
-						<input class="textFields" type="url" name="url" placeholder="LinkedIn URL"><br />
-						<input class="textFields" type="url" name="url" placeholder="Google+ URL"><br />
-						<input class="textFields" type="url" name="url" placeholder="Twitter URL"><br /><br />
-					
-					
-					<form action="uploadImage.php" method="post" enctype="multipart/form-data">
+						<br />
+						
+						<form action="uploadImage.php" method="post" enctype="multipart/form-data">
 							<span class="uploadTitle">UPLOAD PROFILE IMAGE</span>
 								<br/>
 							<input id="chooseFile" type="file" name="fileToUpload" id="fileToUpload">
 								<br/>
 							<input id="uploadButton" type="submit" value="UPLOAD IMAGE" name="submit">
 								<br/>
+						</form>
 					
-					</form>
-					
-				</div>
+					</div>
 				
 		</form>
 		
 		<form id="">
-			<input id="formSubmit" type="button" value="REGISTER AS A SPEAKER">
+			<input id="formSubmit" type="button" value="REGISTER AS A TEACHER">
 		</form>
 		
 		<br />
 		<br />
 		<br />
-	
 	
 	<?php include 'bottomBarHome.php' ?>
 	

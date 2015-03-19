@@ -34,6 +34,33 @@ body, html{
 	-webkit-user-select: none;
 }
 
+#topBarFixed{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: black; /*rgb(19, 125, 193);*/
+	z-index: 3;
+}
+
+#titleFixed{
+	position: fixed;
+	background-color: black; /* rgb(0, 91, 154); */
+	height: 120px;
+	width: 320px;
+	margin-left: 75px;
+	z-index: 4;
+	cursor: pointer;
+	-webkit-user-select: none;
+}
+
+#titleFixed img{
+	margin-top: 10px;
+	margin-left: 10px;
+	max-width: 300px;
+    height: auto;
+	-webkit-user-select: none;
+}
+
 .topBarText{
 	margin-top: 12px;
 }
@@ -190,6 +217,7 @@ body, html{
 	background-color: rgb(19, 125, 193);
 	position: fixed;
 	bottom: 0;
+	left: 0;
 }
 
 #bottomBarText{
@@ -367,3 +395,28 @@ body, html{
 	text-align: center;
 	margin-top: 14px;
 }
+
+#filler{
+  position: fixed;
+  background-color: rgb(160, 223, 250);
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

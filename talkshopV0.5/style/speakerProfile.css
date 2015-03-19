@@ -1,14 +1,15 @@
 /* CSS for speakerProfiles */
 
 #profileBox{
-	position: 			absolute;
-	width: 				980px;
-	height: 			630px;
-	background-color: 	rgb(19, 125, 193);
-	margin-top:			150px;
-	margin-left: 		-377.5px;
-	left: 				50%;
-	-webkit-user-select: none;
+	position: 				absolute;
+	width: 					1000px;
+	height: 				630px;
+	background-color: 		rgb(29, 174, 235);
+	margin-top:				150px;
+	margin-left: 			-500px;
+	left: 					50%;
+	-webkit-user-select: 	none;
+	border: 				solid 1px black;
 }
 
 #profileBox img{
@@ -18,18 +19,9 @@
 }
 
 #socialMediaLinks{
-	margin-top: 		-75px; 
-	margin-left: 		33px;
-}
-
-#websiteURL{
-	margin-top: 		-25px; 
-	margin-left: 		50px;
-	font-family: 		'Oswald', sans-serif;
-	font-weight: 		300;
-	color: 				white;
-	font-size:		 	28px;
-	-webkit-user-select: none;
+	width: 200px;
+	margin-top: 		-70px; 
+	margin-left: 		7px;
 }
 
 #speakerName{
@@ -45,7 +37,7 @@
 #profession{
 	font-family: 		'Oswald', sans-serif;
 	font-weight: 		300;
-	color: 				white;
+	color: 				rgb(160, 223, 250);
 	font-size: 			25px;
 	margin-top: 		-40px; 
 	margin-left: 		218px;
@@ -55,7 +47,7 @@
 #topicAreas{
 	font-family: 		'Oswald', sans-serif;
 	font-weight: 		300;
-	color: 				white;
+	color: 				rgb(160, 223, 250);
 	font-size: 			25px;
 	margin-top: 		-28px; 
 	margin-left: 		218px;
@@ -65,7 +57,7 @@
 #ageGroup{
 	font-family: 		'Oswald', sans-serif;
 	font-weight: 		300;
-	color: 				white;
+	color: 				rgb(160, 223, 250);
 	font-size: 			25px;
 	margin-top: 		-28px; 
 	margin-left: 		218px;
@@ -75,7 +67,7 @@
 #geographicLocation{
 	font-family:		 	'Oswald', sans-serif;
 	font-weight: 		  	300;
-	color: 					white;
+	color: 					rgb(160, 223, 250);
 	font-size: 				25px;
 	margin-top: 			-28px; 
 	margin-left: 			218px;
@@ -85,9 +77,18 @@
 #aboutSpeaker{
 	font-family: 			'Oswald', sans-serif;
 	font-weight: 			300;
-	color: 					white;
+	color: 					rgb(160, 223, 250);
 	font-size: 				28px;
 	margin-top: 			-15px; 
+	margin-left: 			218px;
+	-webkit-user-select: 	none;
+}
+
+#aboutTeacher{
+	font-family: 			'Oswald', sans-serif;
+	font-weight: 			300;
+	color: 					rgb(160, 223, 250);
+	font-size: 				28px;
 	margin-left: 			218px;
 	-webkit-user-select: 	none;
 }
@@ -97,10 +98,22 @@
 	font-weight: 		300;
 	color: 				white;
 	font-size: 			18px;
-	margin-top: 		-53px; 
+	margin-right:		10px;
 	margin-left: 		218px;
 	margin-bottom: 		30px; 
 	-webkit-user-select: none;
+}
+
+#aboutParagraphTeacher{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size: 			18px;
+	margin-right:		10px;
+	margin-left: 		218px;
+	margin-bottom: 		30px; 
+	-webkit-user-select: none;
+	margin-top:			-20px;
 }
 
 #contactSpeaker {
@@ -108,34 +121,25 @@ font-family: 'Oswald', sans-serif;
 font-weight: 300;
 color: white;
 text-align: center;
-font-size: 28px;
-margin-top: 3px;
+font-size: 20px;
+margin-top: 5px;
 -webkit-user-select: none;
+
 }
 
 #contactButton{
-  background-color:  rgb(160, 223, 250);
+  background-color:  rgb(19, 125, 193);
   cursor: pointer;
   border: none;
   bottom: 0%; 
   position: absolute;
   margin-top: -10px;
   margin-bottom: 10px; 
-  width: 250px;
-  height: 50px;
-  right: 50%;
-  margin-right: -120px;
+  width: 225px;
+  height: 40px;
+  left: 50%;
+  margin-left: -112.5px;
   z-index: 2;
-}
-
-#backToSearch{
-	font-family: 		'Oswald', sans-serif;
-	font-weight: 		300;
-	color: 				white;
-	font-size: 			20px;
-	margin-top: 		-75px; 
-	margin-left: 		820px;
-	-webkit-user-select: none;
 }
 
 a:link {
@@ -156,4 +160,35 @@ text-decoration: 	none;
 	height: 		40px;
 	background-color: rgb(19, 125, 193);
 }
+
+.fa-facebook-square{
+	color: white;
+	margin-left: 27px;
+}
+
+.fa-twitter-square{
+	color: white;
+	margin-left: 7px;
+}
+
+.fa-google-plus-square{
+	color: white;
+	margin-left: 7px;
+}
+
+.fa-linkedin-square{
+	color: white;
+	margin-left: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
 

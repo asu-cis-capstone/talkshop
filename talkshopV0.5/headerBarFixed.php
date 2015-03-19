@@ -17,14 +17,14 @@
 		});
 	</script>
 	
-	<div id="title" onclick="javascript:location.href='index.php'">
+	<div id="titleFixed" onclick="javascript:location.href='index.php'">
 		<img src="images/bluelogo.png" alt="logo" />
 	</div>
 		
 		<?php
 			if (isset($_SESSION["user"])) //THIS CODE FOR USERS THAT ARE LOGGED IN!
 			{
-				echo '<div id="topBar">';
+				echo '<div id="topBarFixed">';
 					echo '<div id="login">';
 						echo '<nav id="settingsDropDown">';
 						  echo '<ul>';
@@ -35,7 +35,7 @@
 									echo '<p class="settingsDropDownText">LOGOUT</p>';
 								echo '</div>';
 								echo '<div id="deleteProfileButton" onclick="window.open(\'#\',\'_self\')">';
-									echo '<p class="settingsDropDownText">DELETE PROFILE</p>';
+									echo '<p class="settingsDropDownText">DELETE ACCOUNT</p>';
 								echo '</div>';
 							  echo '</div> ';                  
 							echo '</li>';
@@ -53,7 +53,7 @@
 			
 			else //THIS CODE FOR USERS THAT ARE *NOT* LOGGED IN!
 			{	
-				echo '<div id="topBar">';
+				echo '<div id="topBarFixed">';
 				
 					echo '<div id="login">';
 							
@@ -87,7 +87,7 @@
 												
 												if ($_GET["rc"] == 3)
 												{
-													echo '<span class="logerr">Returned from loginProcess.php</span>';
+													echo '<span class="logerr">*Returned from loginProcess.php</span>';
 												}
 											}
 

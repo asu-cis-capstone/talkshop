@@ -1,5 +1,9 @@
 /* *************LOGIN BOX STYLING************* */
 
+#login-content{
+	z-index: 5;
+}
+
 #loginDropDown ul {
 	margin: 0;
 	padding: 0;
@@ -32,7 +36,6 @@ fieldset{
 	width: 100px;
 	color: white;
 	text-decoration: none;
-
 }
 
 #loginDropDown #login-trigger:hover,

@@ -47,8 +47,7 @@
 	
 	// Get and store our PHP session variables
 	$row = mysqli_fetch_array($result);
-	$_SESSION['name'] = $row['name'];
-	$_SESSION['userID'] = $row['id'];
+	$_SESSION['user'] = $row['FName'];
 	header('Location: index.php');
 	exit;
 	

@@ -64,6 +64,21 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 ##To Do List
 * Database connectivity to the login and registration forms
 
+##v0.4 Release Notes
+* Increased the functionality of both the speaker and teacher registration forms to allow the user to decide whether they would like an active profile or not
+* Created database connectivity to the login form
+* Started to create database connectivity to the registration forms
+* Created the template for the search form that will be displayed across the speaker listings and individual profile pages
+* Created a template of how the speaker listings page will be displayed
+* Created a presentation demonstrating website functionality 
+
+###[Talkshop Demonstration Video](https://www.youtube.com/watch?v=fGdxvSO_428)
+
+##To Do List
+* Finish up creating database connectivity to the speaker and teacher registration forms
+* Figure out how to pull registration form info to create a user's profile
+* Figure out how to allow the user to search based on the criteria we have laid out in our search form template
+
 ###[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)
 
 ###[Talkshop Video](http://t.co/hDJQhBq9YR)
