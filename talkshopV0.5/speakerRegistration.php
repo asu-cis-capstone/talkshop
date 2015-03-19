@@ -5,10 +5,14 @@
 
     <!-- Web Page Title -->
     <title>TalkShop | Speaker Registration</title>
+	
+	<!-- JavaScript Tags -->
+	<script type="text/javascript" src="js/focus.js"></script>
+	<script type="text/javascript" src="js/validate.js"></script>
 
   </head>
 
-  <body>
+  <body onload="focus()">
   
 	<script type="text/javascript" language="JavaScript">
 		function HidePart(d) { document.getElementById(d).style.display = "none";  }
@@ -35,36 +39,61 @@
 	
 	<br />
 	
-		<form id="joinform" action="../confirm.htm" method="get">
+		<form id="joinform" action="confirm.php" method="post">
 				
-					<!-- first name -->
-					<input class="textFields" placeholder="First Name" type="text" id="firstname" name="firstname" />
+			<!-- first name -->
+					<input class="textFields" placeholder="First Name" type="text" id="firstname" name="firstname" 
+					autofocus
+					required
+					title="First Name: 4-30 chars, u/l case letters and - and ' only."
+					pattern="[a-zA-Z-' ]{4,30}"
+					onfocus="fnamemsg()" />
 					<br />
 					
 					<!-- last name -->
-					<input class="textFields" placeholder="Last Name" type="text" id="lastname" name="lastname" />
+					<input class="textFields" placeholder="Last Name" type="text" id="lastname" name="lastname"
+					required
+					title="Last Name: 4-30 chars, u/l case letters and - and ' only."
+					pattern="[a-zA-Z-' ]{4,30}"
+					onfocus="lnamemsg()"	/>
 					<br />
 					
 					<!-- email -->
-					<input class="textFields" placeholder="Email Address" type="text" id="email" name="email" />
+					<input class="textFields" placeholder="Email Address" type="text" id="email" name="email" 
+					required
+					title="Valid email only - 50 chars max."
+					pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"
+					maxlength="50"
+					onfocus="emailmsg()" />
 					<br />
 					
 					<!-- password -->
-					<input class="textFields" placeholder="Password" type="password" id="password" name="password" />
+					<input class="textFields" placeholder="Password" type="password" id="pword" name="pword" 
+					required
+					title="Password: 5-15 chars, numbers, u/l case letters and -, _, ! $ only."
+					pattern="[a-zA-Z0-9-_!$]{5,15}"
+					onchange="form.reenter.pattern=this.value;"
+					onfocus="passwordmsg()"/>
 					<br />
 					
 					<!-- confirm password -->
-					<input class="textFields" placeholder="Confirm Password" type="password" id="reenter" name="reenter" />
+					<input class="textFields" placeholder="Confirm Password" type="password" id="reenter" name="reenter"
+					required
+					title="Passwords must match!"
+					onfocus="reentermsg()" />
 					<br />
 					
 					<!-- address -->
-					<input class="textFields" placeholder="Street Address 1" type="text" id="lineone" name="lineone" />
+					<input class="textFields" placeholder="Street Address 1" type="text" id="lineone" name="lineone" 
+					required 
+					title="Please enter the street address at which you reside." 
+					onfocus="addmsg()" />
 					<br />
-					<input class="textFields" placeholder="Street Address 2" type="text" id="lineone" name="lineone" />
+					<input class="textFields" placeholder="Street Address 2" type="text" id="linetwo" name="linetwo" />
 					<br />
-					<input class="textFields" placeholder="City" type="text" id="city" name="city" />
+					<input class="textFields" placeholder="City" type="text" id="city" name="city" required title="Please enter the city in which you reside." onfocus="citymsg()" />
 					<br />
-					<select class="textFields" id="state" name="state">
+					<select class="textFields" id="state" name="state" required title="Please select the state in which you reside." onfocus="statemsg()">
 							<option value="">Select State...</option>
 							<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
@@ -119,22 +148,35 @@
 							<option value="WY">Wyoming</option>
 					</select>
 					<br>
-					<input class="textFields" placeholder="Zip" type="text" id="zip" name="zip" />
+					<input class="textFields" placeholder="Zip" type="text" id="zip" name="zip" 
+					required
+					maxlength="5"
+					title="Please enter the zip code of the city in which you reside."
+					onfocus="zipmsg()"/>
 					<br />
 					
 					<!-- phone -->
-					<input class="textFields" placeholder="Phone Number" type="text" id="phone" name="phone" />
+					<input class="textFields" placeholder="Phone Number" type="tel" id="phone" name="phone"
+					required
+					maxlength="15"
+					title="Please enter a valid phone number up to 15 characters."
+					onfocus="phonemsg()"
+					/>
 					<br />
 					
 					<!-- active profile? -->
 					<span class="selectionTitle">Make Active Profile</span>
-					<input type="checkbox" name="activeProfile" value="yes" onclick="CheckboxChecked(this.checked,'checkboxdiv')" style="margin-bottom: 15px; margin-top: 20px;">
+					<input type="checkbox" id="activeProfile" name="activeProfile" value="yes" onclick="CheckboxChecked(this.checked,'checkboxdiv')" 
+					title="Check this box to create a listing." onfocus="checkboxmsg()" style="margin-bottom: 15px; margin-top: 20px;">
 					
 					<!-- begin expanded form -->
 					<div id="checkboxdiv" style="display:none;">
 					
-						<!-- profession -->
-						<select class="textFields" name="profession">
+					<!-- profession -->
+						<select class="textFields" id="profession" name="profession"
+						required
+						title="Please select your profession."
+						onfocus="professionmsg()">
 							<option value="">Select Profession...</option>
 							<option value="">Agriculture</option>
 							<option value="">Architecture/Planning</option>
@@ -166,7 +208,10 @@
 						</select><br />
 						
 						<!-- age group -->
-						<select class="textFields" id="agegroup" name="agegroup">
+						<select class="textFields" id="agegroup" name="agegroup"
+						required
+						title="Please select your intended audience."
+						onfocus="agemsg()">
 							<option value="">Select Age Group...</option>
 							<option value="preschool">Pre School</option>
 							<option value="elementary">Elementary</option>
@@ -224,9 +269,8 @@
 				
 		</form>
 		
-		<form id="">
-			<input id="formSubmit" type="button" value="REGISTER AS A SPEAKER">
-		</form>
+		<input id="formSubmit" type="submit" form="joinform" value="REGISTER AS A SPEAKER" title="Click here or press 'Enter' to submit your info!"
+		onfocus="signmsg()" onclick="return validate()"/>
 		
 		<br />
 		<br />
