@@ -15,7 +15,7 @@
 		<div id="speaker">Connect with Speakers</div>
 	</div>
 	
-	<div id="teacherButton" onclick="javascript:location.href='teacherProfiles.php'">
+	<div id="teacherButton" onclick="javascript:location.href='teacherListings.php'">
 		<div id="teacher">Connect with Teachers</div>
 	</div>
 	

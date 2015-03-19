@@ -87,7 +87,7 @@
 												
 												if ($_GET["rc"] == 3)
 												{
-													echo '<span class="logerr">Returned from loginProcess.php</span>';
+													echo '<span class="logerr">*Returned from loginProcess.php</span>';
 												}
 											}
 

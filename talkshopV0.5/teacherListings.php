@@ -1,5 +1,5 @@
 <!--
-TALK SHOP! Speaker Profile Listings
+TALK SHOP! Teacher Profile Listings
 -->
 
 <?php include 'htmlHeader.php' ?>
@@ -9,7 +9,7 @@ TALK SHOP! Speaker Profile Listings
 	<link type="text/css" rel="stylesheet" href="style/searchForm.css" />
 	
     <!-- Web Page Title -->
-    <title>TalkShop | Speakers</title>
+    <title>TalkShop | Teachers</title>
 
   </head>
   
@@ -133,7 +133,7 @@ TALK SHOP! Speaker Profile Listings
 	
 		<div>
 			<?php
-				echo file_get_contents("http://" . $_SERVER["SERVER_NAME"] . "/talkshop/speakerInfo.php?command=Retrieve");
+				echo file_get_contents("http://" . $_SERVER["SERVER_NAME"] . "/talkshop/teacherInfo.php?command=Retrieve");
 			?>
 		</div>
 	

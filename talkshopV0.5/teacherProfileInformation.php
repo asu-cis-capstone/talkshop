@@ -17,7 +17,7 @@
 		die("Database Connection Error!");
 	}
 	
-	$sql = "SELECT * FROM speakers WHERE speakers.id = '" . $id . "'";
+	$sql = "SELECT * FROM teachers WHERE teachers.id = '" . $id . "'";
 	$result = $connection->query($sql);
 	
 	
@@ -28,15 +28,10 @@
 			$profilePic = $row["profilePic"];
 			$fullName = $row["fname"] . " " . $row["lname"];
 			$fNameCaps = strtoupper($row["fname"]);
-			$profession = $row["profession"];
+
 			$ageGroup = $row["ageGroup"];
 			$location = $row["city"] . ", " . $row["state"];
 			$bio = $row["bio"];
-			
-				$fbURL = $row["fbURL"];
-				$tURL = $row["tURL"];
-				$gpURL = $row["gpURL"];
-				$liURL = $row["liURL"];
 					
 			$topic1 = $row["topic1"];
 			$topic2 = $row["topic2"];
@@ -69,10 +64,6 @@
 		{
 			echo $fNameCaps;
 		}
-		else if ($selection == "profession")
-		{
-			echo $profession;
-		}
 		else if ($selection == "topics")
 		{
 			echo $topics;
@@ -88,22 +79,6 @@
 		else if ($selection == "bio")
 		{
 			echo $bio;
-		}
-		else if ($selection == "fbURL")
-		{
-			echo $fbURL;
-		}
-		else if ($selection == "tURL")
-		{
-			echo $tURL;
-		}
-		else if ($selection == "gpURL")
-		{
-			echo $gpURL;
-		}
-		else if ($selection == "liURL")
-		{
-			echo $liURL;
 		}
 	}
 	else

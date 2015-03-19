@@ -1,7 +1,8 @@
-	<?php
+<?php
 	session_name();
 	session_start();
-	?>
+?>
+	
 	
 	<script>
 		$(document).ready(function()
@@ -87,7 +88,7 @@
 												
 												if ($_GET["rc"] == 3)
 												{
-													echo '<span class="logerr">Returned from loginProcess.php</span>';
+													echo '<span class="logerr">*Returned from loginProcess.php</span>';
 												}
 											}
 
