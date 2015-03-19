@@ -218,27 +218,27 @@
 						<!-- topic areas -->
 						<p class="selectionTitle">SELECT YOUR NEEDED TOPIC AREAS</p>
 						<ul class="checkbox" id="topicarea">
-							<li><input type="checkbox" name="" value="">Agriculture<br /></li>
-							<li><input type="checkbox" name="" value="">Art<br /></li>
-							<li><input type="checkbox" name="" value="">Biological Sciences<br /></li>
-							<li><input type="checkbox" name="" value="">Business<br /></li>
-							<li><input type="checkbox" name="" value="">Communication<br /></li>
-							<li><input type="checkbox" name="" value="">Information Technology<br /></li>
-							<li><input type="checkbox" name="" value="">Education<br /></li>
-							<li><input type="checkbox" name="" value="">Engineering<br /></li>
-							<li><input type="checkbox" name="" value="">Environmental Science<br /></li>
-							<li><input type="checkbox" name="" value="">Health<br /></li>
-							<li><input type="checkbox" name="" value="">Language and Literature<br /></li>
-							<li><input type="checkbox" name="" value="">Law<br /></li>
-							<li><input type="checkbox" name="" value="">Philosophy and Religion<br /></li>
-							<li><input type="checkbox" name="" value="">Physical Science<br /></li>
-							<li><input type="checkbox" name="" value="">Psychology and Counseling<br /></li>
-							<li><input type="checkbox" name="" value="">Recreation and Fitness<br /></li>
-							<li><input type="checkbox" name="" value="">Skilled Trade and Construction<br /></li>
-							<li><input type="checkbox" name="" value="">Social Sciences and Liberal Arts<br /></li>
-							<li><input type="checkbox" name="" value="">Social Services<br /></li>
-							<li><input type="checkbox" name="" value="">Transportation<br /></li>
-							<li><input type="checkbox" name="" value="">Other<br /></li>
+							<li><input type="checkbox" name="agriculture" value="AG">Agriculture<br /></li>
+							<li><input type="checkbox" name="art" value="ART">Art<br /></li>
+							<li><input type="checkbox" name="biologicalsciences" value="BIO">Biological Sciences<br /></li>
+							<li><input type="checkbox" name="business" value="BUS">Business<br /></li>
+							<li><input type="checkbox" name="communication" value="COM">Communication<br /></li>
+							<li><input type="checkbox" name="infotech" value="IT">Information Technology<br /></li>
+							<li><input type="checkbox" name="education" value="EDU">Education<br /></li>
+							<li><input type="checkbox" name="engineering" value="ENGR">Engineering<br /></li>
+							<li><input type="checkbox" name="environscience" value="ENVS">Environmental Science<br /></li>
+							<li><input type="checkbox" name="health" value="HE">Health<br /></li>
+							<li><input type="checkbox" name="langandlit" value="LANGLIT">Language and Literature<br /></li>
+							<li><input type="checkbox" name="law" value="LAW">Law<br /></li>
+							<li><input type="checkbox" name="philosophyandreligion" value="PHR">Philosophy and Religion<br /></li>
+							<li><input type="checkbox" name="physci" value="PHYS">Physical Science<br /></li>
+							<li><input type="checkbox" name="psychoandcounseling" value="PSY">Psychology and Counseling<br /></li>
+							<li><input type="checkbox" name="recandfit" value="RECFIT">Recreation and Fitness<br /></li>
+							<li><input type="checkbox" name="tradeandconstruction" value="CON">Skilled Trade and Construction<br /></li>
+							<li><input type="checkbox" name="socsciandlibarts" value="LIBART">Social Sciences and Liberal Arts<br /></li>
+							<li><input type="checkbox" name="socialservices" value="SOCSRV">Social Services<br /></li>
+							<li><input type="checkbox" name="transportation" value="TRANS">Transportation<br /></li>
+							<li><input type="checkbox" name="other" value="OTHER">Other<br /></li>
 						</ul>
 						
 						<textarea id="bio" rows="7" cols="75" name="bio" placeholder="Bio and/or Additional Information"></textarea>

@@ -178,33 +178,33 @@
 						title="Please select your profession."
 						onfocus="professionmsg()">
 							<option value="">Select Profession...</option>
-							<option value="">Agriculture</option>
-							<option value="">Architecture/Planning</option>
-							<option value="">Arts</option>
-							<option value="">Biological Sciences</option>
-							<option value="">Business</option>
-							<option value="">Communication</option>
-							<option value="">Information Technology</option>
-							<option value="">Education</option>
-							<option value="">Engineering</option>
-							<option value="">Environmental Sciences</option>
-							<option value="">Healthcare</option>
-							<option value="">Language and Literature</option>
-							<option value="">Law</option>
-							<option value="">Math and Statistics</option>
-							<option value="">Mechanics/Repair</option>
-							<option value="">Military Science</option>
-							<option value="">Philosophy and Religion</option>
-							<option value="">Physical Science</option>
-							<option value="">Protective Services</option>
-							<option value="">Psychology and Counseling</option>
-							<option value="">Recreation and Fitness</option>
-							<option value="">Sales</option>
-							<option value="">Skilled Trade/Construction</option>
-							<option value="">Social Sciences/Liberal Arts</option>
-							<option value="">Social Services</option>
-							<option value="">Transportation</option>
-							<option value="">Other</option>
+							<option value="AG">Agriculture</option>
+							<option value="ARCHPL">Architecture/Planning</option>
+							<option value="ART">Arts</option>
+							<option value="BIO">Biological Sciences</option>
+							<option value="BUS">Business</option>
+							<option value="COM">Communication</option>
+							<option value="IT">Information Technology</option>
+							<option value="EDU">Education</option>
+							<option value="ENGR">Engineering</option>
+							<option value="ENVS">Environmental Sciences</option>
+							<option value="HE">Healthcare</option>
+							<option value="LANGLIT">Language and Literature</option>
+							<option value="LAW">Law</option>
+							<option value="MATSTAT">Math and Statistics</option>
+							<option value="MECH">Mechanics/Repair</option>
+							<option value="MILSCI">Military Science</option>
+							<option value="PHR">Philosophy and Religion</option>
+							<option value="PHYS">Physical Science</option>
+							<option value="PROSERV">Protective Services</option>
+							<option value="PSY">Psychology and Counseling</option>
+							<option value="RECFIT">Recreation and Fitness</option>
+							<option value="SALES">Sales</option>
+							<option value="CON">Skilled Trade/Construction</option>
+							<option value="LIBART">Social Sciences/Liberal Arts</option>
+							<option value="SOCSERV">Social Services</option>
+							<option value="TRANS">Transportation</option>
+							<option value="OTHER">Other</option>
 						</select><br />
 						
 						<!-- age group -->
@@ -224,27 +224,27 @@
 						<!-- topic areas -->
 						<p class="selectionTitle">SELECT YOUR TOPIC AREAS</p>
 						<ul class="checkbox">
-							<li><input type="checkbox" name="" value="">Agriculture<br /></li>
-							<li><input type="checkbox" name="" value="">Art<br /></li>
-							<li><input type="checkbox" name="" value="">Biological Sciences<br /></li>
-							<li><input type="checkbox" name="" value="">Business<br /></li>
-							<li><input type="checkbox" name="" value="">Communication<br /></li>
-							<li><input type="checkbox" name="" value="">Information Technology<br /></li>
-							<li><input type="checkbox" name="" value="">Education<br /></li>
-							<li><input type="checkbox" name="" value="">Engineering<br /></li>
-							<li><input type="checkbox" name="" value="">Environmental Science<br /></li>
-							<li><input type="checkbox" name="" value="">Health<br /></li>
-							<li><input type="checkbox" name="" value="">Language and Literature<br /></li>
-							<li><input type="checkbox" name="" value="">Law<br /></li>
-							<li><input type="checkbox" name="" value="">Philosophy and Religion<br /></li>
-							<li><input type="checkbox" name="" value="">Physical Science<br /></li>
-							<li><input type="checkbox" name="" value="">Psychology and Counseling<br /></li>
-							<li><input type="checkbox" name="" value="">Recreation and Fitness<br /></li>
-							<li><input type="checkbox" name="" value="">Skilled Trade and Construction<br /></li>
-							<li><input type="checkbox" name="" value="">Social Sciences and Liberal Arts<br /></li>
-							<li><input type="checkbox" name="" value="">Social Services<br /></li>
-							<li><input type="checkbox" name="" value="">Transportation<br /></li>
-							<li><input type="checkbox" name="" value="">Other<br /></li>
+							<li><input type="checkbox" name="agriculture" value="AG">Agriculture<br /></li>
+							<li><input type="checkbox" name="art" value="ART">Art<br /></li>
+							<li><input type="checkbox" name="biologicalsciences" value="BIO">Biological Sciences<br /></li>
+							<li><input type="checkbox" name="business" value="BUS">Business<br /></li>
+							<li><input type="checkbox" name="communication" value="COM">Communication<br /></li>
+							<li><input type="checkbox" name="infotech" value="IT">Information Technology<br /></li>
+							<li><input type="checkbox" name="education" value="EDU">Education<br /></li>
+							<li><input type="checkbox" name="engineering" value="ENGR">Engineering<br /></li>
+							<li><input type="checkbox" name="environscience" value="ENVS">Environmental Science<br /></li>
+							<li><input type="checkbox" name="health" value="HE">Health<br /></li>
+							<li><input type="checkbox" name="langandlit" value="LANGLIT">Language and Literature<br /></li>
+							<li><input type="checkbox" name="law" value="LAW">Law<br /></li>
+							<li><input type="checkbox" name="philosophyandreligion" value="PHR">Philosophy and Religion<br /></li>
+							<li><input type="checkbox" name="physci" value="PHYS">Physical Science<br /></li>
+							<li><input type="checkbox" name="psychoandcounseling" value="PSY">Psychology and Counseling<br /></li>
+							<li><input type="checkbox" name="recandfit" value="RECFIT">Recreation and Fitness<br /></li>
+							<li><input type="checkbox" name="tradeandconstruction" value="CON">Skilled Trade and Construction<br /></li>
+							<li><input type="checkbox" name="socsciandlibarts" value="LIBART">Social Sciences and Liberal Arts<br /></li>
+							<li><input type="checkbox" name="socialservices" value="SOCSRV">Social Services<br /></li>
+							<li><input type="checkbox" name="transportation" value="TRANS">Transportation<br /></li>
+							<li><input type="checkbox" name="other" value="OTHER">Other<br /></li>
 						</ul>
 						
 						<textarea id="bio" rows="7" cols="75" name="bio" placeholder="Bio and/or Additional Information"></textarea>
