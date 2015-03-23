@@ -27,7 +27,7 @@
 				die("Error");
 			}
 
-			$sql = "SELECT * FROM speakers";
+			$sql = "SELECT * FROM teachers";
 			$result = $connection->query($sql);
 
 			if ($result->num_rows > 0) 
@@ -40,7 +40,7 @@
 					
 					$profilePic = $row["profilePic"];
 					$fullName = $row["fname"] . " " . $row["lname"];
-					$profession = $row["profession"];
+					
 					$ageGroup = $row["ageGroup"];
 					$location = $row["city"] . ", " . $row["state"];
 					
@@ -64,15 +64,15 @@
 	
 					
 					// HTML for profiles.
-					echo '<a href="speakerProfiles.php?id=' . $id . '">';
+					echo '<a href="teacherProfiles.php?id=' . $id . '">';
 						echo '<div class="profileBox">';
-							echo '<img src="speakerUploads/' . $profilePic . '" alt="Profile Image" height="200" width="200">';	
+							echo '<img src="images/' . $profilePic . '" alt="Profile Image" height="200" width="200">';	
 							echo '<p id="speakerName">';
 								echo $fullName;
 							echo '</p>';		
-							echo '<p id="profession">';
-								echo '<span class="boldText">PROFESSION: </span>' . $profession;
-							echo '</p>	';		
+
+							
+							
 							echo '<p id="topicAreas">';
 								echo '<span class="boldText">TOPIC AREAS: </span>' . $topics;
 							echo '</p>';		

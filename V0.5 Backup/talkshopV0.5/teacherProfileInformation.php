@@ -54,7 +54,7 @@
 		}
 		if ($selection == "profilePic")
 		{
-			echo "http://" . $_SERVER["SERVER_NAME"] . "/talkshop/teacherUploads/" . $profilePic;
+			echo "http://" . $_SERVER["SERVER_NAME"] . "/talkshop/images/" . $profilePic;
 		}
 		else if ($selection == "fullName")
 		{

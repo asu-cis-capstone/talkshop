@@ -66,7 +66,7 @@
 					// HTML for profiles.
 					echo '<a href="speakerProfiles.php?id=' . $id . '">';
 						echo '<div class="profileBox">';
-							echo '<img src="speakerUploads/' . $profilePic . '" alt="Profile Image" height="200" width="200">';	
+							echo '<img src="images/' . $profilePic . '" alt="Profile Image" height="200" width="200">';	
 							echo '<p id="speakerName">';
 								echo $fullName;
 							echo '</p>';		

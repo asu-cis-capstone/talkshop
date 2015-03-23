@@ -39,7 +39,7 @@
 	
 	<br />
 	
-		<form id="joinform" action="confirm.php" method="post">
+		<form id="joinform" action="speakerConfirm.php" method="post" enctype="multipart/form-data">
 				
 			<!-- first name -->
 					<input class="textFields" placeholder="First Name" type="text" id="firstname" name="firstname" 
@@ -178,33 +178,33 @@
 						title="Please select your profession."
 						onfocus="professionmsg()">
 							<option value="">Select Profession...</option>
-							<option value="AG">Agriculture</option>
-							<option value="ARCHPL">Architecture/Planning</option>
-							<option value="ART">Arts</option>
-							<option value="BIO">Biological Sciences</option>
-							<option value="BUS">Business</option>
-							<option value="COM">Communication</option>
-							<option value="IT">Information Technology</option>
-							<option value="EDU">Education</option>
-							<option value="ENGR">Engineering</option>
-							<option value="ENVS">Environmental Sciences</option>
-							<option value="HE">Healthcare</option>
-							<option value="LANGLIT">Language and Literature</option>
-							<option value="LAW">Law</option>
-							<option value="MATSTAT">Math and Statistics</option>
-							<option value="MECH">Mechanics/Repair</option>
-							<option value="MILSCI">Military Science</option>
-							<option value="PHR">Philosophy and Religion</option>
-							<option value="PHYS">Physical Science</option>
-							<option value="PROSERV">Protective Services</option>
-							<option value="PSY">Psychology and Counseling</option>
-							<option value="RECFIT">Recreation and Fitness</option>
-							<option value="SALES">Sales</option>
-							<option value="CON">Skilled Trade/Construction</option>
-							<option value="LIBART">Social Sciences/Liberal Arts</option>
-							<option value="SOCSERV">Social Services</option>
-							<option value="TRANS">Transportation</option>
-							<option value="OTHER">Other</option>
+							<option value="Agriculture">Agriculture</option>
+							<option value="Architecture/Planning">Architecture/Planning</option>
+							<option value="Arts">Arts</option>
+							<option value="Biological Sciences">Biological Sciences</option>
+							<option value="Business">Business</option>
+							<option value="Communication">Communication</option>
+							<option value="Information Technology">Information Technology</option>
+							<option value="Education">Education</option>
+							<option value="Engineering">Engineering</option>
+							<option value="Environmental Sciences">Environmental Sciences</option>
+							<option value="Healthcare">Healthcare</option>
+							<option value="Language and Literature">Language and Literature</option>
+							<option value="Law">Law</option>
+							<option value="Math and Statistics">Math and Statistics</option>
+							<option value="Mechanics/Repair">Mechanics/Repair</option>
+							<option value="Military Science">Military Science</option>
+							<option value="Philosophy and Religion">Philosophy and Religion</option>
+							<option value="Physical Science">Physical Science</option>
+							<option value="Protective Services">Protective Services</option>
+							<option value="Psychology and Counseling">Psychology and Counseling</option>
+							<option value="Recreation and Fitness">Recreation and Fitness</option>
+							<option value="Sales">Sales</option>
+							<option value="Skilled Trade/Construction">Skilled Trade/Construction</option>
+							<option value="Social Sciences/Liberal">Social Sciences/Liberal Arts</option>
+							<option value="Social Services">Social Services</option>
+							<option value="Transportation">Transportation</option>
+							<option value="Other">Other</option>
 						</select><br />
 						
 						<!-- age group -->
@@ -213,57 +213,56 @@
 						title="Please select your intended audience."
 						onfocus="agemsg()">
 							<option value="">Select Age Group...</option>
-							<option value="preschool">Pre School</option>
-							<option value="elementary">Elementary</option>
-							<option value="middle">Middle School</option>
-							<option value="high">High School</option>
-							<option value="college">College</option>
-							<option value="other">Other</option>
+							<option value="Pre School">Pre School</option>
+							<option value="Elementary">Elementary</option>
+							<option value="Middle School">Middle School</option>
+							<option value="High School">High School</option>
+							<option value="College">College</option>
+							<option value="Other">Other</option>
 						</select>
 						
 						<!-- topic areas -->
-						<p class="selectionTitle">SELECT YOUR TOPIC AREAS</p>
+						<p class="selectionTitle">SELECT YOUR EXPERT TOPIC AREAS</p>
 						<ul class="checkbox">
-							<li><input type="checkbox" name="agriculture" value="AG">Agriculture<br /></li>
-							<li><input type="checkbox" name="art" value="ART">Art<br /></li>
-							<li><input type="checkbox" name="biologicalsciences" value="BIO">Biological Sciences<br /></li>
-							<li><input type="checkbox" name="business" value="BUS">Business<br /></li>
-							<li><input type="checkbox" name="communication" value="COM">Communication<br /></li>
-							<li><input type="checkbox" name="infotech" value="IT">Information Technology<br /></li>
-							<li><input type="checkbox" name="education" value="EDU">Education<br /></li>
-							<li><input type="checkbox" name="engineering" value="ENGR">Engineering<br /></li>
-							<li><input type="checkbox" name="environscience" value="ENVS">Environmental Science<br /></li>
-							<li><input type="checkbox" name="health" value="HE">Health<br /></li>
-							<li><input type="checkbox" name="langandlit" value="LANGLIT">Language and Literature<br /></li>
-							<li><input type="checkbox" name="law" value="LAW">Law<br /></li>
-							<li><input type="checkbox" name="philosophyandreligion" value="PHR">Philosophy and Religion<br /></li>
-							<li><input type="checkbox" name="physci" value="PHYS">Physical Science<br /></li>
-							<li><input type="checkbox" name="psychoandcounseling" value="PSY">Psychology and Counseling<br /></li>
-							<li><input type="checkbox" name="recandfit" value="RECFIT">Recreation and Fitness<br /></li>
-							<li><input type="checkbox" name="tradeandconstruction" value="CON">Skilled Trade and Construction<br /></li>
-							<li><input type="checkbox" name="socsciandlibarts" value="LIBART">Social Sciences and Liberal Arts<br /></li>
-							<li><input type="checkbox" name="socialservices" value="SOCSRV">Social Services<br /></li>
-							<li><input type="checkbox" name="transportation" value="TRANS">Transportation<br /></li>
-							<li><input type="checkbox" name="other" value="OTHER">Other<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Agriculture">Agriculture<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Art">Art<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Biological Sciences">Biological Sciences<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Business">Business<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Communication">Communication<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Information Technology">Information Technology<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Education">Education<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Engineering">Engineering<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Environmental Science">Environmental Science<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Health">Health<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Language and Literature">Language and Literature<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Law">Law<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Philosophy">Philosophy<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Physical Science">Physical Science<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Psychology">Psychology<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Fitness">Fitness<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Construction">Construction<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Liberal Arts">Liberal Arts<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Social Services">Social Services<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Transportation">Transportation<br /></li>
+							<li><input type="checkbox" name="topic[]" value="Other">Other<br /></li>
 						</ul>
 						
 						<textarea id="bio" rows="7" cols="75" name="bio" placeholder="Bio and/or Additional Information"></textarea>
 						
-						<input class="textFields" type="url" name="url" placeholder="Facebook URL"><br />
-						<input class="textFields" type="url" name="url" placeholder="LinkedIn URL"><br />
-						<input class="textFields" type="url" name="url" placeholder="Google+ URL"><br />
-						<input class="textFields" type="url" name="url" placeholder="Twitter URL"><br /><br />
+						<input class="textFields" type="url" name="fburl" placeholder="Facebook URL"><br />
+						<input class="textFields" type="url" name="liurl" placeholder="LinkedIn URL"><br />
+						<input class="textFields" type="url" name="gpurl" placeholder="Google+ URL"><br />
+						<input class="textFields" type="url" name="turl" placeholder="Twitter URL"><br /><br />
 					
 					
-					<form action="uploadImage.php" method="post" enctype="multipart/form-data">
-							<span class="uploadTitle">UPLOAD PROFILE IMAGE</span>
-								<br/>
-							<input id="chooseFile" type="file" name="fileToUpload" id="fileToUpload">
-								<br/>
-							<input id="uploadButton" type="submit" value="UPLOAD IMAGE" name="submit">
-								<br/>
-					
-					</form>
+
+						<span class="uploadTitle">UPLOAD PROFILE IMAGE</span>
+						<br/>
+						<span id="">Note: Please upload a .jpg, .jpeg, .png, or .gif image with an equal width and height.<br/></span>
+						<input id="chooseFile" type="file" name="fileToUpload" id="fileToUpload">
+						<br/>
+
+
 					
 				</div>
 				

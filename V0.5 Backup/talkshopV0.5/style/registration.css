@@ -80,7 +80,7 @@ ul.checkbox li {
 }
 
 ul.checkbox{
-	margin-left: -13px;
+	margin-left: -35px;
 }
 
 .selectionTitle{
@@ -120,7 +120,6 @@ ul.checkbox{
 	width:				200px;
 	left:				50%;
 	text-align:			center;
-	cursor:				pointer;
 }
 
 #formSubmit:hover{
@@ -133,8 +132,7 @@ ul.checkbox{
 	font-weight: 		300;
 	color: 				white;
 	background: 		rgb(19, 125, 193);
-	width:				400px;
-	margin-bottom:		15px;
+	width:				350px;
 }
 
 #uploadButton{

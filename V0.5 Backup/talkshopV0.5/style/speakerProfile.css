@@ -2,11 +2,11 @@
 
 #profileBox{
 	position: 				absolute;
-	width: 					1050px;
+	width: 					1000px;
 	height: 				630px;
 	background-color: 		rgb(29, 174, 235);
 	margin-top:				150px;
-	margin-left: 			-525px;
+	margin-left: 			-500px;
 	left: 					50%;
 	-webkit-user-select: 	none;
 	border: 				solid 1px black;
@@ -31,6 +31,7 @@
 	font-size:		 	40px;
 	margin-top: 		-205px;
 	margin-left: 		218px;
+	-webkit-user-select: none;
 }
 
 #profession{
@@ -40,6 +41,7 @@
 	font-size: 			25px;
 	margin-top: 		-40px; 
 	margin-left: 		218px;
+	-webkit-user-select: none;
 }
 
 #topicAreas{
@@ -49,6 +51,7 @@
 	font-size: 			25px;
 	margin-top: 		-28px; 
 	margin-left: 		218px;
+	-webkit-user-select: none;
 }
 
 #ageGroup{
@@ -58,6 +61,7 @@
 	font-size: 			25px;
 	margin-top: 		-28px; 
 	margin-left: 		218px;
+	-webkit-user-select: none;
 }
 
 #geographicLocation{
@@ -67,6 +71,7 @@
 	font-size: 				25px;
 	margin-top: 			-28px; 
 	margin-left: 			218px;
+	-webkit-user-select: 	none;
 }
 
 #aboutSpeaker{
@@ -76,6 +81,7 @@
 	font-size: 				28px;
 	margin-top: 			-15px; 
 	margin-left: 			218px;
+	-webkit-user-select: 	none;
 }
 
 #aboutTeacher{
@@ -84,6 +90,7 @@
 	color: 					rgb(160, 223, 250);
 	font-size: 				28px;
 	margin-left: 			218px;
+	-webkit-user-select: 	none;
 }
 
 #aboutParagraph{
@@ -94,6 +101,7 @@
 	margin-right:		10px;
 	margin-left: 		218px;
 	margin-bottom: 		30px; 
+	-webkit-user-select: none;
 }
 
 #aboutParagraphTeacher{
@@ -104,6 +112,7 @@
 	margin-right:		10px;
 	margin-left: 		218px;
 	margin-bottom: 		30px; 
+	-webkit-user-select: none;
 	margin-top:			-20px;
 }
 

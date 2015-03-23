@@ -59,7 +59,7 @@
 		}
 		if ($selection == "profilePic")
 		{
-			echo "http://" . $_SERVER["SERVER_NAME"] . "/talkshop/images/" . $profilePic;
+			echo "http://" . $_SERVER["SERVER_NAME"] . "/talkshop/speakerUploads/" . $profilePic;
 		}
 		else if ($selection == "fullName")
 		{
