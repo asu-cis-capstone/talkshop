@@ -115,6 +115,16 @@
     
     $result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
     
+    //PHP UPLOAD EMAIL
+    $to = $email;
+    $subject = "Thank you for Registering with Talk Shop!";
+    $message = wordwrap($message, 70, "Thank you for registering with Talk shop. more stuff here (whatever we deide on) ");
+    $headers = 'From: info@talk-shop.com';
+    
+    mail($to, $subject, $message, $headers);
+    
+    // END EMAIL
+    
     mysqli_close($dbc);
     
 ?>
