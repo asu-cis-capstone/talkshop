@@ -23,12 +23,12 @@ TALK SHOP! Speaker Profile Listings
 	
 		<p id="searchTitle">SEARCH SPEAKERS</p>
 		
-			<form method="get" action="speakerListingsSearch.php?go"  id="searchform">
+			<form method="post" action="speakerListingsSearch.php?go"  id="searchform">
 			
 			<input class="textFields" placeholder="Keyword..." type="text" id="search" name="search">
 			
 			</br>
-			<!--
+			
 			<select class="textFields" id="state" name="state">
 									<option value="">State</option>
 									<option value="AL">Alabama</option>
@@ -122,21 +122,18 @@ TALK SHOP! Speaker Profile Listings
 									<option value="CS">College</option>
 									
 							</select>
-							-->
 							
-							<input type="submit" name="submit" id="searchButton" value="SEARCH">
-							
+							<div id="searchButton" onclick="javascript:location.href='speakerListingsSearch.php'">
+							<div id="searchButtonText"><a href="speakerListingsSearch.php">Search</a></div>
 							</div>
 					
 		</form>
-
-		
 
 	</div>
 	
 		<div>
 			<?php
-				echo file_get_contents("http://" . $_SERVER["SERVER_NAME"] . "/talkshop/speakerInfo.php?command=Retrieve");
+				echo file_get_contents("http://" . $_SERVER["SERVER_NAME"] . "/talkshop/speakerInfoSearch.php?command=Retrieve");
 			?>
 		</div>
 	

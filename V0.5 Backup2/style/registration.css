@@ -1,0 +1,155 @@
+/* CSS for Registration forms */
+
+#joinform {
+	width:				725px;
+	margin:				auto;
+	border:				solid 1px black;
+	margin-top:			250px;
+	margin-bottom:		100px;
+	padding-left:		8px;
+	background-color:	rgb(29, 174, 235);
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align: 		center;
+}
+
+#confirmRegistrationTitle{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				black;
+	font-size: 			40px;
+	text-align:			center;
+}
+
+#confirmMessage{
+	position: 			absolute;
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				black;
+	font-size: 			18px;
+	left: 				50%;
+	text-align: 		center;
+	width: 				700px;
+	margin-left: 		-350px;
+}
+
+#confirmationHolder	{
+	height:				400px;
+	width:				600px;
+	margin-left:		400px;
+	margin-top:			100px;
+	position:			absolute;
+	left:				50%;
+	margin-left:		-300px;
+	background-color:	rgb(160, 223, 250);
+}
+
+.textFields{
+	background: 		rgb(19, 125, 193);
+	height: 			30px;
+	margin-top: 		15px;
+	width: 				250px;
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align: 		center;
+	float:				center;
+}
+
+#bio{
+	background: 		rgb(19, 125, 193);
+	margin-top: 		15px;
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align:			center;
+	resize:				none;
+	margin-bottom:		15px;
+}
+
+ul.checkbox li { 
+  display: inline-block;
+  width: 230px;
+  text-align: left;
+}
+
+ul.checkbox{
+	margin-left: -13px;
+}
+
+.selectionTitle{
+	font-size: 22px;
+	margin-bottom: -15px;
+}
+
+.uploadTitle{
+	font-size: 22px;
+	margin-bottom: -15px;
+	margin-top: -10px;
+}
+
+#formSubmit{
+	position:			absolute;
+	margin-bottom:		100px;
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	background: 		rgb(19, 125, 193);
+	width:				200px;
+	left:				50%;
+	margin-left:		-100px;
+	margin-top:			-50px;
+}
+
+#returnToTalkShop{
+	margin-bottom:		100px;
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	background: 		rgb(19, 125, 193);
+	width:				200px;
+	left:				50%;
+	text-align:			center;
+	cursor:				pointer;
+}
+
+#formSubmit:hover{
+	cursor: pointer;
+}
+
+#chooseFile{
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	background: 		rgb(19, 125, 193);
+	width:				400px;
+	margin-bottom:		15px;
+}
+
+#uploadButton{
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	background: 		rgb(19, 125, 193);
+	width:				150px;
+	font-size: 			16px;
+	margin-top:			10px;
+	margin-bottom:		20px;
+}
+
+#uploadButton:hover{
+	cursor: pointer;
+}
+
