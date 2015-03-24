@@ -22,6 +22,16 @@
     $query = "INSERT INTO teachers(firstname, lastname, username, email, password, organization, addressone, addresstwo, city, state, zip, phone, agegroup, image)" .  "VALUES('$fname2','$lname2','$username', '$email','$password','$org', '$line1','$line2','$city', '$state', '$zip', '$phone','$age', '$image')";
     
     $result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
+     
+     $to = $email;
+     $subject = "Thank you for Registering with Talk Shop!";
+     $message = wordwrap($message, 70, "Thank you for registering with Talk shop. more stuff here (whatever we deide on) ");
+     $headers = 'From: info@talk-shop.com';
+     
+     
+     
+     
+     mail($to, $subject, $message, $headers);
     
     mysqli_close($dbc);
     */
