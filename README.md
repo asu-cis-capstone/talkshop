@@ -89,6 +89,23 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 * Figure out how to send email 
 * Complete search functionality
 
+##v0.6 Release Notes
+* Continued to work on and enhance search functionality. 
+* Discovered issues with form validation, began debugging. 
+* Continued to work on email functionality. 
+* Ran into issues uploading localhost files to GoDaddy. 
+  * Site not functioning the same live as it is from local host.
+
+##To Do List
+* Finish search functionality.
+* Complete form debugging. 
+* Get email/contact functionality working properly.
+* Resolve file transfer issues.
+* Fine tune site functions.
+* Begin polishing site for showcase.
+* Find prospective members and encourage them to sign up.
+
+
 ###[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)
 
 ###[Talkshop Video](http://t.co/hDJQhBq9YR)
