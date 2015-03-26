@@ -1,5 +1,3 @@
-
-=======
 <?php
     /*
     include('../local-connect.php');
