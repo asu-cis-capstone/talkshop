@@ -1,6 +1,6 @@
 	<?php
-		session_name();
-		session_start();
+	session_name();
+	session_start();
 	?>
 	
 	<script>

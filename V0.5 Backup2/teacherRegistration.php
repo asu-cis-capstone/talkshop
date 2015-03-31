@@ -1,27 +1,36 @@
 
+=======
 <?php
     /*
-    $to = $email;
-    $subject = "Thank you for Registering with Talk Shop!";
-    $message = wordwrap($message, 70, "Thank you for registering with Talk shop. more stuff here (whatever we deide on) ");
-    $headers = 'From: info@talk-shop.com';
+    include('../local-connect.php');
+    $fname1 = $_POST['firstname'];
+    $fname2 = mysqli_real_escape_string($dbc,$fname1);
+    $lname1 = $_POST['lastname'];
+    $lname2 = mysqli_real_escape_string($dbc,$lname1);
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $org = $_POST['organization'];
+    $line1 = $_POST['lineone'];
+    $line2 = $_POST['linetwo'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zip = $_POST['zip'];
+    $phone = $_POST['phone'];
+    $age = $_POST['agegroup'];
+    $image = $_POST['fileToUpload'];
     
     
+    $query = "INSERT INTO teachers(firstname, lastname, username, email, password, organization, addressone, addresstwo, city, state, zip, phone, agegroup, image)" .  "VALUES('$fname2','$lname2','$username', '$email','$password','$org', '$line1','$line2','$city', '$state', '$zip', '$phone','$age', '$image')";
     
+    $result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
+     
+
+     
     
-    mail($to, $subject, $message, $headers);
-    
-    
-    
-    
-*/    
+    mysqli_close($dbc);
+    */
 ?>
-
-
-
-
-
-
 
 
 <?php include 'htmlHeader.php' ?>
@@ -30,8 +39,8 @@
     <link type="text/css" rel="stylesheet" href="style/registration.css" />
 
     <!-- Web Page Title -->
-    <title>TalkShop | Speaker Registration</title>
-	
+    <title>TalkShop | Teacher Registration</title>
+
 	<!-- JavaScript Tags -->
 	<script type="text/javascript" src="js/focus.js"></script>
 	<script type="text/javascript" src="js/validate.js"></script>
@@ -56,7 +65,7 @@
   
 	<?php include 'headerBar.php' ?>
 	
-	<div id="speakerRegistrationTitle">SPEAKER REGISTRATION</div>
+	<div id="teacherRegistrationTitle">TEACHER REGISTRATION</div>
 	
 	<div id="registrationInstructions">
 		To register without making a profile, please fill out the first section of this form.<br />
@@ -65,9 +74,9 @@
 	
 	<br />
 	
-		<form id="joinform" action="speakerConfirm.php" method="post" enctype="multipart/form-data">
+		<form id="joinform" action="teacherConfirm.php" method="post" enctype="multipart/form-data">
 				
-			<!-- first name -->
+					<!-- first name -->
 					<input class="textFields" placeholder="First Name" type="text" id="firstname" name="firstname" 
 					autofocus
 					required
@@ -115,10 +124,13 @@
 					title="Please enter the street address at which you reside." 
 					onfocus="addmsg()" />
 					<br />
+					
 					<input class="textFields" placeholder="Street Address 2" type="text" id="linetwo" name="linetwo" />
 					<br />
+					
 					<input class="textFields" placeholder="City" type="text" id="city" name="city" required title="Please enter the city in which you reside." onfocus="citymsg()" />
 					<br />
+					
 					<select class="textFields" id="state" name="state" required title="Please select the state in which you reside." onfocus="statemsg()">
 							<option value="">Select State...</option>
 							<option value="AL">Alabama</option>
@@ -174,6 +186,7 @@
 							<option value="WY">Wyoming</option>
 					</select>
 					<br>
+					
 					<input class="textFields" placeholder="Zip" type="text" id="zip" name="zip" 
 					required
 					maxlength="5"
@@ -197,46 +210,11 @@
 					
 					<!-- begin expanded form -->
 					<div id="checkboxdiv" style="display:none;">
-					
-					<!-- profession -->
-						<select class="textFields" id="profession" name="profession"
-						required
-						title="Please select your profession."
-						onfocus="professionmsg()">
-							<option value="">Select Profession...</option>
-							<option value="Agriculture">Agriculture</option>
-							<option value="Architecture/Planning">Architecture/Planning</option>
-							<option value="Arts">Arts</option>
-							<option value="Biological Sciences">Biological Sciences</option>
-							<option value="Business">Business</option>
-							<option value="Communication">Communication</option>
-							<option value="Information Technology">Information Technology</option>
-							<option value="Education">Education</option>
-							<option value="Engineering">Engineering</option>
-							<option value="Environmental Sciences">Environmental Sciences</option>
-							<option value="Healthcare">Healthcare</option>
-							<option value="Language and Literature">Language and Literature</option>
-							<option value="Law">Law</option>
-							<option value="Math and Statistics">Math and Statistics</option>
-							<option value="Mechanics/Repair">Mechanics/Repair</option>
-							<option value="Military Science">Military Science</option>
-							<option value="Philosophy and Religion">Philosophy and Religion</option>
-							<option value="Physical Science">Physical Science</option>
-							<option value="Protective Services">Protective Services</option>
-							<option value="Psychology and Counseling">Psychology and Counseling</option>
-							<option value="Recreation and Fitness">Recreation and Fitness</option>
-							<option value="Sales">Sales</option>
-							<option value="Skilled Trade/Construction">Skilled Trade/Construction</option>
-							<option value="Social Sciences/Liberal">Social Sciences/Liberal Arts</option>
-							<option value="Social Services">Social Services</option>
-							<option value="Transportation">Transportation</option>
-							<option value="Other">Other</option>
-						</select><br />
 						
 						<!-- age group -->
 						<select class="textFields" id="agegroup" name="agegroup"
 						required
-						title="Please select your intended audience."
+						title="Please select your intended age group."
 						onfocus="agemsg()">
 							<option value="">Select Age Group...</option>
 							<option value="Pre School">Pre School</option>
@@ -248,8 +226,8 @@
 						</select>
 						
 						<!-- topic areas -->
-						<p class="selectionTitle">SELECT YOUR EXPERT TOPIC AREAS</p>
-						<ul class="checkbox">
+						<p class="selectionTitle">SELECT YOUR NEEDED TOPIC AREAS</p>
+						<ul class="checkbox" id="topicarea">
 							<li><input type="checkbox" name="topic[]" value="Agriculture">Agriculture<br /></li>
 							<li><input type="checkbox" name="topic[]" value="Art">Art<br /></li>
 							<li><input type="checkbox" name="topic[]" value="Biological Sciences">Biological Sciences<br /></li>
@@ -275,32 +253,24 @@
 						
 						<textarea id="bio" rows="7" cols="75" name="bio" placeholder="Bio and/or Additional Information"></textarea>
 						
-						<input class="textFields" type="url" name="fburl" placeholder="Facebook URL"><br />
-						<input class="textFields" type="url" name="liurl" placeholder="LinkedIn URL"><br />
-						<input class="textFields" type="url" name="gpurl" placeholder="Google+ URL"><br />
-						<input class="textFields" type="url" name="turl" placeholder="Twitter URL"><br /><br />
-					
-					
-
+						<br />
+						
 						<span class="uploadTitle">UPLOAD PROFILE IMAGE</span>
 						<br/>
 						<span id="">Note: Please upload a .jpg, .jpeg, .png, or .gif image with an equal width and height.<br/></span>
 						<input id="chooseFile" type="file" name="fileToUpload" id="fileToUpload">
 						<br/>
-
-
 					
-				</div>
-				
+					</div>		
+					
 		</form>
 		
-		<input id="formSubmit" type="submit" form="joinform" value="REGISTER AS A SPEAKER" title="Click here or press 'Enter' to submit your info!"
+		<input id="formSubmit" type="submit" form="joinform" value="REGISTER AS A TEACHER" title="Click here or press 'Enter' to submit your info!"
 		onfocus="signmsg()" onclick="return validate()"/>
 		
 		<br />
 		<br />
 		<br />
-	
 	
 	<?php include 'bottomBarHome.php' ?>
 	

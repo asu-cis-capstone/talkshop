@@ -1,7 +1,8 @@
-	<?php
-		session_name();
-		session_start();
-	?>
+<?php
+	session_name();
+	session_start();
+?>
+	
 	
 	<script>
 		$(document).ready(function()
@@ -17,14 +18,14 @@
 		});
 	</script>
 	
-	<div id="titleFixed" onclick="javascript:location.href='index.php'">
+	<div id="title" onclick="javascript:location.href='index.php'">
 		<img src="images/bluelogo.png" alt="logo" />
 	</div>
 		
 		<?php
 			if (isset($_SESSION["user"])) //THIS CODE FOR USERS THAT ARE LOGGED IN!
 			{
-				echo '<div id="topBarFixed">';
+				echo '<div id="topBar">';
 					echo '<div id="login">';
 						echo '<nav id="settingsDropDown">';
 						  echo '<ul>';
@@ -53,7 +54,7 @@
 			
 			else //THIS CODE FOR USERS THAT ARE *NOT* LOGGED IN!
 			{	
-				echo '<div id="topBarFixed">';
+				echo '<div id="topBar">';
 				
 					echo '<div id="login">';
 							

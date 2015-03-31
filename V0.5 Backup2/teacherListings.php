@@ -1,5 +1,5 @@
 <!--
-TALK SHOP! Speaker Profile Listings
+TALK SHOP! Teacher Profile Listings
 -->
 
 <?php include 'htmlHeader.php' ?>
@@ -9,7 +9,7 @@ TALK SHOP! Speaker Profile Listings
 	<link type="text/css" rel="stylesheet" href="style/searchForm.css" />
 	
     <!-- Web Page Title -->
-    <title>TalkShop | Speakers</title>
+    <title>TalkShop | Teachers</title>
 
   </head>
   
@@ -21,14 +21,14 @@ TALK SHOP! Speaker Profile Listings
 	
 	<div id="searchForm">
 	
-		<p id="searchTitle">SEARCH SPEAKERS</p>
+		<p id="searchTitle">SEARCH</p>
 		
-			<form method="get" action="speakerListingsSearch.php?go"  id="searchform">
+			<form method="post" action="search.php?go"  id="searchform">
 			
 			<input class="textFields" placeholder="Keyword..." type="text" id="search" name="search">
 			
 			</br>
-			<!--
+			
 			<select class="textFields" id="state" name="state">
 									<option value="">State</option>
 									<option value="AL">Alabama</option>
@@ -122,21 +122,18 @@ TALK SHOP! Speaker Profile Listings
 									<option value="CS">College</option>
 									
 							</select>
-							-->
 							
-							<input type="submit" name="submit" id="searchButton" value="SEARCH">
-							
+							<div id="searchButton" onclick="javascript:location.href='search.php'">
+							<div id="searchButtonText"><a href="search.php">Search</a></div>
 							</div>
 					
 		</form>
-
-		
 
 	</div>
 	
 		<div>
 			<?php
-				echo file_get_contents("http://" . $_SERVER["SERVER_NAME"] . "/talkshop/speakerInfo.php?command=Retrieve");
+				echo file_get_contents("http://" . $_SERVER["SERVER_NAME"] . "/talkshop/teacherInfo.php?command=Retrieve");
 			?>
 		</div>
 	

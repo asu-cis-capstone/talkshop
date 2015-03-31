@@ -21,7 +21,7 @@ TALK SHOP! Teacher Profile Listings
 	
 	<div id="searchForm">
 	
-		<p id="searchTitle">SEARCH</p>
+		<p id="searchTitle">SEARCH TEACHERS</p>
 		
 			<form method="post" action="search.php?go"  id="searchform">
 			
