@@ -126,7 +126,7 @@ if($_POST) {
 
 
 
-    $to =  $_POST['email'];; // Add the email you want to send to. Can be pulled from submitting form as a variable 
+    $to =  $_POST['email']; // Add the email you want to send to. Can be pulled from submitting form as a variable 
 
 
 
