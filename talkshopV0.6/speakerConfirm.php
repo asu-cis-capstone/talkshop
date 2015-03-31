@@ -60,7 +60,7 @@
 	
 	// PHP TO WRITE TO DATABASE
 	
-    include('local-connect.php');
+    include('server-connect.php');
 	
     $fname = mysqli_real_escape_string($dbc, $_POST['firstname']);
     $lname = mysqli_real_escape_string($dbc, $_POST['lastname']);	
