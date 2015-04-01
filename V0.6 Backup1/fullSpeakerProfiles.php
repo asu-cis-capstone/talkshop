@@ -3,9 +3,9 @@
 	$id = $_GET["id"];
 
 	// MySQL Info
-	$servername = 'localhost'; 
-	$username = 'root';
-	$password = '';
+	$servername = 'localhost';
+	$username = 'talkshopconnect';
+	$password = 'Asu275833';
 	$db = 'talkshop';
 	
 	// Connection
@@ -16,9 +16,8 @@
 		die("Database Connection Error!");
 	}
 	
-	$sql = "SELECT * FROM teachers WHERE teachers.id = '" . $id . "'";
+	$sql = "SELECT * FROM speakers WHERE speakers.id = '" . $id . "'";
 	$result = $connection->query($sql);
-	
 	
 	if ($result->num_rows > 0) 
 	{
@@ -27,10 +26,15 @@
 			$profilePic = $row["profilePic"];
 			$fullName = $row["fname"] . " " . $row["lname"];
 			$fNameCaps = strtoupper($row["fname"]);
-
+			$profession = $row["profession"];
 			$ageGroup = $row["ageGroup"];
 			$location = $row["city"] . ", " . $row["state"];
 			$bio = $row["bio"];
+			
+				$fbURL = $row["fbURL"];
+				$tURL = $row["tURL"];
+				$gpURL = $row["gpURL"];
+				$liURL = $row["liURL"];
 					
 			$topic1 = $row["topic1"];
 			$topic2 = $row["topic2"];
@@ -58,7 +62,7 @@
 	
 ?>
 
-<?php	
+<?php
 
 	$id = $_GET["id"];
 	
@@ -81,7 +85,7 @@
 
 	<div id="profileBox">
 	
-		<img src="<?php echo "teacherUploads/" . $profilePic;?>" alt="Profile Image" height="200" width="200">
+		<img src="<?php echo "speakerUploads/" . $profilePic; ?>" alt="Profile Image" height="200" width="200">
 		
 		<p id="speakerName">
 			<span style="color: white;">
@@ -91,7 +95,15 @@
 			</span>
 		</p>
 		
-		<p id="topicAreas">REQUESTED TOPICS:
+		<p id="profession">PROFESSION:
+			<span style="color: white;">
+				<?php
+					echo $profession;
+				?>
+			</span>
+		</p>
+		
+		<p id="topicAreas">TOPIC AREAS:
 			<span style="color: white;">
 				<?php
 					echo $topics;
@@ -99,7 +111,7 @@
 			</span>
 		</p>
 		
-		<p id="ageGroup">AGE GROUP:
+		<p id="ageGroup">TARGET AUDIENCE:
 			<span style="color: white;">
 				<?php
 					echo $ageGroup;
@@ -115,16 +127,23 @@
 			</span>
 		</p>	
 		
-		<p id="aboutTeacher">ABOUT <?php echo $fNameCaps?>:</p>
+		<p id="aboutSpeaker">ABOUT <?php echo $fNameCaps; ?>:</p>
 		
-		<p id="aboutParagraphTeacher">
+		<p id="socialMediaLinks">
+			<a href="<?php echo $fbURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
+			<a href="<?php echo $tURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
+			<a href="<?php echo $gpURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-google-plus-square fa-2x"></i></a>
+			<a href="<?php echo $liURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+		</p>
+		
+		<p id="aboutParagraph">
 			<?php
 				echo $bio;
 			?>
 		</p>
 		
 		<div id="contactButton" onclick="javascript:location.href='login.php'">
-		<div id="contactSpeaker"><a href="login.php">CONTACT THIS TEACHER</a></div>
+		<div id="contactSpeaker"><a href="login.php">CONTACT THIS SPEAKER</a></div>
 		</div>
 
 	</div>
@@ -134,5 +153,5 @@
 	<?php include 'bottomBar.php' ?>
 	
   </body>
-  
-</html>
+ 
+ 

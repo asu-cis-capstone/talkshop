@@ -1,3 +1,7 @@
+<!--
+TALK SHOP! Speaker Profile Listings
+-->
+
 <?php include 'htmlHeader.php' ?>
   
 	<!-- Link tag for speakerProfile CSS -->
@@ -5,7 +9,7 @@
 	<link type="text/css" rel="stylesheet" href="style/searchForm.css" />
 	
     <!-- Web Page Title -->
-    <title>TalkShop | Teachers</title>
+    <title>TalkShop | Speakers</title>
 
   </head>
   
@@ -17,14 +21,14 @@
 	
 	<div id="searchForm">
 	
-		<p id="searchTitle">SEARCH TEACHERS</p>
+		<p id="searchTitle">SEARCH SPEAKERS</p>
 		
-			<form method="post" action="teacherProfilesSearch.php?go"  id="searchform">
+			<form method="get" action="speakerListingsSearch.php?go"  id="searchform">
 			
 			<input class="textFields" placeholder="Keyword..." type="text" id="search" name="search">
 			
 			</br>
-			
+			<!--
 			<select class="textFields" id="state" name="state">
 									<option value="">State</option>
 									<option value="AL">Alabama</option>
@@ -118,24 +122,27 @@
 									<option value="CS">College</option>
 									
 							</select>
+							-->
 							
-							<div id="searchButton" onclick="javascript:location.href='search.php'">
-							<div id="searchButtonText"><a href="search.php">Search</a></div>
+							<input type="submit" name="submit" id="searchButton" value="SEARCH">
+							
 							</div>
 					
 		</form>
 
+		
+
 	</div>
 	
-	
+
 			<?php
 				session_name();
 				session_start();
 
 				// MySQL Info
-				$servername = 'localhost'; 
-				$username = 'root';
-				$password = '';
+				$servername = 'localhost';
+				$username = 'talkshopconnect';
+				$password = 'Asu275833';
 				$db = 'talkshop';
 				
 				// Connection
@@ -152,7 +159,7 @@
 							die("Error");
 						}
 
-						$sql = "SELECT * FROM teachers";
+						$sql = "SELECT * FROM speakers";
 						$result = $connection->query($sql);
 
 						if ($result->num_rows > 0) 
@@ -165,7 +172,7 @@
 								
 								$profilePic = $row["profilePic"];
 								$fullName = $row["fname"] . " " . $row["lname"];
-								
+								$profession = $row["profession"];
 								$ageGroup = $row["ageGroup"];
 								$location = $row["city"] . ", " . $row["state"];
 								
@@ -189,15 +196,15 @@
 				
 								
 								// HTML for profiles.
-								echo '<a href="fullTeacherProfiles.php?id=' . $id . '">';
+								echo '<a href="fullSpeakerProfiles.php?id=' . $id . '">';
 									echo '<div class="profileBox">';
-										echo '<img src="teacherUploads/' . $profilePic . '" alt="Profile Image" height="200" width="200">';	
+										echo '<img src="speakerUploads/' . $profilePic . '" alt="Profile Image" height="200" width="200">';	
 										echo '<p id="speakerName">';
 											echo $fullName;
 										echo '</p>';		
-
-										
-										
+										echo '<p id="profession">';
+											echo '<span class="boldText">PROFESSION: </span>' . $profession;
+										echo '</p>	';		
 										echo '<p id="topicAreas">';
 											echo '<span class="boldText">TOPIC AREAS: </span>' . $topics;
 										echo '</p>';		
@@ -214,8 +221,7 @@
 							echo '</div>';
 						} 
 			?>
-		
-	
+
 	<?php include 'bottomBarFixed.php' ?>
 	
   </body>

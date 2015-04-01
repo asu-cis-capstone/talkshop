@@ -23,12 +23,12 @@ TALK SHOP! Speaker Profile Listings
 	
 		<p id="searchTitle">SEARCH SPEAKERS</p>
 		
-			<form method="get" action="speakerListingsSearch.php?go"  id="searchform">
+			<form method="get" action="speakerProfilesSearch.php"  id="searchform">
 			
 			<input class="textFields" placeholder="Keyword..." type="text" id="search" name="search">
 			
 			</br>
-			<!--
+			
 			<select class="textFields" id="state" name="state">
 									<option value="">State</option>
 									<option value="AL">Alabama</option>
@@ -122,7 +122,7 @@ TALK SHOP! Speaker Profile Listings
 									<option value="CS">College</option>
 									
 							</select>
-							-->
+							
 							
 							<input type="submit" name="submit" id="searchButton" value="SEARCH">
 							
@@ -140,9 +140,9 @@ TALK SHOP! Speaker Profile Listings
 				session_start();
 
 				// MySQL Info
-				$servername = 'localhost';
-				$username = 'talkshopconnect';
-				$password = 'Asu275833';
+				$servername = 'localhost'; 
+				$username = 'root';
+				$password = '';
 				$db = 'talkshop';
 				
 				// Connection

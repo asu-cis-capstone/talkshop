@@ -3,9 +3,9 @@
 	$id = $_GET["id"];
 
 	// MySQL Info
-	$servername = 'localhost';
-	$username = 'talkshopconnect';
-	$password = 'Asu275833';
+	$servername = 'localhost'; 
+	$username = 'root';
+	$password = '';
 	$db = 'talkshop';
 	
 	// Connection

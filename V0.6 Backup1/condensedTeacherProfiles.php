@@ -19,7 +19,7 @@
 	
 		<p id="searchTitle">SEARCH TEACHERS</p>
 		
-			<form method="post" action="teacherProfilesSearch.php?go"  id="searchform">
+			<form method="post" action="search.php?go"  id="searchform">
 			
 			<input class="textFields" placeholder="Keyword..." type="text" id="search" name="search">
 			
@@ -133,9 +133,9 @@
 				session_start();
 
 				// MySQL Info
-				$servername = 'localhost'; 
-				$username = 'root';
-				$password = '';
+				$servername = 'localhost';
+				$username = 'talkshopconnect';
+				$password = 'Asu275833';
 				$db = 'talkshop';
 				
 				// Connection
