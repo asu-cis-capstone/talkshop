@@ -122,7 +122,7 @@ if($_POST) {
 
     $subject = "THANK YOU FOR REGISTERING WITH TALK SHOP";
 
-    $sentmessage = "TESTING";
+    $sentmessage = "Thank you for registering with talkshop! You're profile is now live. Please look around and see if you can find a speaker for you. Sincerely, The TalkShop Team";
 
 
 

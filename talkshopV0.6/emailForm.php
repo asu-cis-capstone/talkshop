@@ -28,20 +28,15 @@
   </div>
   
   
-	<form id="emailform" action="https://webapp4.asu.edu/pubtools/Mail" method="post">
+	<form id="emailform"  method="post">
 	
 	
 		<p class="ef1"></p>
-			
-				<!-- 3 hidden element for email processing -->
-				<!-- change value to taurn's email  tarun.gorowara@asu.edu 
-				<input type="hidden" name="sendto" value="tarun.gorowara@asu.edu" />
-				<input type="hidden" name="subject" value="Website Email" />
 				
 				
 				<!-- name -->
 				<label for="name">Name:</label>
-				<input class="textFields" placeholder="First Name" type="text" id="name" name="name"  value="testing" readonly
+				<input class="textFields" placeholder="Your Name" type="text" id="name" name="name"  value="testing" readonly
 				autofocus
 				required
 				title="Name: 4-30 chars, u/l case letters and - and ' only!"
@@ -62,15 +57,15 @@
 				
 				<!-- comments -->
 				
-				<textarea id="commentssection" rows="5" cols="75" name="bio" placeholder="   Comments"
-					maxlength="500" 
+				<textarea id="comments" rows="5" cols="75" name="comments" placeholder="Enter Your Message Here"
+					maxlength="1000"
 					title="Comments:1-500 chars" 
 					onfocus="commentsmsg()"></textarea>	
 			</p>
 			
 			<input id="submitButton" type="submit" value="SUBMIT" name="submit">
 								
-			<!--					
+
 			<p class="submit">
 				<input type="submit" value="Send Email"  onfocus="sendmsg()"/>
 				
@@ -80,7 +75,7 @@
 				</span>
 			</p>
 			
-			-->
+
 			
 	</form>
 	
