@@ -164,7 +164,10 @@ TALK SHOP! Speaker Profile Listings
 						$topicCode = $_GET['topicArea'];
 						$audienceCode = $_GET['searchTargetAudience'];
 
-						$sql = "SELECT * FROM speakers WHERE fname LIKE '%" . $keyword . "%' OR lname LIKE '%" . $keyword . "%' OR city LIKE '%" . $keyword . "%'"; //AND state LIKE '%" . $stateCode . "%' AND ageGroup LIKE '%" . $audienceCode . "%' AND topic1 LIKE '%" . $topicCode . "%' AND topic2 LIKE '%" . $topicCode . "%' AND topic3 LIKE '%" . $topicCode . "%'";
+						$sql = "SELECT * FROM speakers WHERE CONCAT(fname, ' ', lname) LIKE '%" . $keyword . "%'
+							OR lname LIKE '%" . $keyword . "%' 
+							OR city LIKE '%" . $keyword . "%'"; 
+							//AND state LIKE '%" . $stateCode . "%' AND ageGroup LIKE '%" . $audienceCode . "%' AND topic1 LIKE '%" . $topicCode . "%' AND topic2 LIKE '%" . $topicCode . "%' AND topic3 LIKE '%" . $topicCode . "%'";
 						
 						$result = $connection->query($sql);
 
