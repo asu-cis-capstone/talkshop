@@ -143,7 +143,7 @@
 		</p>
 		
 		<div id="contactButton" onclick="javascript:location.href='login.php'">
-		<div id="contactSpeaker"><a href="login.php">CONTACT THIS SPEAKER</a></div>
+		<div id="contactSpeaker"><a href="<?php echo 'emailForm.php?id=' . $id ?>">CONTACT THIS SPEAKER</a></div>
 		</div>
 
 	</div>
