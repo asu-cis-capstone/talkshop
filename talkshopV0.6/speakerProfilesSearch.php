@@ -88,39 +88,45 @@ TALK SHOP! Speaker Profile Listings
 							
 							<select class="textFields" id="searchtopicAreas" name="topicArea">
 									<option value="">Topic Areas</option>
-									<option value="AG">Agriculture</option>
-									<option value="ART">Art</option>
-									<option value="BIO">Biological Sciences</option>
-									<option value="BUS">Business</option>
-									<option value="COM">Communication</option>
-									<option value="IT">Information Technology</option>
-									<option value="EDU">Education</option>
-									<option value="ENGR">Engineering</option>
-									<option value="ENVS">Environmental Science</option>
-									<option value="HE">Health</option>
-									<option value="LANGLIT">Language and Literature</option>
-									<option value="LAW">Law</option>
-									<option value="PHR">Philosophy and Religion</option>
-									<option value="PHYS">Physical Science</option>
-									<option value="PSY">Psychology and Counseling</option>
-									<option value="RECFIT">Recreation and Fitness</option>
-									<option value="CON">Skilled Trade and Construction</option>
-									<option value="LIBART">Social Sciences and Liberal Arts</option>
-									<option value="SOCSRV">Social Services</option>
-									<option value="TRANS">Transportation</option>
-									<option value="OTHER">Other</option>
+									<option value="Agriculture">Agriculture</option>
+									<option value="Architecture/Planning">Architecture/Planning</option>
+									<option value="Arts">Arts</option>
+									<option value="Biological Sciences">Biological Sciences</option>
+									<option value="Business">Business</option>
+									<option value="Communication">Communication</option>
+									<option value="Information Technology">Information Technology</option>
+									<option value="Education">Education</option>
+									<option value="Engineering">Engineering</option>
+									<option value="Environmental Sciences">Environmental Sciences</option>
+									<option value="Healthcare">Healthcare</option>
+									<option value="Language and Literature">Language and Literature</option>
+									<option value="Law">Law</option>
+									<option value="Math and Statistics">Math and Statistics</option>
+									<option value="Mechanics/Repair">Mechanics/Repair</option>
+									<option value="Military Science">Military Science</option>
+									<option value="Philosophy and Religion">Philosophy and Religion</option>
+									<option value="Physical Science">Physical Science</option>
+									<option value="Protective Services">Protective Services</option>
+									<option value="Psychology and Counseling">Psychology and Counseling</option>
+									<option value="Recreation and Fitness">Recreation and Fitness</option>
+									<option value="Sales">Sales</option>
+									<option value="Skilled Trade/Construction">Skilled Trade/Construction</option>
+									<option value="Social Sciences/Liberal">Social Sciences/Liberal Arts</option>
+									<option value="Social Services">Social Services</option>
+									<option value="Transportation">Transportation</option>
+									<option value="Other">Other</option>
 							</select>
 							
 							</br>
 							
 							<select class="textFields" id="searchTargetAudience" name="searchTargetAudience">
 									<option value="">Target Audience</option>
-									<option value="PS">Pre School</option>
-									<option value="ES">Elementary</option>
-									<option value="MS">Middle School</option>
-									<option value="HS">High School</option>
-									<option value="CS">College</option>
-									
+									<option value="Pre School">Pre School</option>
+									<option value="Elementary">Elementary</option>
+									<option value="Middle School">Middle School</option>
+									<option value="High School">High School</option>
+									<option value="College">College</option>
+									<option value="Other">Other</option>
 							</select>
 							
 							
