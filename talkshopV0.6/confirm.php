@@ -6,6 +6,8 @@
     $name = $_POST['name'];
     $comments = $_POST['comments'];
     
+    $id = $_POST['id']
+    
         
         $subject = "TalkShop: Someone has contacted you!";
         
@@ -13,7 +15,7 @@
         
         
         
-        $to =  $_POST['email']; // Add the email you want to send to. Can be pulled from submitting form as a variable
+        $to =  $id; // Add the email you want to send to. Can be pulled from submitting form as a variable
         
         
         
