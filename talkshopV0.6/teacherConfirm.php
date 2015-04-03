@@ -3,9 +3,12 @@
 	//PHP TO UPLOAD THE IMAGE
 
 	$target_dir = "teacherUploads/";
-	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+	$randomNumber = rand(100000,999999);
+	$target_file = $target_dir . $randomNumber . basename($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+	
+	
 	
 	// Check if image file is a actual image or fake image
 	if(isset($_POST["submit"])) {
@@ -102,7 +105,7 @@
 		}
 	
 	$bio = $_POST['bio'];
-    $profilePic = basename( $_FILES["fileToUpload"]["name"]);
+    $profilePic = $randomNumber . basename( $_FILES["fileToUpload"]["name"]);
     
     $query = "INSERT INTO teachers(fname, lname, email, pword, address1, address2, city, state, zip, phone, ageGroup, topic1, topic2, topic3, bio, profilePic)" . 
 			 "VALUES('$fname','$lname','$email','$password','$address1','$address2','$city','$state','$zip','$phone','$ageGroup','$topic1','$topic2','$topic3','$bio','$profilePic')";
