@@ -60,7 +60,7 @@
 	
 	// PHP TO WRITE TO DATABASE
 	
-    include('server-connect.php');
+    include('local-connect.php');
 	
     $fname = mysqli_real_escape_string($dbc, $_POST['firstname']);
     $lname = mysqli_real_escape_string($dbc, $_POST['lastname']);	
@@ -107,83 +107,24 @@
     $query = "INSERT INTO teachers(fname, lname, email, pword, address1, address2, city, state, zip, phone, ageGroup, topic1, topic2, topic3, bio, profilePic)" . 
 			 "VALUES('$fname','$lname','$email','$password','$address1','$address2','$city','$state','$zip','$phone','$ageGroup','$topic1','$topic2','$topic3','$bio','$profilePic')";
              
-             
-
-
-
-
-if($_POST) {
-
-
-
-    $name = $_POST['fname'];
-
-    $email = $_POST['email'];
-
-    $subject = "THANK YOU FOR REGISTERING WITH TALK SHOP";
-
-    $sentmessage = "Thank you for registering with talkshop! You're profile is now live. Please look around and see if you can find a speaker for you. Sincerely, The TalkShop Team";
-
-
-
-    $to =  $_POST['email']; // Add the email you want to send to. Can be pulled from submitting form as a variable 
-
-
-
-    $headers  = "From: info@talk-shop.net \r\n"; // Add the email you would like to send from after "From". EX: "From: Cats@SuperHappyAnimals.com\r\n"
-
-    $headers .= "Reply-To: " . $email . " \r\n";
-
-    $headers .= "MIME-Version: 1.0\r\n";
-
-    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
-
-
-    $message  = "<html><body>";
-
-    $message .= "<p>From: " . $name . "<br/>";
-
-    $message .= "Email: " . $email . "<br/>";
-
-    $message .= "Subject: " . $subject ."</p>";
-
-    $message .= "<p>" . $sentmessage . "</p></body></html>";
-
-
-
-    mail($to, $subject, $message, $headers);
-
-
-
-//    Debugging info
-
-//    echo $name . "<br/>";
-
-//    echo $email . "<br/>";
-
-//    echo $subject . "<br/>";
-
-//    echo $sentmessage . "<br/>";
-
-
-
-// Test email. Sends a blank email to "EMAILADDRESS" and shows as "FROMEMAILADDRESS". Uncomment and change emails to test the
-
-// mail function on the server
-
-
-
-// mail('EMAILADDress', 'blank test', 'test of blank email', 'From: FROMEMAILADDRESS');
-
-
-
-}
-
-
-
-
     
+	//MAIL FUNCTION
+	if($_POST) 
+	{
+		$subject = "Welcome to TalkShop!";
+		
+		$sentmessage = "Dear " . $fname . ",<br/><br/>Thank you for registering with TalkShop! You may now login at www.talk-shop.net using your email address and chosen password. 
+						If you chose to create a profile, it will now be visible.<br/><br/>Happy Talking!<br/><br/>   -Team TalkShop";
+		$message  = "<html><body><p>" . $sentmessage . "</p></body></html>";
+				
+		$headers  = "From: info@talk-shop.net\r\n";
+		$headers .= "MIME-Version: 1.0\r\n";
+		$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+		
+		mail($email, $subject, $message, $headers);
+	}
+
+	
     $result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
     
     mysqli_close($dbc);
