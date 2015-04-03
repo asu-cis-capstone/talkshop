@@ -1,18 +1,17 @@
 <?php
 
-	//DELETE ENTRY IN DATABASE
+	//DELETE PICTURE, DELETE ROW IN TABLE, AND LOGOUT
 
 		session_name();
 		session_start();
 	
 		$id = $_GET["id"];
 		
-	
 		// MySQL Info
-		$servername = 'localhost'; 
-		$username = 'root';
-		$password = '';
-		$db = 'talkshop';
+$servername = 'localhost'; 
+$username = 'root';
+$password = '';
+$db = 'talkshop';
 				
 		// Connection
 		$connection = mysqli_connect($servername, $username, $password, $db);
@@ -31,9 +30,10 @@
 			{
 				$picture = "teacherUploads/" . $row["profilePic"];
 			}
-			
+		
 			unlink($picture);	
-
+			//echo $picture;
+			
 			//Delete row in teachers table
 			$query = 'DELETE FROM teachers WHERE id = "' . $id . '"';
 
@@ -48,8 +48,9 @@
 			{
 				$picture = "speakerUploads/" . $row["profilePic"];
 			}
-			
+		
 			unlink($picture);	
+			//echo $picture;
 
 			//Delete row in speakers table
 			$query = 'DELETE FROM speakers WHERE id = "' . $id . '"';
@@ -62,5 +63,4 @@
 			session_destroy();
 			header('Location: index.php');
 		}
-		
 ?>

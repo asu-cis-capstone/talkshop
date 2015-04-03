@@ -8,8 +8,6 @@
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 	
-	
-	
 	// Check if image file is a actual image or fake image
 	if(isset($_POST["submit"])) {
 		$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
@@ -65,13 +63,13 @@
 	
     include('local-connect.php');
 	
-    $fname = mysqli_real_escape_string($dbc, $_POST['firstname']);
-    $lname = mysqli_real_escape_string($dbc, $_POST['lastname']);	
+    $fname = mysqli_real_escape_string($dbc, ucfirst($_POST['firstname']));	
+    $lname = mysqli_real_escape_string($dbc, ucfirst($_POST['lastname']));	
     $email = $_POST['email'];	
     $password = $_POST['pword'];	
-    $address1 = $_POST['lineone'];	
-    $address2 = $_POST['linetwo'];	
-    $city = $_POST['city'];
+    $address1 = ucwords($_POST['lineone']);	
+    $address2 = ucwords($_POST['linetwo']);	
+    $city = ucwords($_POST['city']);
     $state = $_POST['state'];
     $zip = $_POST['zip'];	
     $phone = $_POST['phone'];	
@@ -105,6 +103,7 @@
 		}
 	
 	$bio = $_POST['bio'];
+	
     $profilePic = $randomNumber . basename( $_FILES["fileToUpload"]["name"]);
     
     $query = "INSERT INTO teachers(fname, lname, email, pword, address1, address2, city, state, zip, phone, ageGroup, topic1, topic2, topic3, bio, profilePic)" . 

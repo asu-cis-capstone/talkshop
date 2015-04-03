@@ -3,7 +3,7 @@
 #profileBox{
 	position: 				absolute;
 	width: 					1050px;
-	height: 				630px;
+	height: 				auto;
 	background-color: 		rgb(29, 174, 235);
 	margin-top:				150px;
 	margin-left: 			-525px;
@@ -93,7 +93,7 @@
 	font-size: 			18px;
 	margin-right:		10px;
 	margin-left: 		218px;
-	margin-bottom: 		30px; 
+	margin-bottom: 		100px; 
 }
 
 #aboutParagraphTeacher{
@@ -103,7 +103,7 @@
 	font-size: 			18px;
 	margin-right:		10px;
 	margin-left: 		218px;
-	margin-bottom: 		30px; 
+	margin-bottom: 		100px; 
 	margin-top:			-20px;
 }
 
@@ -138,7 +138,7 @@ color: 				white;
 }
 
 a:visited {
-color: 				grey;
+color: 				white;
 }
 
 a {
