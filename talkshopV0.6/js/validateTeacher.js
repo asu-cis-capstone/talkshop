@@ -1,35 +1,34 @@
-
-//TalkShop Validation Javascript
-
 function validate() {
 	// Section one of form.
 	var firstname 	 	= 			document.getElementById("firstname").value;
 	var lastname 	 	= 			document.getElementById("lastname").value;
 	var email    		= 			document.getElementById("email").value;
-	var pword		=				document.getElementById("pword").value;
+	var pword 			=			document.getElementById("pword").value;
 	var reenter 		= 			document.getElementById("reenter").value;
 	var lineone 		= 			document.getElementById("lineone").value;
-	var linetwo 		= 			document.getElementById("linetwo").value;
 	var city	 		= 			document.getElementById("city").value;
 	var state	 		= 			document.getElementById("state").value;
 	var zip		 		= 			document.getElementById("zip").value;
 	var phone	 		= 			document.getElementById("phone").value;
+	var checkboxdiv		=			document.getElementById("checkboxdiv").style.display;
 
 	// Section two of form.
-	var agegroup	= 			document.getElementById("agegroup").value;
-	var topicarea   = 			document.getElementsByName("topicarea");
-	var image		=			document.getElementById("image");
+	var agegroup		= 			document.getElementById("agegroup").value;
+	var bio   			= 			document.getElementById("bio").value;
+	var fileToUpload 	=			document.getElementById("fileToUpload");
+	
 	
 	// This variable will be set to true if an element fails validation.
 	var failed = false;
-	
-	// This is the message that will appear on screen.
-	var warning = "Please fill in/fix/select"
 	
 	// These variables will be used to validate password and email. 
 	var dot = 0;
 	var space = 0;
 	var atSign = 0;
+	
+	// This is the message that will appear on screen.
+	var warning = "Please fill in/fix/select";
+
 	
 	// Floating focus variables.
 	var f1 = 0;
@@ -42,7 +41,9 @@ function validate() {
 	var f8 = 0;
 	var f9 = 0;
 	var fa = 0;
-	
+	var fb = 0;
+	var fc = 0;
+	var fd = 0;
 	// firstname
 	if (firstname=="") 
 	{
@@ -130,7 +131,7 @@ function validate() {
 	}
 	else
 	{
-		space = password.indexOf(" ");
+		space = pword.indexOf(" ");
 		if(space != -1 || pword.length < 4 || pword.length > 10)
 		{
 			document.getElementById("pword").style.backgroundColor="#FF6666";
@@ -218,7 +219,7 @@ function validate() {
 		}
 		else
 		{
-			document.getElementById("City").style.backgroundColor="rgb(19,125,193)";
+			document.getElementById("city").style.backgroundColor="rgb(19,125,193)";
 		}
 	}
 	
@@ -252,11 +253,11 @@ function validate() {
 			document.getElementById("zip").value="";
 			f9 = 1;
 			failed = true;
-			warning = warning + "\n  Zip: 1 to 30 chars - cannot be all spaces!";
+			warning = warning + "\n  Zip";
 		}
 		else
 		{
-			document.getElementById("Zip").style.backgroundColor="rgb(19,125,193)";
+			document.getElementById("zip").style.backgroundColor="rgb(19,125,193)";
 		}
 	}
 	
@@ -285,45 +286,77 @@ function validate() {
 		}
 	}
 
-	// agegroup
-	if (agegroup=="") 
+	//check if Make Active Profile is checked
+	if(checkboxdiv=="block")
 	{
+		// state
+		if (agegroup=="") 
+		{
 		document.getElementById("agegroup").style.backgroundColor="#FF6666";
-		f8 = 1;
+		fb = 1;
 		failed = true;
 		warning = warning + "\n  Age Group";
-	}
-	else
-	{
+		}
+		else
+		{
 		document.getElementById("agegroup").style.backgroundColor="rgb(19,125,193)";
+		}
+		
+		if (bio=="") 
+		{
+		document.getElementById("bio").style.backgroundColor="#FF6666";
+		fc = 1;
+		failed = true;
+		warning = warning + "\n  Comments";	
+		}
+		else
+		{
+		
+			if(bio.length < 2 || bio.length > 1500)
+			{
+			document.getElementById("bio").style.backgroundColor="#FF6666";
+			fc = 1;
+			failed = true;
+			warning = warning + "\n  Comments: 2-1500 chars - chars & spaces included!";
+			
+			}
+			else
+			{
+			document.getElementById("bio").style.backgroundColor="rgb(19,125,193)";
+			
+			}	
+		}
+		
+		// Upload Image'
+		if (document.getElementById("fileToUpload").value == "")
+		{
+		document.getElementById("fileToUpload").style.backgroundColor="#FF6666";
+		fb = 1;
+		failed = true;
+		warning = warning + "\n  Please add a JPEG";
+		}
+		else
+		{
+		document.getElementById("fileToUpload").style.backgroundColor="rgb(19,125,193)";
+		}
+			
 	}
-
-
 	
-	// Check to see if anything failed.
 	if (failed)
 	{
 		// Display message on screen.
 		alert(warning);
 		
-		// Check floating focus flags.
-		if (fa==1) { document.getElementById("phone").focus(); }
-		if (f9==1) { document.getElementById("zip").focus(); }
-		if (f8==1) { document.getElementById("state").focus(); }
-		if (f7==1) { document.getElementById("city").focus(); }
-		if (f6==1) { document.getElementById("lineone").focus(); }
-		if (f5==1) { document.getElementById("reenter").focus(); }
-		if (f4==1) { document.getElementById("password").focus(); }
-		if (f3==1) { document.getElementById("email").focus(); }
-		if (f2==1) { document.getElementById("lastname").focus(); }
-		if (f1==1) { document.getElementById("firstname").focus(); }
+	
 		
-		// return control to HTML
+		
+			// return control to HTML
 		return false;
 	}
 	
+	
 	//If we get to here, we pass validation. Yay!
 	return true;	
-}
 	
+}
 	

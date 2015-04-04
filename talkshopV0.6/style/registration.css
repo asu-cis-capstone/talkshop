@@ -127,7 +127,7 @@ ul.checkbox{
 	cursor: pointer;
 }
 
-#chooseFile{
+#fileToUpload{
 	border: 			none;
   	font-family: 		'Oswald', sans-serif;
 	font-weight: 		300;

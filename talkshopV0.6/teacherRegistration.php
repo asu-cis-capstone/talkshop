@@ -1,3 +1,36 @@
+<?php
+    /*
+    include('../local-connect.php');
+    $fname1 = $_POST['firstname'];
+    $fname2 = mysqli_real_escape_string($dbc,$fname1);
+    $lname1 = $_POST['lastname'];
+    $lname2 = mysqli_real_escape_string($dbc,$lname1);
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $org = $_POST['organization'];
+    $line1 = $_POST['lineone'];
+    $line2 = $_POST['linetwo'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zip = $_POST['zip'];
+    $phone = $_POST['phone'];
+    $age = $_POST['agegroup'];
+    $image = $_POST['fileToUpload'];
+    
+    
+    $query = "INSERT INTO teachers(firstname, lastname, username, email, password, organization, addressone, addresstwo, city, state, zip, phone, agegroup, image)" .  "VALUES('$fname2','$lname2','$username', '$email','$password','$org', '$line1','$line2','$city', '$state', '$zip', '$phone','$age', '$image')";
+    
+    $result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
+     
+
+     
+    
+    mysqli_close($dbc);
+    */
+?>
+
+
 <?php include 'htmlHeader.php' ?>
 
 	<!-- Link tag for teacherRegistration CSS -->
@@ -8,7 +41,7 @@
 
 	<!-- JavaScript Tags -->
 	<script type="text/javascript" src="js/focus.js"></script>
-	<script type="text/javascript" src="js/validate.js"></script>
+	<script type="text/javascript" src="js/validateTeacher.js"></script>
 
   </head>
 
@@ -26,6 +59,24 @@
 	
 	<script type="text/javascript">
 		CheckboxChecked(document.myform.mycheckbox.checked,'checkboxdiv');;
+	</script>
+	
+	<script type="text/javascript">
+	function checkboxlimit(checkgroup, limit){
+		var checkgroup = document.getElementsByName(checkgroup);
+		var limit=limit;
+		for (var i=0; i<checkgroup.length; i++){
+			checkgroup[i].onclick=function(){
+			var checkedcount=0;
+			for (var i=0; i<checkgroup.length; i++)
+				checkedcount+=(checkgroup[i].checked)? 1 : 0;
+				if (checkedcount>limit){
+					alert("You can only select a maximum of 3 checkboxes");
+					this.checked=false;
+				}
+			}
+		}
+	}
 	</script>
   
 	<?php include 'headerBar.php' ?>
@@ -178,7 +229,6 @@
 						
 						<!-- age group -->
 						<select class="textFields" id="agegroup" name="agegroup"
-						required
 						title="Please select your intended age group."
 						onfocus="agemsg()">
 							<option value="">Select Age Group...</option>
@@ -223,12 +273,16 @@
 						<span class="uploadTitle">UPLOAD PROFILE IMAGE</span>
 						<br/>
 						<span id="">Note: Please upload a .jpg, .jpeg, .png, or .gif image with an equal width and height.<br/></span>
-						<input id="chooseFile" type="file" name="fileToUpload" id="fileToUpload">
+						<input id="fileToUpload" type="file" name="fileToUpload" value="fileToUpload">
 						<br/>
 					
 					</div>		
 					
 		</form>
+		
+		<script language="javascript">
+		checkboxlimit('topic[]', 3);
+		</script>
 		
 		<input id="formSubmit" type="submit" form="joinform" value="REGISTER AS A TEACHER" title="Click here or press 'Enter' to submit your info!"
 		onfocus="signmsg()" onclick="return validate()"/>

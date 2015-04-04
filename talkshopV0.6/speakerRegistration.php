@@ -1,3 +1,29 @@
+
+<?php
+    /*
+    $to = $email;
+    $subject = "Thank you for Registering with Talk Shop!";
+    $message = wordwrap($message, 70, "Thank you for registering with Talk shop. more stuff here (whatever we deide on) ");
+    $headers = 'From: info@talk-shop.com';
+    
+    
+    
+    
+    mail($to, $subject, $message, $headers);
+    
+    
+    
+    
+*/    
+?>
+
+
+
+
+
+
+
+
 <?php include 'htmlHeader.php' ?>
 
 	<!-- Link tag for teacherRegistration CSS -->
@@ -8,7 +34,7 @@
 	
 	<!-- JavaScript Tags -->
 	<script type="text/javascript" src="js/focus.js"></script>
-	<script type="text/javascript" src="js/validate.js"></script>
+	<script type="text/javascript" src="js/validateSpeaker.js"></script>
 
   </head>
 
@@ -26,6 +52,24 @@
 	
 	<script type="text/javascript">
 		CheckboxChecked(document.myform.mycheckbox.checked,'checkboxdiv');;
+	</script>
+	
+	<script type="text/javascript">
+	function checkboxlimit(checkgroup, limit){
+		var checkgroup = document.getElementsByName(checkgroup);
+		var limit=limit;
+		for (var i=0; i<checkgroup.length; i++){
+			checkgroup[i].onclick=function(){
+			var checkedcount=0;
+			for (var i=0; i<checkgroup.length; i++)
+				checkedcount+=(checkgroup[i].checked)? 1 : 0;
+				if (checkedcount>limit){
+					alert("You can only select a maximum of 3 checkboxes");
+					this.checked=false;
+				}
+			}
+		}
+	}
 	</script>
   
 	<?php include 'headerBar.php' ?>
@@ -174,7 +218,7 @@
 					
 					<!-- profession -->
 						<select class="textFields" id="profession" name="profession"
-						required
+						
 						title="Please select your profession."
 						onfocus="professionmsg()">
 							<option value="">Select Profession...</option>
@@ -209,7 +253,7 @@
 						
 						<!-- age group -->
 						<select class="textFields" id="agegroup" name="agegroup"
-						required
+						
 						title="Please select your intended audience."
 						onfocus="agemsg()">
 							<option value="">Select Age Group...</option>
@@ -259,7 +303,7 @@
 						<span class="uploadTitle">UPLOAD PROFILE IMAGE</span>
 						<br/>
 						<span id="">Note: Please upload a .jpg, .jpeg, .png, or .gif image with an equal width and height.<br/></span>
-						<input id="chooseFile" type="file" name="fileToUpload" id="fileToUpload">
+						<input id="fileToUpload" type="file" name="fileToUpload" value="fileToUpload">
 						<br/>
 
 
@@ -267,6 +311,10 @@
 				</div>
 				
 		</form>
+
+		<script language="javascript">
+		checkboxlimit('topic[]', 3);
+		</script>
 		
 		<input id="formSubmit" type="submit" form="joinform" value="REGISTER AS A SPEAKER" title="Click here or press 'Enter' to submit your info!"
 		onfocus="signmsg()" onclick="return validate()"/>
