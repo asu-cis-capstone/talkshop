@@ -194,3 +194,13 @@ a {
 	background-color: rgb(19, 125, 193);
 }
 
+#noResultsFound{
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	font-size:		 	30px;
+	margin-top: 		50px;
+	margin-left: 		300px;
+	-webkit-user-select: none;
+}
+
