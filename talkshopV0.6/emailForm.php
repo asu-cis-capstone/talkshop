@@ -18,7 +18,11 @@
  
   <body>
   
- 
+ <?php
+     
+if (isset($_SESSION["user"]))
+     
+{
   <div id="emailformmessage">
       Email Form
   </div>
@@ -28,7 +32,7 @@
   </div>
   
   
-	<form id="emailform"  method="post">
+	<form id="emailform" action="confirm.php"  method="post">
 	
 	
 		<p class="ef1"></p>
@@ -78,8 +82,14 @@
 
 			
 	</form>
-	
-	
+                    }
+     
+     else
+     {
+         echo 'Please Login First to contact this person';
+         
+     }
+	?>
 	
 	<p id="jsmsgs"></p>
 	
