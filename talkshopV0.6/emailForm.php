@@ -20,8 +20,7 @@
   
  <?php
      
-if (isset($_SESSION["user"]))
-     
+if (isset($_SESSION["user"]))    
 {
   <div id="emailformmessage">
       Email Form

@@ -2,7 +2,7 @@
 
 	//DELETE PICTURE, DELETE ROW IN TABLE, AND LOGOUT
 
-		session_name();
+		//session_name();
 		session_start();
 	
 		$id = $_GET["id"];
@@ -32,7 +32,6 @@ $db = 'talkshop';
 			}
 		
 			unlink($picture);	
-			//echo $picture;
 			
 			//Delete row in teachers table
 			$query = 'DELETE FROM teachers WHERE id = "' . $id . '"';
@@ -49,8 +48,7 @@ $db = 'talkshop';
 				$picture = "speakerUploads/" . $row["profilePic"];
 			}
 		
-			unlink($picture);	
-			//echo $picture;
+			unlink($picture);
 
 			//Delete row in speakers table
 			$query = 'DELETE FROM speakers WHERE id = "' . $id . '"';

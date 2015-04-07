@@ -150,7 +150,7 @@
 	
 	<br><br/>
 	
-	<?php include 'bottomBar.php' ?>
+	<?php include 'bottomBarFixed.php' ?>
 	
   </body>
  

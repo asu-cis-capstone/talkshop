@@ -231,6 +231,13 @@ body, html{
 	cursor: default;
 }
 
+#bottomBarPic img{
+	height: 25px;
+	margin-left: 25px;
+	margin-top: 7px;
+	position: absolute;
+}
+
 #time{
 	position: absolute;
 	font-family: 'Oswald', sans-serif;

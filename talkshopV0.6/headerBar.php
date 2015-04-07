@@ -33,11 +33,8 @@
 							  echo '<div id="login-content">';
 								echo '<div id="logoutButton" onclick="window.open(\'logout.php\',\'_self\')">';
 									echo '<p class="settingsDropDownText">LOGOUT</p>';
-								echo '</div>';
-									
-								$userId = $_SESSION['id'];
-										
-								echo '<div id="deleteProfileButton" onclick="window.open(\'deleteLogout.php?id=' . $userId . '\',\'_self\')">';
+								echo '</div>';		
+								echo '<div id="deleteProfileButton" onclick="window.open(\'deleteLogout.php?id=' . $_SESSION['id'] . '\',\'_self\')">';
 									echo '<p class="settingsDropDownText">DELETE ACCOUNT</p>';
 								echo '</div>';
 							  echo '</div> ';                  
