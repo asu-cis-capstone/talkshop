@@ -61,6 +61,7 @@
 	{
 		$row = mysqli_fetch_array($result);
 		$_SESSION['user'] = $row['fname'];
+		$_SESSION['userFullName'] = $row['fname'] . " " . $row['lname'];
 		$_SESSION['id'] = $row['id'];
 		header('Location: index.php');
 		exit;
@@ -69,6 +70,7 @@
 	{
 		$row = mysqli_fetch_array($result2);
 		$_SESSION['user'] = $row['fname'];
+		$_SESSION['userFullName'] = $row['fname'] . " " . $row['lname'];
 		$_SESSION['id'] = $row['id'];
 		header('Location: index.php');
 		exit;
