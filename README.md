@@ -96,6 +96,16 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 * Find prospective members and encourage them to sign up.
 
 
+##v0.6 Release Notes
+* Created Smoke Suite to allow group to easily test if essential functionality is broken
+* 10 automated Test Cases with excel file to track progress
+
+##To Do List
+* Continue to fix bugs and functionality
+* Prepare for live demonstration
+* Inform Product Owners to start promoting users to sign up and get user feedback
+
+
 ###[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)
 
 ###[Talkshop Video](http://t.co/hDJQhBq9YR)
