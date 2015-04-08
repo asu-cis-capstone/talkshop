@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="selenium-java-2.42.1-srcs.jar"/>
+	<classpathentry kind="lib" path="selenium-java-2.42.1.jar"/>
+	<classpathentry kind="lib" path="libs/selenium-server-standalone-2.45.0.jar"/>
+	<classpathentry kind="lib" path="libs/json-20080701.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

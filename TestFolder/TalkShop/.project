@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>TalkShop</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>libs/selenium-java-2.42.1.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/selenium-2.42.1/selenium-java-2.42.1.jar</locationURI>
+		</link>
+		<link>
+			<name>libs/selenium-server-standalone-2.45.0.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/Downloads/selenium-server-standalone-2.45.0.jar</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
