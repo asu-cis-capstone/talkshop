@@ -4,7 +4,7 @@
 
     $semail = $_POST['email'];
     $name = $_POST['name'];
-    $comments = $_POST['comments'];
+    $comments = $_POST['commentssection'];
     
         
         $subject = "TalkShop: Someone has contacted you!";

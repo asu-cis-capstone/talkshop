@@ -1,5 +1,35 @@
 <?php include 'htmlHeader.php' ?>
-	
+
+<?php
+    // MySQL Info
+    $servername = 'localhost';
+    $username = 'talkshopconnect';
+    $password = 'Asu275833';
+    $db = 'talkshop';
+    
+    $connection = mysqli_connect($servername, $username, $password, $db);
+    
+    if (!$connection)
+    {
+        die("Database Connection Error!");
+    }
+    $id= $_POST["id"];
+    $sql = "SELECT * FROM speakers WHERE speakers.id = '" . $id . "'";
+    $result = $connection->query($sql);
+    
+    if ($result->num_rows > 0)
+    {
+        
+        $email = $row["email"];
+    }
+    else{
+        echo "cannot be found";
+        
+    
+    }
+    
+    ?>
+
 	
 
 	 <!-- Link tag for CSS -->
@@ -19,69 +49,65 @@
   <body>
   
  <?php
-     
+ 
 if (isset($_SESSION["user"]))
      
 {
-  <div id="emailformmessage">
-      Email Form
-  </div>
+ echo '<div id="emailformmessage">';
+     echo 'Email Form';
+  echo'</div>';
   
-  <div id="emailformmessage1">
-  Connect with this speaker by filling out the comments section.
-  </div>
+  echo'<div id="emailformmessage1">';
+  echo 'Connect with this speaker by filling out the comments section.';
+  echo'</div>';
   
   
-	<form id="emailform" action="confirm.php"  method="post">
+	echo '<form id="emailform" action="confirm.php"  method="post">';
 	
 	
-		<p class="ef1"></p>
+		echo '<p class="ef1"></p>';
 				
 				
-				<!-- name -->
-				<label for="name">Name:</label>
-				<input class="textFields" placeholder="Your Name" type="text" id="name" name="name"  value="testing" readonly
-				autofocus
-				required
-				title="Name: 4-30 chars, u/l case letters and - and ' only!"
-				pattern="[a-zA-Z-' ]{4,30}"
-				onfocus="namemsg()"
-				/>
-				<br />
-				<!-- email -->
-				<label for="email">Email:</label>
-				<input class="textFields" placeholder="Email Address" type="email" id="email" name="email" value="test" readonly
-				required
-				title="Valid email only - 50 chars max"
-				pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"
-				maxlength="50"
-				onfocus="emailmsg()"
-				/>
-				<br />
+				echo'<label for="name">Name:</label>';
+				echo'<input class="textFields" placeholder="Your Name" type="text" id="name" name="name" autofocus required';
+                 echo 'title="Name: 4-30 chars, u/l case letters and - and apostrophes only!"';
+				echo 'pattern="[a-zA-Z- ]{4,30}" ';
+				echo 'onfocus="namemsg()" ';
+				echo '/>';
+				echo '<br />';
+    
+            echo '<label for="email">Email:</label>';
+				echo '<p id="ToEmail">';
+                    echo $email;
+                    echo '</p>';
+    
 				
-				<!-- comments -->
+				echo '<label for="email">Email:</label>';
+				echo '<input class="textFields" placeholder="Email Address" type="email" id="email" name="email" ';
+				 echo 'required ';
+				 echo 'title="Valid email only - 50 chars max" ';
+				echo 'pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}" ';
+				echo 'maxlength="50"';
+				echo 'onfocus="emailmsg()"';
+				echo '/>';
+				echo '<br />';
 				
-				<textarea id="comments" rows="5" cols="75" name="comments" placeholder="Enter Your Message Here"
-					maxlength="1000"
-					title="Comments:1-500 chars" 
-					onfocus="commentsmsg()"></textarea>	
-			</p>
+				
+				
+				echo '<textarea id="commentssection" rows="5" cols="75" name="comments" placeholder="Enter Your Message Here" ';
+					echo 'maxlength="1000"';
+					echo 'title="Comments:1-500 chars" ';
+					echo 'onfocus="commentsmsg()"></textarea>';
+			echo '</p>';
 			
-			<input id="submitButton" type="submit" value="SUBMIT" name="submit">
-								
-
-			<p class="submit">
-				<input type="submit" value="Send Email"  onfocus="sendmsg()"/>
-				
-				<span class="reset">
-					<input type="reset" value="Clear Form!"  onclick="history.go(0)" onfocus="resetmsg()"
-					/>
-				</span>
-			</p>
+			echo '<input id="submitButton" type="submit" value="SUBMIT" name="submit">';
+    
+				echo '</span>';
+			echo '</p> ';
 			
 
 			
-	</form>
+	echo '</form>';
                     }
      
      else
@@ -89,6 +115,8 @@ if (isset($_SESSION["user"]))
          echo 'Please Login First to contact this person';
          
      }
+     
+     
 	?>
 	
 	<p id="jsmsgs"></p>
