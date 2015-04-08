@@ -49,9 +49,14 @@
   <body>
   
  <?php
+<<<<<<< HEAD
  
 if (isset($_SESSION["user"]))
      
+=======
+     
+if (isset($_SESSION["user"]))    
+>>>>>>> origin/master
 {
  echo '<div id="emailformmessage">';
      echo 'Email Form';

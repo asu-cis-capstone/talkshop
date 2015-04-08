@@ -1,5 +1,5 @@
 <?php
-	session_name();
+	//session_name();
 	session_start();
 ?>
 	
@@ -22,8 +22,8 @@
 	</div>
 		
 		<?php
-			if (isset($_SESSION["user"])) //THIS CODE FOR USERS THAT ARE LOGGED IN!
-			{
+			if (isset($_SESSION["user"]))
+			{	
 				echo '<div id="topBarFixed">';
 					echo '<div id="login">';
 						echo '<nav id="settingsDropDown">';
@@ -34,11 +34,8 @@
 								echo '<div id="logoutButton" onclick="window.open(\'logout.php\',\'_self\')">';
 									echo '<p class="settingsDropDownText">LOGOUT</p>';
 								echo '</div>';
-								
-								$userId = $_SESSION['id'];
-								
-								echo '<div id="deleteProfileButton" onclick="window.open(\'deleteLogout.php?id=' . $userId . '\',\'_self\')">';
-									echo '<p class="settingsDropDownText">DELETE ACCOUNT</p>';
+								echo '<div id="deleteProfileButton" onclick="window.open(\'deleteLogout.php?id=' . $_SESSION["id"] . '\',\'_self\')">';
+									echo '<p class="settingsDropDownText">' . $_SESSION["id"] . '</p>';
 								echo '</div>';
 							  echo '</div> ';                  
 							echo '</li>';
