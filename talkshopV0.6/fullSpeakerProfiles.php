@@ -1,3 +1,7 @@
+<!--
+TALK SHOP! Full Speaker Profiles
+-->
+
 <?php
 	// Post Variables
 	$id = $_GET["id"];
@@ -130,10 +134,29 @@
 		<p id="aboutSpeaker">ABOUT <?php echo $fNameCaps; ?>:</p>
 		
 		<p id="socialMediaLinks">
-			<a href="<?php echo $fbURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
-			<a href="<?php echo $tURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
-			<a href="<?php echo $gpURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-google-plus-square fa-2x"></i></a>
-			<a href="<?php echo $liURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+		
+			<?php 
+			if ($fbURL != null)
+			{
+				?><a href="<?php echo $fbURL = "http://" . $fbURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-facebook-square fa-2x"></i></a><?php
+			}
+			
+			if ($tURL != null)
+			{
+				?><a href="<?php echo $tURL = "http://" . $tURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-twitter-square fa-2x"></i></a><?php
+			}
+			
+			if ($gpURL != null)
+			{
+				?><a href="<?php echo $gpURL = "http://" . $gpURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-google-plus-square fa-2x"></i></a><?php
+			}
+			
+			if ($liURL != null)
+			{
+				?><a href="<?php echo $liURL = "http://" . $liURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-linkedin-square fa-2x"></i></a><?php
+			}
+			?>
+			
 		</p>
 		
 		<p id="aboutParagraph">
