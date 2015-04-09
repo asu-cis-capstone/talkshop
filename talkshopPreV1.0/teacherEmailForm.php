@@ -75,7 +75,7 @@ $db = 'talkshop';
 		
 		else
 		{
-			echo 'Please Login First to contact this person';					 
+			include 'teacherLoginEmailNotification.php';				 
 		}
 			 
 	}  

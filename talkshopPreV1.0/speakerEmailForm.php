@@ -75,9 +75,7 @@ $db = 'talkshop';
 		
 		else
 		{
-			echo '<div id="error">';
-			echo 'Please Login First to contact this person';
-			echo '</div>';					 
+			include 'speakerLoginEmailNotification.php';					 
 		}
 			 
 	}
