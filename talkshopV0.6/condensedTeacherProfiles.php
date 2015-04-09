@@ -1,3 +1,7 @@
+<!--
+TALK SHOP! Teacher Profile Listings
+-->
+
 <?php include 'htmlHeader.php' ?>
   
 	<!-- Link tag for speakerProfile CSS -->
@@ -19,7 +23,7 @@
 	
 		<p id="searchTitle">SEARCH TEACHERS</p>
 		
-			<form method="post" action="teacherProfilesSearch.php?go"  id="searchform">
+			<form method="get" action="teacherProfilesSearch.php"  id="searchform">
 			
 			<input class="textFields" placeholder="Keyword..." type="text" id="search" name="search">
 			
@@ -111,16 +115,16 @@
 							
 							<select class="textFields" id="searchTargetAudience" name="searchTargetAudience">
 									<option value="">Target Audience</option>
-									<option value="PS">Pre School</option>
-									<option value="ES">Elementary</option>
-									<option value="MS">Middle School</option>
-									<option value="HS">High School</option>
-									<option value="CS">College</option>
+									<option value="Pre School">Pre School</option>
+									<option value="Elementary">Elementary</option>
+									<option value="Middle School">Middle School</option>
+									<option value="High School">High School</option>
+									<option value="College">College</option>
 									
 							</select>
 							
-							<div id="searchButton" onclick="javascript:location.href='search.php'">
-							<div id="searchButtonText"><a href="search.php">Search</a></div>
+							<input type="submit" name="submit" id="searchButton" value="SEARCH">
+							
 							</div>
 					
 		</form>
@@ -133,10 +137,10 @@
 				session_start();
 
 				// MySQL Info
-$servername = 'localhost'; 
-$username = 'root';
-$password = '';
-$db = 'talkshop';
+				$servername = 'localhost'; 
+				$username = 'root';
+				$password = '';
+				$db = 'talkshop';
 				
 				// Connection
 				$connection = mysqli_connect($servername, $username, $password, $db);

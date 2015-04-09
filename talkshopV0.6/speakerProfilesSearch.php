@@ -1,5 +1,5 @@
 <!--
-TALK SHOP! Speaker Profile Listings
+TALK SHOP! Speaker Profile Listings after search
 -->
 
 <?php include 'htmlHeader.php' ?>
@@ -129,17 +129,13 @@ TALK SHOP! Speaker Profile Listings
 									<option value="Other">Other</option>
 							</select>
 							
-							
 							<input type="submit" name="submit" id="searchButton" value="SEARCH">
 							
 							</div>
 					
 		</form>
 
-		
-
 	</div>
-	
 
 			<?php
 				session_name();
@@ -170,6 +166,7 @@ TALK SHOP! Speaker Profile Listings
 						$topicCode = $_GET['topicArea'];
 						$audienceCode = $_GET['searchTargetAudience'];
 
+						//SQL statement if the entire form is filled out
 						$sql = "SELECT * FROM speakers 
 									WHERE CONCAT(fname, ' ', lname) LIKE '%" . $keyword . "%'
 									OR city LIKE '%" . $keyword . "%'
@@ -194,10 +191,63 @@ TALK SHOP! Speaker Profile Listings
 								UNION
 								
 									SELECT * FROM speakers
-									WHERE ageGroup LIKE '%" . $audienceCode . "%'
+									WHERE ageGroup LIKE '%" . $audienceCode . "%'";
+							
+							//SQL statement if only keyword is searched
+							if ($stateCode == NULL && $topicCode == NULL && $audienceCode == NULL)
+							{
+								$sql = "SELECT * FROM speakers 
+									WHERE CONCAT(fname, ' ', lname) LIKE '%" . $keyword . "%'
+									OR city LIKE '%" . $keyword . "%'
+									OR state LIKE '%" . $keyword . "%'
+									OR topic1 LIKE '%" . $keyword . "%'
+									OR topic2 LIKE '%" . $keyword . "%'
+									OR topic3 LIKE '%" . $keyword . "%'
+									OR ageGroup LIKE '%" . $keyword . "%'"; 
+							}
+							
+							//SQL statement if everything but the keyword is searched
+							if ($keyword == NULL)
+							{
+								$sql = "SELECT * FROM speakers
+									WHERE state LIKE '%" . $stateCode . "%'
 									
-									";
-						
+									UNION 
+								
+										SELECT * FROM speakers
+										WHERE topic1 LIKE '%" . $topicCode . "%' 
+										OR topic2 LIKE '%" . $topicCode . "%'
+										OR topic3 LIKE '%" . $topicCode . "%'
+									
+									UNION
+								
+										SELECT * FROM speakers
+										WHERE ageGroup LIKE '%" . $audienceCode . "%'"; 
+							}
+							
+							//SQL statement if only state is searched
+							if ($keyword == NULL && $topicCode == NULL && $audienceCode == NULL)
+							{
+									$sql = "SELECT * FROM speakers
+									WHERE state LIKE '%" . $stateCode . "%'"; 
+							}
+							
+							//SQL statement if only topic area is searched
+							if ($keyword == NULL && $stateCode == NULL && $audienceCode == NULL)
+							{
+									$sql = "SELECT * FROM speakers
+										WHERE topic1 LIKE '%" . $topicCode . "%' 
+										OR topic2 LIKE '%" . $topicCode . "%'
+										OR topic3 LIKE '%" . $topicCode . "%'"; 
+							}
+							
+							//SQL statement if only target audience is searched
+							if ($keyword == NULL && $stateCode == NULL && $topicCode == NULL)
+							{
+									$sql = "SELECT * FROM speakers
+										WHERE ageGroup LIKE '%" . $audienceCode . "%'"; 
+							}
+							
 						$result = $connection->query($sql);
 
 						if ($result->num_rows > 0) 
@@ -232,7 +282,6 @@ TALK SHOP! Speaker Profile Listings
 										$topics = $topic1 . ", " . $topic2 . ", & " . $topic3;
 									}
 				
-								
 								// HTML for profiles.
 								echo '<a href="fullSpeakerProfiles.php?id=' . $id . '">';
 									echo '<div class="profileBox">';

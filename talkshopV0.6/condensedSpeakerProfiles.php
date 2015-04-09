@@ -115,11 +115,11 @@ TALK SHOP! Speaker Profile Listings
 							
 							<select class="textFields" id="searchTargetAudience" name="searchTargetAudience">
 									<option value="">Target Audience</option>
-									<option value="PS">Pre School</option>
-									<option value="ES">Elementary</option>
-									<option value="MS">Middle School</option>
-									<option value="HS">High School</option>
-									<option value="CS">College</option>
+									<option value="Pre School">Pre School</option>
+									<option value="Elementary">Elementary</option>
+									<option value="Middle School">Middle School</option>
+									<option value="High School">High School</option>
+									<option value="College">College</option>
 									
 							</select>
 							
