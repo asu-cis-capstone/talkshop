@@ -20,10 +20,10 @@
 }
 
 #socialMediaLinks{
-	width: 200px;
-	margin-top: -70px;
-	margin-left: 7px;
-	position: absolute;
+	width: 			200px;
+	margin-top: 	-70px;
+	position: 		absolute;
+	text-align:		center;
 }
 
 #speakerName{
