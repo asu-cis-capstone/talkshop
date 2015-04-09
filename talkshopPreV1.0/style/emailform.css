@@ -1,4 +1,3 @@
-
 #emailformmessage{
 	padding-top:		150px;
 	font-family: 		'Oswald', sans-serif;
@@ -6,7 +5,7 @@
 	color: 				black;
 	font-size: 			40px;
 	text-align:			center;
-	padding-left: 		55px;
+	margin-bottom:		15px;
 }
 
 #emailformmessage1{
@@ -59,7 +58,8 @@
 	color: 				white;
 	text-align:			center;
 	resize:				none;
-	margin-top:			10px;
+	margin-top:			25px;
+	margin-bottom:		20px;
 }
 #submitButton{
 	border: 			none;
@@ -69,20 +69,22 @@
 	background: 		rgb(19, 125, 193);
 	width:				150px;
 	font-size: 			16px;
-	margin-left:		35px;
-	margin-bottom:		15px;
+	margin-bottom:		25px;
 }
 
 #submitButton:hover{
 	cursor: pointer;
 }
-p.ToEmail{ 
-text-align: left;
-font-family: 		'Oswald', sans-serif;
-font-weight: 		300;
-font-size: 			18px;
-color: 				white;
+
+#toEmail{ 
+	background: rgb(19, 125, 193);
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: white;
+	border: none;
+	width: 536px;
+	padding-left: 10px;
+	margin-top: 25px;
 }
-
-
-

@@ -165,8 +165,8 @@ TALK SHOP! Full Speaker Profiles
 			?>
 		</p>
 		
-		<div id="contactButton" onclick="javascript:location.href='login.php'">
-		<div id="contactSpeaker"><a href="<?php echo 'speakerEmailForm.php?id=' . $id ?>">CONTACT THIS SPEAKER</a></div>
+		<div id="contactButton" onclick="javascript:location.href='<?php echo 'speakerEmailForm.php?id=' . $id ?>'">
+			<div id="contactSpeaker">CONTACT THIS SPEAKER</div>
 		</div>
 
 	</div>
