@@ -78,18 +78,9 @@ $db = 'talkshop';
 			echo 'Please Login First to contact this person';					 
 		}
 			 
-	}
-     
+	}  
      
 	?>
-	
-	<p id="jsmsgs"></p>
-	
-	
-	
-	</div>
-		
-	
 	
 	<?php include 'bottomBarFixed.php' ?>
 	

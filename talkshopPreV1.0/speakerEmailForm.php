@@ -82,16 +82,8 @@ $db = 'talkshop';
 			 
 	}
      
-     
 	?>
-	
-	<p id="jsmsgs"></p>
-	
-	
-	
-	</div>
 		
-	
 	
 	<?php include 'bottomBarFixed.php' ?>
 	
