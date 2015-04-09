@@ -21,8 +21,9 @@
 
 #socialMediaLinks{
 	width: 200px;
-	margin-top: 		-70px; 
-	margin-left: 		7px;
+	margin-top: -70px;
+	margin-left: 7px;
+	position: absolute;
 }
 
 #speakerName{
