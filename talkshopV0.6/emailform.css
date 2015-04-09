@@ -1,0 +1,97 @@
+#emailformmessage{
+	padding-top:		150px;
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				black;
+	font-size: 			40px;
+	text-align:			center;
+	padding-left: 		55px;
+}
+
+#emailformmessage1{
+	
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				black;
+	font-size: 			18px;
+	text-align:			center;
+	margin-bottom:      1px;
+	padding-left:		30px;
+}
+#emailform {
+	width:				600px;
+	margin:				auto;
+	border:				solid 1px black;
+	
+	margin-bottom:		20px;
+	padding-left:		8px;
+	background-color:	rgb(29, 174, 235);
+	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align: 		center;
+}
+
+
+
+.textFields{
+	background: 		rgb(19, 125, 193);
+	height: 			30px;
+	margin-top: 		10px;
+	width: 				250px;
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align: 		center;
+	float:				center;
+}
+
+#commentssection{
+	background: 		rgb(19, 125, 193);
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	font-size: 			18px;
+	color: 				white;
+	text-align:			center;
+	resize:				none;
+	margin-top:			10px;
+}
+#submitButton{
+	border: 			none;
+  	font-family: 		'Oswald', sans-serif;
+	font-weight: 		300;
+	color: 				white;
+	background: 		rgb(19, 125, 193);
+	width:				150px;
+	font-size: 			16px;
+	margin-left:		35px;
+	margin-bottom:		15px;
+}
+
+#submitButton:hover{
+	cursor: pointer;
+}
+#ToEmail{ 
+text-align: left;
+font-family: 		'Oswald', sans-serif;
+font-weight: 		300;
+font-size: 			18px;
+color: 				white;
+}
+#error{
+color: red; 
+text-align: center;
+font-size: 17px; 
+left: 400px; 
+top: 200px; 
+position: absolute; 
+
+
+}
+
+
+

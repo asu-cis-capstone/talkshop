@@ -25,6 +25,7 @@
 $username = 'talkshopconnect';
 $password = 'Asu275833';
 $db = 'talkshop';
+
     $connection = mysqli_connect($servername, $username, $password, $db);
     
     if (!$connection)
@@ -61,13 +62,13 @@ $db = 'talkshop';
 							
 				
 
-							echo '<p id="ToEmail">';
+							echo '<div id="ToEmail">';
 								echo 'To: ' . $toFullName;
-							echo '</p>';
+							echo '</div>';
 								
-							echo '<p id="ToEmail">';
+							echo '<div id="ToEmail">';
 								echo 'From: ' . $fromFullName;
-							echo '</p>';
+							echo '</div>';
 				
 							
 							
@@ -89,7 +90,9 @@ $db = 'talkshop';
 		}
 		else
 		{
-			echo 'Please Login First to contact this person';					 
+			echo '<div id="error">';
+			echo 'Please Login First to contact this person';
+			echo '</div>';					 
 		}
 			 
 	}
