@@ -125,7 +125,7 @@ $db = 'talkshop';
 		</p>
 		
 		<div id="contactButton" onclick="javascript:location.href='login.php'">
-		<div id="contactSpeaker"><a href="login.php">CONTACT THIS TEACHER</a></div>
+		<div id="contactSpeaker"><a href="TemailContact.php">CONTACT THIS TEACHER</a></div>
 		</div>
 
 	</div>
