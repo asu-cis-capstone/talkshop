@@ -21,11 +21,10 @@
 	include 'headerBar.php';
  
     // MySQL Info
-	$servername = 'localhost'; 
-	$username = 'root';
-	$password = '';
-	$db = 'talkshop';
-    
+	$servername = 'localhost';
+$username = 'talkshopconnect';
+$password = 'Asu275833';
+$db = 'talkshop';
     $connection = mysqli_connect($servername, $username, $password, $db);
     
     if (!$connection)
@@ -47,12 +46,10 @@
 		if (isset($_SESSION['user']))   
 		{
 			 echo '<div id="emailformmessage">';
-				 echo 'Email Form';
+				 echo 'Contact Your Speaker!';
 			  echo'</div>';
 			  
-			  echo'<div id="emailformmessage1">';
-			  echo 'Connect with this speaker by filling out the comments section.';
-			  echo'</div>';
+			  
 			  
 			  
 				echo '<form id="emailform" action="confirm.php"  method="post">';

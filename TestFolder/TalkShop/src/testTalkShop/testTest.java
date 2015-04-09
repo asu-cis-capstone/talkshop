@@ -356,5 +356,31 @@ public static void registerAsTeacherWithoutMakingActive() throws InterruptedExce
 }
 
 
+@Test
+public static void deleteUser() throws InterupptedException{
+	//Point the location of the webdriver on the local machine
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Steven\\Documents\\chromedriver_win32\\chromedriver.exe");
+	//Instantiate the instance of the Chrome Driver
+	WebDriver driver = new ChromeDriver();
+	//Direct the driver to the location of the site
+	driver.get("http://talk-shop.net");
+	
+	driver.findElement(By.className("topBarText")).click();
+		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+		Thread.sleep(3000);
+		driver.findElement(By.id("username")).sendKeys("stevejobs@apple.com");
+		driver.findElement(By.id("password")).sendKeys("22222");
+		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+		Thread.sleep(5000);
+		driver.findElement(By.id("submit")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.cssSelector("#login-content")).click();
+		driver.findElement(By.cssSelector("#deleteProfileButton > p")).click();
+		
+		//Check if the user has been deleted 
+		//Need Assert Statement to check if anybody is logged in 
+		
+		driver.close(); 
 
+}
 }

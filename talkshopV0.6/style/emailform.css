@@ -76,5 +76,13 @@
 #submitButton:hover{
 	cursor: pointer;
 }
+p.ToEmail{ 
+text-align: left;
+font-family: 		'Oswald', sans-serif;
+font-weight: 		300;
+font-size: 			18px;
+color: 				white;
+}
+
 
 
