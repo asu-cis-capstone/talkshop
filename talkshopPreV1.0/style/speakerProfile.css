@@ -24,6 +24,7 @@
 	margin-top: 	-70px;
 	position: 		absolute;
 	text-align:		center;
+	margin-left:	7px;
 }
 
 #speakerName{
@@ -156,22 +157,26 @@ text-decoration: 	none;
 
 .fa-facebook-square{
 	color: white;
-	margin-left: 27px;
+	margin-left: 7px;
+	margin-right: 7px;
 }
 
 .fa-twitter-square{
 	color: white;
 	margin-left: 7px;
+	margin-right: 7px;
 }
 
 .fa-google-plus-square{
 	color: white;
 	margin-left: 7px;
+	margin-right: 7px;
 }
 
 .fa-linkedin-square{
 	color: white;
 	margin-left: 7px;
+	margin-right: 7px;
 }
 
 
