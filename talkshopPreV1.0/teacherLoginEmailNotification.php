@@ -2,7 +2,7 @@
 TALKSHOP! Login Email Notification for Teachers
 -->
 
-<div id="pleaseLogin">PLEASE JOIN TALKSHOP TO CONTACT THIS TEACHER</div>
+<div id="pleaseLoginTeacher">PLEASE JOIN TALKSHOP TO CONTACT THIS TEACHER</div>
 <div id="pleaseLoginSubText">If you already have an account, please login. Otherwise, click one of the links below to register as a speaker or a teacher.</div>
 	<div id="registerSpeakerButton" onclick="javascript:location.href='speakerRegistration.php'">
 		<div id="speaker">Register as a Speaker</div>
