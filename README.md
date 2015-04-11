@@ -110,3 +110,16 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 
 ###[Talkshop Video](http://t.co/hDJQhBq9YR)
 
+## Preview 1.0 Release
+*enhanced the search functionality to be easier utilized
+*updated the email that will be sent out
+*added iOS functionality to some of the webpages
+* Helped with form control 
+* correct SQL statement that only shows active profiles. 
+
+
+##To Do List 
+* Fix any new bugs that have arised. 
+* Prepare for live demonstration 
+* promotion of the website. 
+
