@@ -4,7 +4,7 @@
 	//loginProcess.php
 	
 	// Set up database connection
-	include('local-connect.php');
+	include('server-connect.php');
 	
 	// PHP variables for the HTML elements
 	$email = $_POST['email'];
@@ -63,6 +63,7 @@
 		$_SESSION['user'] = $row['fname'];
 		$_SESSION['userFullName'] = $row['fname'] . " " . $row['lname'];
 		$_SESSION['id'] = $row['id'];
+		$_SESSION['email'] = $row['email'];
 		header('Location: index.php');
 		exit;
 	}
@@ -72,6 +73,7 @@
 		$_SESSION['user'] = $row['fname'];
 		$_SESSION['userFullName'] = $row['fname'] . " " . $row['lname'];
 		$_SESSION['id'] = $row['id'];
+		$_SESSION['email'] = $row['email'];
 		header('Location: index.php');
 		exit;
 	}

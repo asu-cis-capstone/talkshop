@@ -7,10 +7,11 @@ TALK SHOP! Full Speaker Profiles
 	$id = $_GET["id"];
 
 	// MySQL Info
-	$servername = 'localhost'; 
-	$username = 'root';
-	$password = '';
-	$db = 'talkshop';
+$servername = 'localhost';
+$username = 'talkshopconnect';
+$password = 'Asu275833';
+$db = 'talkshop';
+
 	
 	// Connection
 	$connection = mysqli_connect($servername, $username, $password, $db);
@@ -134,24 +135,24 @@ TALK SHOP! Full Speaker Profiles
 		<p id="aboutSpeaker">ABOUT <?php echo $fNameCaps; ?>:</p>
 		
 		<p id="socialMediaLinks">
-		
+			
 			<?php 
-			if ($fbURL != null)
+			if ($fbURL != null || $fbURL != "")
 			{
 				?><a href="<?php echo $fbURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-facebook-square fa-2x"></i></a><?php
 			}
 			
-			if ($tURL != null)
+			if ($tURL != null || $tURL != "")
 			{
 				?><a href="<?php echo $tURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-twitter-square fa-2x"></i></a><?php
 			}
 			
-			if ($gpURL != null)
+			if ($gpURL != null || $gpURL != "")
 			{
 				?><a href="<?php echo $gpURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-google-plus-square fa-2x"></i></a><?php
 			}
 			
-			if ($liURL != null)
+			if ($liURL != null || $liURL != "")
 			{
 				?><a href="<?php echo $liURL; ?>" onclick="window.open(this.href) ; return false;"><i class="fa fa-linkedin-square fa-2x"></i></a><?php
 			}

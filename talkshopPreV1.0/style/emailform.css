@@ -84,7 +84,20 @@
 	font-size: 18px;
 	color: white;
 	border: none;
-	width: 536px;
+	width: 506px;
+	padding-left: 10px;
+	margin-top: 25px;
+}
+
+#fromEmail{ 
+	background: rgb(19, 125, 193);
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: white;
+	border: none;
+	width: 487px;
 	padding-left: 10px;
 	margin-top: 25px;
 }

@@ -62,23 +62,20 @@
 					<!-- first name -->
 					<input class="textFields" placeholder="First Name" type="text" id="firstname" name="firstname" 
 					autofocus
-					required
-					title="First Name: 4-30 chars, u/l case letters and - and ' only."
-					pattern="[a-zA-Z-' ]{4,30}"
+					title="First Name: 1-30 chars, u/l case letters and - and ' only."
+					pattern="[a-zA-Z-' ]{1,30}"
 					onfocus="fnamemsg()" />
 					<br />
 					
 					<!-- last name -->
 					<input class="textFields" placeholder="Last Name" type="text" id="lastname" name="lastname"
-					required
-					title="Last Name: 4-30 chars, u/l case letters and - and ' only."
-					pattern="[a-zA-Z-' ]{4,30}"
+					title="Last Name: 1-30 chars, u/l case letters and - and ' only."
+					pattern="[a-zA-Z-' ]{1,30}"
 					onfocus="lnamemsg()"	/>
 					<br />
 					
 					<!-- email -->
 					<input class="textFields" placeholder="Email Address" type="text" id="email" name="email" 
-					required
 					title="Valid email only - 50 chars max."
 					pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"
 					maxlength="50"
@@ -87,7 +84,6 @@
 					
 					<!-- password -->
 					<input class="textFields" placeholder="Password" type="password" id="pword" name="pword" 
-					required
 					title="Password: 5-15 chars, numbers, u/l case letters and -, _, ! $ only."
 					pattern="[a-zA-Z0-9-_!$]{5,15}"
 					onchange="form.reenter.pattern=this.value;"
@@ -96,14 +92,12 @@
 					
 					<!-- confirm password -->
 					<input class="textFields" placeholder="Confirm Password" type="password" id="reenter" name="reenter"
-					required
 					title="Passwords must match!"
 					onfocus="reentermsg()" />
 					<br />
 					
 					<!-- address -->
 					<input class="textFields" placeholder="Street Address 1" type="text" id="lineone" name="lineone" 
-					required 
 					title="Please enter the street address at which you reside." 
 					onfocus="addmsg()" />
 					<br />

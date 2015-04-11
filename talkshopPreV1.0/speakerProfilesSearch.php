@@ -142,10 +142,11 @@ TALK SHOP! Speaker Profile Listings after search
 				session_start();
 
 				// MySQL Info
-$servername = 'localhost'; 
-$username = 'root';
-$password = '';
+$servername = 'localhost';
+$username = 'talkshopconnect';
+$password = 'Asu275833';
 $db = 'talkshop';
+
 				
 				// Connection
 				$connection = mysqli_connect($servername, $username, $password, $db);

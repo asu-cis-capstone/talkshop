@@ -137,10 +137,11 @@ TALK SHOP! Teacher Profile Listings
 				session_start();
 
 				// MySQL Info
-$servername = 'localhost'; 
-$username = 'root';
-$password = '';
+$servername = 'localhost';
+$username = 'talkshopconnect';
+$password = 'Asu275833';
 $db = 'talkshop';
+
 				
 				// Connection
 				$connection = mysqli_connect($servername, $username, $password, $db);
@@ -156,7 +157,7 @@ $db = 'talkshop';
 							die("Error");
 						}
 
-						$sql = "SELECT * FROM teachers";
+						$sql = "SELECT * FROM teachers WHERE profilePic IS NOT NULL";
 						$result = $connection->query($sql);
 
 						if ($result->num_rows > 0) 
@@ -198,10 +199,7 @@ $db = 'talkshop';
 										echo '<img src="teacherUploads/' . $profilePic . '" alt="Profile Image" height="200" width="200">';	
 										echo '<p id="speakerName">';
 											echo $fullName;
-										echo '</p>';		
-
-										
-										
+										echo '</p>';
 										echo '<p id="topicAreas">';
 											echo '<span class="boldText">TOPIC AREAS: </span>' . $topics;
 										echo '</p>';		

@@ -140,10 +140,11 @@ TALK SHOP! Speaker Profile Listings
 				session_start();
 
 				// MySQL Info
-$servername = 'localhost'; 
-$username = 'root';
-$password = '';
+$servername = 'localhost';
+$username = 'talkshopconnect';
+$password = 'Asu275833';
 $db = 'talkshop';
+
 				
 				// Connection
 				$connection = mysqli_connect($servername, $username, $password, $db);
@@ -159,7 +160,7 @@ $db = 'talkshop';
 							die("Error");
 						}
 
-						$sql = "SELECT * FROM speakers";
+						$sql = "SELECT * FROM speakers WHERE profilePic IS NOT NULL";
 						$result = $connection->query($sql);
 
 						if ($result->num_rows > 0) 
