@@ -62,12 +62,12 @@ $db = 'talkshop';
 					echo '<input type="hidden" name="hiddenEmail" value="' . $receiverEmail . '">';
 				echo '</div>';
 				
-				echo '<div id="toEmail">';
+				echo '<div>';
 					echo 'TO: ';
 					echo '<input type="text" id="toEmail" name="toEmail" value="' . $toFullName . '" readonly>';
 				echo '</div>';
 				
-				echo '<div id="toEmail">';
+				echo '<div>';
 					echo 'FROM: ';
 					echo '<input type="text" id="fromEmail" name="fromEmail" value="' . $fromFullName . '" readonly>';
 				echo '</div>';
