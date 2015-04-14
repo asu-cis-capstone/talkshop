@@ -445,6 +445,28 @@ body, html{
 	left: 50%;
 }
 
+#deleteAccountMessage{
+	position: absolute;
+	margin-top: 150px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: black;
+	font-size: 40px;
+	margin-left: -171.5px;
+	left: 50%;
+}
+
+#deleteAccountSubText{
+	position: absolute;
+	margin-top: 215px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: black;
+	font-size: 20px;
+	margin-left: -336px;
+	left: 50%;
+}
+
 
 
 
