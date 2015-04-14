@@ -121,7 +121,8 @@
 				$topic3 = NULL;
 			}
 		
-		$bio = $_POST['bio'];
+		$bio = addslashes($_POST['bio']);
+		
 		$fbURL = $_POST['fburl'];
 		$liURL = $_POST['liurl'];
 		$gpURL = $_POST['gpurl'];

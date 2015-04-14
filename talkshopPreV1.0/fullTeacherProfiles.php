@@ -119,11 +119,11 @@ $db = 'talkshop';
 		
 		<p id="aboutTeacher">ABOUT <?php echo $fNameCaps?>:</p>
 		
-		<p id="aboutParagraphTeacher">
+		<div id="aboutParagraphTeacher">
 			<?php
 				echo $bio;
 			?>
-		</p>
+		</div>
 		
 		<div id="contactButton" onclick="javascript:location.href='<?php echo 'teacherEmailForm.php?id=' . $id ?>'">
 			<div id="contactSpeaker">CONTACT THIS TEACHER</div>

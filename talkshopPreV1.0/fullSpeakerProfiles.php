@@ -160,11 +160,11 @@ $db = 'talkshop';
 			
 		</p>
 		
-		<p id="aboutParagraph">
+		<div id="aboutParagraph">
 			<?php
 				echo $bio;
 			?>
-		</p>
+		</div>
 		
 		<div id="contactButton" onclick="javascript:location.href='<?php echo 'speakerEmailForm.php?id=' . $id ?>'">
 			<div id="contactSpeaker">CONTACT THIS SPEAKER</div>

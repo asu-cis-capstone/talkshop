@@ -119,14 +119,14 @@
 				$topic3 = NULL;
 			}
 		
-		$bio = $_POST['bio'];
+		$bio = addslashes($_POST['bio']);
 		
 		$profilePic = $randomNumber . basename( $_FILES["fileToUpload"]["name"]);
 		
 		$query = "INSERT INTO teachers(fname, lname, email, pword, address1, address2, city, state, zip, phone, ageGroup, topic1, topic2, topic3, bio, profilePic)" . 
 				 "VALUES('$fname','$lname','$email','$password','$address1','$address2','$city','$state','$zip','$phone','$ageGroup','$topic1','$topic2','$topic3','$bio','$profilePic')";
 				 
-		$result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
+		$result = mysqli_query($dbc, $query) or die(mysqli_error($dbc));
     
 		mysqli_close($dbc);
     }
@@ -160,7 +160,7 @@
 		$query = "INSERT INTO teachers(fname, lname, email, pword, address1, address2, city, state, zip, phone)" . 
 				 "VALUES('$fname','$lname','$email','$password','$address1','$address2','$city','$state','$zip','$phone')";
 				 
-		$result = mysqli_query($dbc, $query) or die('Unable to Connect to Database or the Registration is incomplete!');
+		$result = mysqli_query($dbc, $query) or die(mysqli_error($dbc));
     
 		mysqli_close($dbc);
 	}
