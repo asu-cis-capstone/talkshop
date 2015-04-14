@@ -8,20 +8,20 @@ TALKSHOP! Delete Account Confirmation
 	
 	include 'htmlHeader.php'
 ?>
-<!-- Link tag for CSS -->
+	<!-- Link tag for CSS -->
     <link type="text/css" rel="stylesheet" href="style/emailform.css" />
 
 	<title>Delete Confirmation</title>
 	
-	</head>
+</head>
 	
-	<body>
+<body>
 	
 	<?php
 		include 'headerBarFixed.php'
 	?>
 
-	<div id="deleteAccountMessage">WE HATE TO SEE YOU GO</div>
+	<div id="deleteAccountMessage">WE HATE TO SEE YOU GO!</div>
 	<div id="deleteAccountSubText">Please confirm that you would like to delete your account by clicking the appropriate button below.</div>
 
 	<div id="registerSpeakerButton" onclick="javascript:location.href='deleteLogout.php?id=<?php echo $_SESSION['id']; ?>'">
@@ -33,10 +33,9 @@ TALKSHOP! Delete Account Confirmation
 	</div>
 	
 	<?php
-	
 		include 'bottomBarFixed.php'
 	?>
 	
-	</body>
+</body>
 
 </html>
