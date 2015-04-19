@@ -7,10 +7,10 @@ TALK SHOP! Full Speaker Profiles
 	$id = $_GET["id"];
 
 	// MySQL Info
-$servername = 'localhost';
-$username = 'talkshopconnect';
-$password = 'Asu275833';
-$db = 'talkshop';
+	$servername = 'localhost';
+	$username = 'talkshopconnect';
+	$password = 'Asu275833';
+	$db = 'talkshop';
 
 	
 	// Connection

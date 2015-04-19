@@ -204,7 +204,7 @@ $db = 'talkshop';
 											echo '<span class="boldText">TOPIC AREAS: </span>' . $topics;
 										echo '</p>';		
 										echo '<p id="ageGroup">';
-											echo '<span class="boldText">TARGET AUDIENCE: </span>' . $ageGroup;
+											echo '<span class="boldText">AGE GROUP: </span>' . $ageGroup;
 										echo '</p>';
 										echo '<p id="geographicLocation">';
 											echo '<span class="boldText">LOCATION: </span>' . $location;

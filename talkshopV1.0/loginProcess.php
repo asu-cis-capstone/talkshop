@@ -79,9 +79,6 @@
 	}
 	
 	
-	
-	// This block of code must be the last block of code in this file.
-	// Pass a return code of 3 back to login.php
 	header('Location: index.php?rc=3');
 	exit;
 ?>

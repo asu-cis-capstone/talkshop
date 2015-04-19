@@ -21,10 +21,10 @@
 	include 'headerBar.php';
  
     // MySQL Info
-$servername = 'localhost';
-$username = 'talkshopconnect';
-$password = 'Asu275833';
-$db = 'talkshop';
+	$servername = 'localhost';
+	$username = 'talkshopconnect';
+	$password = 'Asu275833';
+	$db = 'talkshop';
 
     $connection = mysqli_connect($servername, $username, $password, $db);
     
