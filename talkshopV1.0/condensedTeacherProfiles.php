@@ -201,7 +201,7 @@ $db = 'talkshop';
 											echo $fullName;
 										echo '</p>';
 										echo '<p id="topicAreas">';
-											echo '<span class="boldText">TOPIC AREAS: </span>' . $topics;
+											echo '<span class="boldText">REQUESTED TOPICS: </span>' . $topics;
 										echo '</p>';		
 										echo '<p id="ageGroup">';
 											echo '<span class="boldText">AGE GROUP: </span>' . $ageGroup;
