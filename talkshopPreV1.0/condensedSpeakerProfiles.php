@@ -145,6 +145,8 @@ $username = 'talkshopconnect';
 $password = 'Asu275833';
 $db = 'talkshop';
 
+
+
 				
 				// Connection
 				$connection = mysqli_connect($servername, $username, $password, $db);

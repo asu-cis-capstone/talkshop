@@ -147,6 +147,8 @@ $username = 'talkshopconnect';
 $password = 'Asu275833';
 $db = 'talkshop';
 
+
+
 				
 				// Connection
 				$connection = mysqli_connect($servername, $username, $password, $db);
@@ -195,7 +197,7 @@ $db = 'talkshop';
 									WHERE ageGroup LIKE '%" . $audienceCode . "%'";
 							
 							//SQL statement if only keyword is searched
-							if ($stateCode == NULL && $topicCode == NULL && $audienceCode == NULL)
+							if ($stateCode == "" && $topicCode == "" && $audienceCode == "")
 							{
 								$sql = "SELECT * FROM speakers 
 									WHERE CONCAT(fname, ' ', lname) LIKE '%" . $keyword . "%'
@@ -227,14 +229,14 @@ $db = 'talkshop';
 							}
 							
 							//SQL statement if only state is searched
-							if ($keyword == NULL && $topicCode == NULL && $audienceCode == NULL)
+							if ($keyword == "" && $topicCode == "" && $audienceCode == "")
 							{
 									$sql = "SELECT * FROM speakers
 									WHERE state LIKE '%" . $stateCode . "%'"; 
 							}
 							
 							//SQL statement if only topic area is searched
-							if ($keyword == NULL && $stateCode == NULL && $audienceCode == NULL)
+							if ($keyword == "" && $stateCode == "" && $audienceCode == "")
 							{
 									$sql = "SELECT * FROM speakers
 										WHERE topic1 LIKE '%" . $topicCode . "%' 
@@ -243,10 +245,78 @@ $db = 'talkshop';
 							}
 							
 							//SQL statement if only target audience is searched
-							if ($keyword == NULL && $stateCode == NULL && $topicCode == NULL)
+							if ($keyword == "" && $stateCode == "" && $topicCode == "")
 							{
 									$sql = "SELECT * FROM speakers
 										WHERE ageGroup LIKE '%" . $audienceCode . "%'"; 
+							}
+							
+							if ($keyword != null && $stateCode != null)
+							{
+								$sql = "SELECT * FROM speakers 
+									WHERE CONCAT(fname, ' ', lname) LIKE '%" . $keyword . "%'
+									OR city LIKE '%" . $keyword . "%'
+									OR state LIKE '%" . $keyword . "%'
+									OR topic1 LIKE '%" . $keyword . "%'
+									OR topic2 LIKE '%" . $keyword . "%'
+									OR topic3 LIKE '%" . $keyword . "%'
+									OR ageGroup LIKE '%" . $keyword . "%'
+									OR state LIKE '%" . $stateCode . "%' ";
+								
+							}
+							
+							if ($keyword != null && $topicCode != null)
+							{
+								$sql = "SELECT * FROM speakers 
+									WHERE CONCAT(fname, ' ', lname) LIKE '%" . $keyword . "%'
+									OR city LIKE '%" . $keyword . "%'
+									OR state LIKE '%" . $keyword . "%'
+									OR topic1 LIKE '%" . $keyword . "%'
+									OR topic2 LIKE '%" . $keyword . "%'
+									OR topic3 LIKE '%" . $keyword . "%'
+									OR ageGroup LIKE '%" . $keyword . "%'
+									OR topic1 LIKE '%" . $topicCode . "%' 
+									OR topic2 LIKE '%" . $topicCode . "%'
+									OR topic3 LIKE '%" . $topicCode . "%'";
+								
+							}
+							
+							if ($keyword != null && $audienceCode != null)
+							{
+								$sql = "SELECT * FROM speakers 
+									WHERE CONCAT(fname, ' ', lname) LIKE '%" . $keyword . "%'
+									OR city LIKE '%" . $keyword . "%'
+									OR state LIKE '%" . $keyword . "%'
+									OR topic1 LIKE '%" . $keyword . "%'
+									OR topic2 LIKE '%" . $keyword . "%'
+									OR topic3 LIKE '%" . $keyword . "%'
+									OR ageGroup LIKE '%" . $keyword . "%'
+									OR ageGroup LIKE '%" . $audienceCode . "%'"; 
+							}
+							
+							if ($stateCode != null && $topicCode != null)
+							{
+								$sql = "SELECT * FROM speakers
+									WHERE state LIKE '%" . $stateCode . "%' 
+									OR topic1 LIKE '%" . $topicCode . "%' 
+									OR topic2 LIKE '%" . $topicCode . "%'
+									OR topic3 LIKE '%" . $topicCode . "%'";
+							}
+							
+							if ($stateCode != null && $audienceCode != null)
+							{
+								$sql = "SELECT * FROM speakers
+									WHERE state LIKE '%" . $stateCode . "%' 
+									OR ageGroup LIKE '%" . $audienceCode . "%'"; 
+							}
+							
+							if ($topicCode != null && $audienceCode != null)
+							{
+								$sql = "SELECT * FROM speakers
+									WHERE topic1 LIKE '%" . $topicCode . "%'
+									OR topic2 LIKE '%" . $topicCode . "%'
+									OR topic3 LIKE '%" . $topicCode . "%'
+									OR ageGroup LIKE '%" . $audienceCode . "%'"; 
 							}
 							
 						$result = $connection->query($sql);
