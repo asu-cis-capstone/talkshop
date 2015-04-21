@@ -65,7 +65,20 @@ function validate() {
 		}
 		else
 		{
-			document.getElementById("firstname").style.backgroundColor="rgb(19,125,193)";
+			function allLetter(inputtxt)
+      			var letters = /^[A-Za-z]+$/;
+      			if(inputtxt.value.match(letters))
+      			{ 
+      				document.getElementById("firstname").style.backgroundColor="rgb(19,125,193)";
+      			}
+      			else 
+      			{
+      				document.getElementById("firstname").style.backgroundColor="#FF6666";
+				document.getElementById("firstname").value="";
+		 		f1 = 1;
+      				failed = true;
+      				warning = warning + "\n Please input alphabet characters only";
+      			}
 		}
 	}
 	
@@ -90,7 +103,20 @@ function validate() {
 		}
 		else
 		{
-			document.getElementById("lastname").style.backgroundColor="rgb(19,125,193)";
+			function allLetter(inputtxt)
+      			var letters = /^[A-Za-z]+$/;
+      			if(inputtxt.value.match(letters))
+      			{ 
+      				document.getElementById("lastname").style.backgroundColor="rgb(19,125,193)";
+      			}
+      			else 
+      			{
+      				document.getElementById("lastname").style.backgroundColor="#FF6666";
+				document.getElementById("lastname").value="";
+		 		f2 = 1;
+      				failed = true;
+      				warning = warning + "\n Please input alphabet characters only";
+      			}
 		}
 	}
 	
@@ -219,7 +245,20 @@ function validate() {
 		}
 		else
 		{
-			document.getElementById("city").style.backgroundColor="rgb(19,125,193)";
+			function allLetter(inputtxt)
+      			var letters = /^[A-Za-z]+$/;
+      			if(inputtxt.value.match(letters))
+      			{ 
+      				document.getElementById("city").style.backgroundColor="rgb(19,125,193)";
+      			}
+      			else 
+      			{
+      				document.getElementById("city").style.backgroundColor="#FF6666";
+				document.getElementById("city").value="";
+		 		f6 = 1;
+      				failed = true;
+      				warning = warning + "\n Please input alphabet characters only";
+      			}
 		}
 	}
 	
