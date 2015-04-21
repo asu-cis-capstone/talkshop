@@ -137,10 +137,10 @@ TALK SHOP! Teacher Profile Listings
 				session_start();
 
 				// MySQL Info
-$servername = 'localhost';
-$username = 'talkshopconnect';
-$password = 'Asu275833';
-$db = 'talkshop';
+				$servername = 'localhost';
+				$username = 'talkshopconnect';
+				$password = 'Asu275833';
+				$db = 'talkshop';
 
 				
 				// Connection
@@ -157,7 +157,7 @@ $db = 'talkshop';
 							die("Error");
 						}
 
-						$sql = "SELECT * FROM teachers WHERE profilePic IS NOT NULL";
+						$sql = "SELECT * FROM teachers WHERE profilePic IS NOT NULL ORDER BY fname ASC";
 						$result = $connection->query($sql);
 
 						if ($result->num_rows > 0) 
