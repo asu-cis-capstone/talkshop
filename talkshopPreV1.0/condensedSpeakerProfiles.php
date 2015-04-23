@@ -139,7 +139,7 @@ TALK SHOP! Speaker Profile Listings
 				session_name();
 				session_start();
 
-				// MySQL Info
+// MySQL Info
 $servername = 'localhost';
 $username = 'talkshopconnect';
 $password = 'Asu275833';
