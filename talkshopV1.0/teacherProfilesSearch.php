@@ -181,7 +181,27 @@ $db = 'talkshop';
 										AND (topic1 LIKE '%" . $topicCode . "%' 
 										OR topic2 LIKE '%" . $topicCode . "%'
 										OR topic3 LIKE '%" . $topicCode . "%')
-										AND ageGroup LIKE '%" . $audienceCode . "%'";
+										AND ageGroup LIKE '%" . $audienceCode . "%'
+										ORDER BY fname ASC";
+						}
+						
+						//SQL statement if the entire form is not filled out
+						if ($keyword == null && $stateCode == null && $topicCode == null && $audienceCode == null)
+						{
+							$sql = "SELECT * FROM teachers 
+										WHERE (CONCAT(fname, ' ', lname) LIKE '%" . $keyword . "%'
+										OR city LIKE '%" . $keyword . "%'
+										OR state LIKE '%" . $keyword . "%'
+										OR topic1 LIKE '%" . $keyword . "%'
+										OR topic2 LIKE '%" . $keyword . "%'
+										OR topic3 LIKE '%" . $keyword . "%'
+										OR ageGroup LIKE '%" . $keyword . "%')
+										AND (state LIKE '%" . $stateCode . "%')
+										AND (topic1 LIKE '%" . $topicCode . "%' 
+										OR topic2 LIKE '%" . $topicCode . "%'
+										OR topic3 LIKE '%" . $topicCode . "%')
+										AND ageGroup LIKE '%" . $audienceCode . "%'
+										ORDER BY fname ASC";
 						}
 						
 						//SQL statement if only keyword is searched
@@ -194,7 +214,8 @@ $db = 'talkshop';
 									OR topic1 LIKE '%" . $keyword . "%'
 									OR topic2 LIKE '%" . $keyword . "%'
 									OR topic3 LIKE '%" . $keyword . "%'
-									OR ageGroup LIKE '%" . $keyword . "%'"; 
+									OR ageGroup LIKE '%" . $keyword . "%'
+									ORDER BY fname ASC"; 
 							}
 							
 							//SQL statement if everything but the keyword is searched
@@ -205,14 +226,16 @@ $db = 'talkshop';
 									AND ageGroup LIKE '%" . $audienceCode . "%'
 									AND (topic1 LIKE '%" . $topicCode . "%' 
 										OR topic2 LIKE '%" . $topicCode . "%'
-										OR topic3 LIKE '%" . $topicCode . "%')"; 
+										OR topic3 LIKE '%" . $topicCode . "%')
+										ORDER BY fname ASC"; 
 							}
 							
 							//SQL statement if only state is searched
 							if ($keyword == null && $topicCode == null && $audienceCode == null && $stateCode != null)
 							{
 									$sql = "SELECT * FROM teachers 
-									WHERE state LIKE '%" . $stateCode . "%'"; 
+									WHERE state LIKE '%" . $stateCode . "%'
+									ORDER BY fname ASC"; 
 							}
 							
 							//SQL statement if only topic area is searched
@@ -221,14 +244,16 @@ $db = 'talkshop';
 									$sql = "SELECT * FROM teachers 
 										WHERE topic1 LIKE '%" . $topicCode . "%' 
 										OR topic2 LIKE '%" . $topicCode . "%'
-										OR topic3 LIKE '%" . $topicCode . "%'"; 
+										OR topic3 LIKE '%" . $topicCode . "%'
+										ORDER BY fname ASC"; 
 							}
 							
 							//SQL statement if only target audience is searched
 							if ($keyword == null && $stateCode == null && $topicCode == null && $audienceCode != null)
 							{
 									$sql = "SELECT * FROM teachers 
-										WHERE ageGroup LIKE '%" . $audienceCode . "%'"; 
+										WHERE ageGroup LIKE '%" . $audienceCode . "%'
+										ORDER BY fname ASC"; 
 							}
 							
 							//SQL statement if only keyword and stateCode are searched
@@ -242,7 +267,8 @@ $db = 'talkshop';
 									OR topic2 LIKE '%" . $keyword . "%'
 									OR topic3 LIKE '%" . $keyword . "%'
 									OR ageGroup LIKE '%" . $keyword . "%')
-									AND state LIKE '%" . $stateCode . "%' ";
+									AND state LIKE '%" . $stateCode . "%' 
+									ORDER BY fname ASC";
 							}
 							
 							//SQL statement if only keyword and topicCode are searched
@@ -258,7 +284,8 @@ $db = 'talkshop';
 									OR ageGroup LIKE '%" . $keyword . "%')
 									AND (topic1 LIKE '%" . $topicCode . "%' 
 									OR topic2 LIKE '%" . $topicCode . "%'
-									OR topic3 LIKE '%" . $topicCode . "%')";
+									OR topic3 LIKE '%" . $topicCode . "%')
+									ORDER BY fname ASC";
 							}
 							
 							//SQL statement if only keyword and audienceCode are searched
@@ -272,7 +299,8 @@ $db = 'talkshop';
 									OR topic2 LIKE '%" . $keyword . "%'
 									OR topic3 LIKE '%" . $keyword . "%'
 									OR ageGroup LIKE '%" . $keyword . "%')
-									AND ageGroup LIKE '%" . $audienceCode . "%'"; 
+									AND ageGroup LIKE '%" . $audienceCode . "%'
+									ORDER BY fname ASC"; 
 							}
 							
 							//SQL statement if only stateCode and topicCode are searched
@@ -282,7 +310,8 @@ $db = 'talkshop';
 									WHERE state LIKE '%" . $stateCode . "%' 
 									AND (topic1 LIKE '%" . $topicCode . "%' 
 									OR topic2 LIKE '%" . $topicCode . "%'
-									OR topic3 LIKE '%" . $topicCode . "%')";
+									OR topic3 LIKE '%" . $topicCode . "%')
+									ORDER BY fname ASC";
 							}
 							
 							//SQL statement if only stateCode and audienceCode are searched
@@ -290,7 +319,8 @@ $db = 'talkshop';
 							{
 								$sql = "SELECT * FROM teachers 
 									WHERE state LIKE '%" . $stateCode . "%' 
-									AND ageGroup LIKE '%" . $audienceCode . "%'"; 
+									AND ageGroup LIKE '%" . $audienceCode . "%'
+									ORDER BY fname ASC"; 
 							}
 							
 							//SQL statement if only topicCode and audienceCode are searched
@@ -300,7 +330,8 @@ $db = 'talkshop';
 									WHERE (topic1 LIKE '%" . $topicCode . "%'
 									OR topic2 LIKE '%" . $topicCode . "%'
 									OR topic3 LIKE '%" . $topicCode . "%')
-									AND ageGroup LIKE '%" . $audienceCode . "%'"; 
+									AND ageGroup LIKE '%" . $audienceCode . "%'
+									ORDER BY fname ASC"; 
 							}
 							
 							//SQL statement if only keyword, state and topic are searched
@@ -317,7 +348,8 @@ $db = 'talkshop';
 										AND state LIKE '%" . $stateCode . "%' 
 										AND (topic1 LIKE '%" . $topicCode . "%' 
 										OR topic2 LIKE '%" . $topicCode . "%'
-										OR topic3 LIKE '%" . $topicCode . "%')";
+										OR topic3 LIKE '%" . $topicCode . "%')
+										ORDER BY fname ASC";
 							}
 							
 							//SQL statement if only keyword, state and targetAudience are searched
@@ -332,7 +364,8 @@ $db = 'talkshop';
 										OR topic3 LIKE '%" . $keyword . "%'
 										OR ageGroup LIKE '%" . $keyword . "%')
 										AND state LIKE '%" . $stateCode . "%' 
-										AND ageGroup LIKE '%" . $audienceCode . "%'";
+										AND ageGroup LIKE '%" . $audienceCode . "%'
+										ORDER BY fname ASC";
 							}
 							
 							//SQL statement if only keyword, topic and targetAudience are searched
@@ -349,7 +382,8 @@ $db = 'talkshop';
 										AND (topic1 LIKE '%" . $topicCode . "%' 
 										OR topic2 LIKE '%" . $topicCode . "%'
 										OR topic3 LIKE '%" . $topicCode . "%')
-										AND ageGroup LIKE '%" . $audienceCode . "%'";
+										AND ageGroup LIKE '%" . $audienceCode . "%'
+										ORDER BY fname ASC";
 							}
 							
 						$result = $connection->query($sql);
