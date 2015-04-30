@@ -105,11 +105,11 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 * Inform Product Owners to start promoting users to sign up and get user feedback
 
 ##Preview v1.0 Release
-*Enhanced the search functionality to be easier utilized
-*Updated the email that will be sent out
-*Added iOS functionality to some of the webpages
-*Helped with form control 
-*Correct SQL statement that only shows active profiles 
+* Enhanced the search functionality to be easier utilized
+* Updated the email that will be sent out
+* Added iOS functionality to some of the webpages
+* Helped with form control 
+* Correct SQL statement that only shows active profiles 
 
 ##To Do List 
 * Fix any new bugs that have arised 
