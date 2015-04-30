@@ -116,26 +116,26 @@ TalkShop was conceived at Startup Weekend in Phoenix, Arizona on November 14th, 
 * Prepare for live demonstration 
 * Promotion of the website 
 
-##v1.0 Release
+##v1.0 Release Notes
 The final release of Talk-Shop.net includes the following functionality:
-  *Login/Logout
-  *Register as Speaker/Teacher (with ability to upload a photo and provide social media links which are all stored and pulled    from our database to be displayed on the website)
-  *Functioning validation for registration forms and login
-  *Delete Account option
-  *Speaker/Teacher listings are displayed on the website based on registration forms submitted and stored in our database
-  *Database functionality
-  *Ability to search for speakers/teachers based on a combination of keyword, state, topic area, and/or target audience
-  *Full speaker profiles with detailed bios 
-  *Ability to contact a speaker or a teacher once the user has created an account by submitting a registration form
-  *Once the user emails the speaker/teacher they would like to contact through the website, the person being contacted will     receive an email from the user and will be able to hit reply and automatically be able to contact the user at their own      personal email address
+* Login/Logout
+* Register as Speaker/Teacher (with ability to upload a photo and provide social media links which are all stored and pulled from our database to be displayed on the website)
+* Functioning validation for registration forms and login
+* Delete Account option
+* Speaker/Teacher listings are displayed on the website based on registration forms submitted and stored in our database
+* Database functionality
+* Ability to search for speakers/teachers based on a combination of keyword, state, topic area, and/or target audience
+* Full speaker profiles with detailed bios 
+* Ability to contact a speaker or a teacher once the user has created an account by submitting a registration form
+* Once the user emails the speaker/teacher they would like to contact through the website, the person being contacted will receive an email from the user and will be able to hit reply and automatically be able to contact the user at their own     personal email address
 
 ##Moving Forward
 As of now, Talk-Shop.net is live and fully functional. Users are able to register, login, create a profile, and connect with teachers or speakers with ease. The team does not intend on making any further changes beyond this point; however, we will continue to encourage people to visit the site and recruit new members. As for future TalkShop development teams, we have comprised a list of suggestions for enhancing the website:
-*New Domain: The clients wish to transfer the site to http://www.talkshopspot.com. A temporary fix would be to redirect; however, the task should be fairly simple. This should be addressed immediately. 
-*Listings: Currently, when users choose to create a profile, they fill out information about themselves and the bio is then posted to the speaker or teacher profile pages. Instead of users searching through profiles, implement a functionality that allows users to only post a listing for what they need at that point in time. Similar to creating an ad on Craigslist, consider developing a “Create a Listing” button that will include the date and time a speaker is needed and the particular topic the teacher is looking for. 
-*Edit Account Info: At this point, there is no way for a user to edit their account information. If they want to update their profile, they must delete their current one and start over. This is very inconvenient and should be considered a top-priority moving forward. 
-*Premium Listings: As the site gains more users, it may be beneficial to offer premium listings at a reasonable price. Speakers could have the option to pay for a more visible space on the website so that they can acquire more business.
-*Rating System: Developers should consider implementing a rating system in which teachers could rate speakers on their performance. Perhaps you could correlate the rating with the position of the speaker on the page, meaning the higher the rating, the more visible the speaker is on the site. Developers could also add rating into the search criteria. 
+* New Domain: The clients wish to transfer the site to http://www.talkshopspot.com. A temporary fix would be to redirect; however, the task should be fairly simple. This should be addressed immediately. 
+* Listings: Currently, when users choose to create a profile, they fill out information about themselves and the bio is then posted to the speaker or teacher profile pages. Instead of users searching through profiles, implement a functionality that allows users to only post a listing for what they need at that point in time. Similar to creating an ad on Craigslist, consider developing a “Create a Listing” button that will include the date and time a speaker is needed and the particular topic the teacher is looking for. 
+* Edit Account Info: At this point, there is no way for a user to edit their account information. If they want to update their profile, they must delete their current one and start over. This is very inconvenient and should be considered a top-priority moving forward. 
+* Premium Listings: As the site gains more users, it may be beneficial to offer premium listings at a reasonable price. Speakers could have the option to pay for a more visible space on the website so that they can acquire more business.
+* Rating System: Developers should consider implementing a rating system in which teachers could rate speakers on their performance. Perhaps you could correlate the rating with the position of the speaker on the page, meaning the higher the rating, the more visible the speaker is on the site. Developers could also add rating into the search criteria. 
 
 ###[Track Our Progress](https://waffle.io/asu-cis-capstone/talkshop)
 
